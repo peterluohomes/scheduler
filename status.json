@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-06-25T22:06:36.578698+00:00",
+  "updated": "2026-06-25T23:12:02.732341+00:00",
   "statuses": {
     "test-telegram-001": {
       "overall": "posted",
@@ -9,6 +9,21 @@
           "status": "posted",
           "info": "ok",
           "at": "2026-06-25T22:06:36.578698+00:00"
+        }
+      }
+    },
+    "test-email-pushover-002": {
+      "overall": "partial",
+      "targets": {
+        "email": {
+          "status": "posted",
+          "info": "sent to 1",
+          "at": "2026-06-25T23:12:02.732341+00:00"
+        },
+        "wechat": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-06-25T23:12:02.732341+00:00"
         }
       }
     }
