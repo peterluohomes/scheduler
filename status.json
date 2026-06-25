@@ -1,5 +1,16 @@
 {
   "version": 1,
-  "updated": null,
-  "statuses": {}
+  "updated": "2026-06-25T22:06:36.578698+00:00",
+  "statuses": {
+    "test-telegram-001": {
+      "overall": "posted",
+      "targets": {
+        "telegram": {
+          "status": "posted",
+          "info": "ok",
+          "at": "2026-06-25T22:06:36.578698+00:00"
+        }
+      }
+    }
+  }
 }
