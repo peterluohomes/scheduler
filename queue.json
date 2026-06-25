@@ -1,5 +1,18 @@
 {
   "version": 1,
   "generated": null,
-  "posts": []
+  "posts": [
+    {
+      "id": "test-telegram-001",
+      "scheduledFor": "2026-06-25T00:00:00.000Z",
+      "status": "queued",
+      "title": "Scheduler test",
+      "media": [],
+      "captions": { "en": "✅ Live test — the scheduler chain works." },
+      "commentLinks": { "en": "" },
+      "targets": [
+        { "platform": "telegram", "label": "Telegram", "lang": "en", "tier": "auto", "status": "queued" }
+      ]
+    }
+  ]
 }
