@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Composer · Pinnacle Listing System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#16243f;--navy-soft:#22324f;--gold:#bb9b46;--gold-deep:#9a7e33;--cream:#f6f2e8;--cream-2:#fbf9f3;--ink:#1d2433;--muted:#6b7385;--line:#e3dccb;--auto:#2f7d57;--assist:#a6792a;--shadow:0 1px 2px rgba(22,36,63,.06),0 8px 24px rgba(22,36,63,.08)}
+  *{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",system-ui,sans-serif;line-height:1.5;font-size:15px}
+  header.bar{background:var(--navy);color:var(--cream);padding:15px 22px;border-bottom:3px solid var(--gold);display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+  header.bar .eyebrow{font-size:.62rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);font-weight:700}
+  header.bar h1{font-family:"Playfair Display",serif;font-weight:600;font-size:1.25rem;margin:0}
+  header.bar .note{font-size:.76rem;color:#bcc6d8;margin-left:auto}
+  .wrap{max-width:1180px;margin:0 auto;padding:20px 18px 70px}
+  .settings{background:var(--cream-2);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin-bottom:20px;display:flex;gap:14px;align-items:center;flex-wrap:wrap;box-shadow:var(--shadow)}
+  .settings label{font-size:.72rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--gold-deep)}
+  .settings input{flex:1;min-width:240px;border:1px solid var(--line);border-radius:8px;padding:8px 11px;font-family:inherit;font-size:.88rem}
+  .settings .hint{font-size:.74rem;color:var(--muted);width:100%}
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;box-shadow:var(--shadow)}
+  .card h2{font-family:"Playfair Display",serif;font-weight:600;font-size:1.2rem;color:var(--navy);margin:0 0 16px}
+  .f{margin-bottom:15px}
+  .f label{display:block;font-size:.72rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:6px}
+  .f input,.f textarea,.f select{width:100%;border:1px solid var(--line);border-radius:9px;padding:9px 11px;font-family:inherit;font-size:.9rem;color:var(--ink);background:#fff}
+  .f textarea{resize:vertical;min-height:64px;line-height:1.45}
+  .f input:focus,.f textarea:focus,.f select:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(187,155,70,.15)}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .langblock{border:1px solid var(--line);border-radius:11px;padding:13px;margin-bottom:13px;background:var(--cream-2)}
+  .langblock .lt{display:flex;align-items:center;gap:8px;margin-bottom:9px}
+  .langblock .flag{font-size:.64rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;background:var(--navy);color:var(--cream);border-radius:6px;padding:3px 9px}
+  .bank{margin-left:auto;font-size:.8rem;border:1px solid var(--line);border-radius:7px;padding:5px 7px;color:var(--gold-deep);background:#fff;cursor:pointer;max-width:180px}
+  .charcount{font-size:.72rem;color:var(--muted);text-align:right;margin-top:3px}
+  .plats{display:flex;flex-direction:column;gap:12px}
+  .tier{border:1px solid var(--line);border-radius:11px;padding:11px 13px}
+  .tier .th{font-size:.66rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;margin-bottom:9px;display:flex;align-items:center;gap:8px}
+  .tier.auto .th{color:var(--auto)}.tier.assist .th{color:var(--assist)}
+  .dot{width:8px;height:8px;border-radius:50%}.tier.auto .dot{background:var(--auto)}.tier.assist .dot{background:var(--assist)}
+  .chips{display:flex;gap:7px;flex-wrap:wrap}
+  .chip{border:1px solid var(--line);background:#fff;color:var(--navy);border-radius:999px;padding:6px 12px;font-size:.82rem;font-weight:600;cursor:pointer;transition:.12s;display:inline-flex;align-items:center;gap:6px}
+  .chip:hover{border-color:var(--gold)}
+  .chip .lg{font-size:.6rem;color:var(--muted);font-weight:700}
+  .chip.on{background:var(--navy);color:var(--cream);border-color:var(--navy)}
+  .chip.on .lg{color:var(--gold)}
+  .tier.auto .chip.on{background:var(--auto);border-color:var(--auto)}
+  .tier.assist .chip.on{background:var(--assist);border-color:var(--assist)}
+  .addbtn{width:100%;background:var(--gold);color:var(--navy);border:1px solid var(--gold-deep);border-radius:10px;padding:13px;font-size:.95rem;font-weight:700;cursor:pointer;font-family:inherit;margin-top:4px}
+  .addbtn:hover{background:#cba954}
+  .addbtn.editing{background:var(--navy);color:var(--cream)}
+  .qhead{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px;flex-wrap:wrap}
+  .qhead h2{margin:0}
+  .qbtns{display:flex;gap:8px;flex-wrap:wrap}
+  .btn{border:1px solid var(--line);background:#fff;color:var(--navy);border-radius:8px;padding:8px 12px;font-size:.8rem;font-weight:600;cursor:pointer;font-family:inherit}
+  .btn:hover{border-color:var(--gold)}.btn.ghost{color:var(--muted)}
+  .post{border:1px solid var(--line);border-radius:12px;padding:13px 15px;margin-bottom:11px;background:var(--cream-2)}
+  .post.due{border-left:4px solid var(--gold)}
+  .post .pt{display:flex;justify-content:space-between;gap:10px;align-items:baseline;flex-wrap:wrap}
+  .post .ptitle{font-weight:700;color:var(--navy);font-size:.96rem}
+  .post .when{font-size:.78rem;color:var(--muted);font-weight:600}
+  .post .pcap{font-size:.83rem;color:#475066;margin:7px 0;line-height:1.4;white-space:pre-wrap;max-height:42px;overflow:hidden}
+  .post .tgs{display:flex;gap:5px;flex-wrap:wrap;margin-top:8px}
+  .tg{font-size:.66rem;font-weight:700;padding:3px 8px;border-radius:999px;border:1px solid var(--line)}
+  .tg.auto{background:rgba(47,125,87,.12);color:var(--auto);border-color:rgba(47,125,87,.3)}
+  .tg.assist{background:rgba(166,121,42,.14);color:var(--assist);border-color:rgba(166,121,42,.3)}
+  .post .pact{display:flex;gap:8px;margin-top:10px}
+  .post .pact button{font-size:.74rem;border:none;background:none;cursor:pointer;color:var(--muted);font-weight:600;padding:0;font-family:inherit}
+  .post .pact button:hover{color:var(--navy)}
+  .post .pact .del:hover{color:#a33}
+  .empty{text-align:center;color:var(--muted);padding:30px 10px;font-size:.9rem}
+  .media-prev{display:flex;gap:7px;flex-wrap:wrap;margin-top:8px}
+  .media-prev img{width:54px;height:54px;object-fit:cover;border-radius:7px;border:1px solid var(--line)}
+  .media-prev .file{font-size:.72rem;color:var(--muted);border:1px solid var(--line);border-radius:7px;padding:6px 8px;background:#fff}
+  dialog{border:none;border-radius:14px;padding:0;box-shadow:0 20px 60px rgba(0,0,0,.3);max-width:560px;width:92%}
+  dialog .dh{background:var(--navy);color:var(--cream);padding:14px 18px;font-family:"Playfair Display",serif;font-size:1.05rem}
+  dialog .db{padding:16px 18px}
+  dialog textarea{width:100%;min-height:180px;border:1px solid var(--line);border-radius:9px;padding:10px;font-family:ui-monospace,monospace;font-size:.78rem}
+  dialog .da{display:flex;gap:8px;justify-content:flex-end;padding:0 18px 16px}
+  .ovl{font-size:.62rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px;margin-left:8px}
+  .ovl.posted{background:rgba(47,125,87,.15);color:var(--auto)}
+  .ovl.partial,.ovl.nudged{background:rgba(166,121,42,.16);color:var(--assist)}
+  .ovl.failed{background:rgba(170,51,51,.14);color:#a33}
+  .tg .ok{color:var(--auto);font-weight:800}.tg .no{color:#a33;font-weight:800}.tg .wait{color:var(--assist);font-weight:800}
+  #toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--navy);color:var(--cream);padding:11px 18px;border-radius:10px;font-size:.86rem;font-weight:600;box-shadow:0 8px 24px rgba(0,0,0,.25);opacity:0;pointer-events:none;transition:.25s;z-index:50;border:1px solid var(--gold)}
+  #toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+  @media (max-width:880px){.cols{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="bar">
+  <span class="eyebrow">Pinnacle Listing System</span><h1>Composer</h1>
+  <span class="note">Build bilingual posts → export queue.json → push to GitHub</span>
+</header>
+
+<div class="wrap">
+
+  <div class="settings">
+    <label>Media base URL</label>
+    <input id="baseUrl" placeholder="https://peterluo.homes/social/">
+    <p class="hint">Where you commit your images/videos so auto-posting (Instagram/Facebook) can read them by public URL. A filename below becomes base + filename. Lines starting with http are used as-is.</p>
+  </div>
+
+  <div class="cols">
+
+    <!-- COMPOSE -->
+    <div class="card">
+      <h2 id="formTitle">New post</h2>
+
+      <div class="f"><label>Title <span style="color:var(--muted);font-weight:400;text-transform:none;letter-spacing:0">(for your reference)</span></label>
+        <input id="title" placeholder="e.g. Friday Just Sold — Hayfield"></div>
+
+      <div class="f"><label>Schedule (your local time)</label>
+        <input type="datetime-local" id="when"></div>
+
+      <div class="f"><label>Media filenames / URLs (one per line)</label>
+        <textarea id="media" placeholder="peterluo_sold_en_9x16.png&#10;peterluo_sold_zh_9x16.png"></textarea>
+        <div class="media-prev" id="mediaPrev"></div></div>
+
+      <!-- EN -->
+      <div class="langblock">
+        <div class="lt"><span class="flag">English</span>
+          <select class="bank" id="bankEn"><option value="">+ insert angle…</option></select></div>
+        <textarea id="capEn" placeholder="English caption…" oninput="cc('En')"></textarea>
+        <div class="charcount" id="ccEn">0</div>
+        <input id="linkEn" placeholder="Comment link (first-comment CTA), optional" style="margin-top:8px;width:100%;border:1px solid var(--line);border-radius:9px;padding:9px 11px;font-family:inherit;font-size:.86rem">
+      </div>
+
+      <!-- ZH -->
+      <div class="langblock">
+        <div class="lt"><span class="flag">中文</span>
+          <select class="bank" id="bankZh"><option value="">+ 插入角度…</option></select></div>
+        <textarea id="capZh" placeholder="中文文案…" oninput="cc('Zh')"></textarea>
+        <div class="charcount" id="ccZh">0</div>
+        <input id="linkZh" placeholder="评论区链接（首条评论 CTA），可选" style="margin-top:8px;width:100%;border:1px solid var(--line);border-radius:9px;padding:9px 11px;font-family:inherit;font-size:.86rem">
+      </div>
+
+      <div class="f"><label>Platforms</label>
+        <div class="plats" id="plats"></div></div>
+
+      <button class="addbtn" id="addBtn">Add to queue</button>
+    </div>
+
+    <!-- QUEUE -->
+    <div class="card">
+      <div class="qhead"><h2>Queue (<span id="qcount">0</span>)</h2>
+        <div class="qbtns">
+          <button class="btn" id="pushBtn">⬆ Push</button>
+          <button class="btn" id="pullBtn">⬇ Pull</button>
+          <button class="btn" id="statusBtn">↻ Status</button>
+          <button class="btn" id="exportBtn">Export</button>
+          <button class="btn" id="copyBtn">Copy</button>
+          <button class="btn ghost" id="importBtn">Import</button>
+          <button class="btn ghost" id="ghBtn">⚙ Sync</button>
+        </div></div>
+      <div id="queue"><div class="empty">No posts yet. Build one on the left.</div></div>
+    </div>
+
+  </div>
+</div>
+
+<dialog id="ioDlg">
+  <div class="dh" id="ioTitle">queue.json</div>
+  <div class="db"><textarea id="ioText" spellcheck="false"></textarea></div>
+  <div class="da"><button class="btn" id="ioAction">Load</button><button class="btn ghost" id="ioClose">Close</button></div>
+</dialog>
+
+<dialog id="ghDlg">
+  <div class="dh">GitHub sync — composer writes queue.json, reads status.json</div>
+  <div class="db">
+    <div class="f"><label>Owner / repo</label><input id="ghRepo" placeholder="peterluohomes/social-scheduler"></div>
+    <div class="f"><label>Queue path</label><input id="ghPath" placeholder="queue.json"></div>
+    <div class="f"><label>status.json URL (public, read-only)</label><input id="ghStatus" placeholder="https://peterluo.homes/status.json"></div>
+    <div class="f"><label>Fine-grained token — Contents: read &amp; write, this repo only</label><input id="ghToken" type="password" placeholder="github_pat_..."></div>
+    <p style="font-size:.76rem;color:var(--muted);margin:0">Stored only in this browser, on this machine — never committed to the repo. The composer only ever writes queue.json; it reads status.json but never writes it.</p>
+  </div>
+  <div class="da"><button class="btn" id="ghSave">Save</button><button class="btn ghost" id="ghCancel">Close</button></div>
+</dialog>
+
+<script>
+(function(){
+  // ---------- platforms ----------
+  const PLATFORMS=[
+    {key:'instagram_en',label:'Instagram',lang:'en',tier:'auto'},
+    {key:'facebook_en',label:'Facebook',lang:'en',tier:'auto'},
+    {key:'youtube',label:'YouTube',lang:'en',tier:'auto'},
+    {key:'threads',label:'Threads',lang:'en',tier:'auto'},
+    {key:'telegram',label:'Telegram',lang:'en',tier:'auto'},
+    {key:'email',label:'Email',lang:'en',tier:'auto'},
+    {key:'instagram_zh',label:'Instagram',lang:'zh',tier:'auto'},
+    {key:'facebook_zh',label:'Facebook',lang:'zh',tier:'auto'},
+    {key:'wechat',label:'WeChat 朋友圈',lang:'zh',tier:'assist'},
+    {key:'red',label:'小红书 RED',lang:'zh',tier:'assist'},
+    {key:'whatsapp',label:'WhatsApp',lang:'en',tier:'assist'},
+    {key:'nextdoor',label:'Nextdoor',lang:'en',tier:'assist'}
+  ];
+  const PMAP={};PLATFORMS.forEach(p=>PMAP[p.key]=p);
+
+  // ---------- caption bank (bilingual angles, from the content pillars) ----------
+  const BANK=[
+    {g:'Preparation',en:'The journey before it goes live.',zh:'上市前的精心准备。'},
+    {g:'Preparation',en:'Staging day — watch it become a home.',zh:'布置日 — 见证空房变成家。'},
+    {g:'Preparation',en:'What buyers never see: the work behind the listing.',zh:'买家看不到的，是房源背后的功夫。'},
+    {g:'First impression',en:'The kind of home that makes you smile before you even walk in.',zh:'还没进门，就让你会心一笑的家。'},
+    {g:'Lifestyle',en:'Morning here: sunrise, coffee, quiet.',zh:'这里的清晨：日出、咖啡、宁静。'},
+    {g:'Lifestyle',en:'Summer here: backyard, BBQ, long evenings.',zh:'这里的夏天：后院、烧烤、悠长的傍晚。'},
+    {g:'Lifestyle',en:'Winter here: fireplace, warmth, calm.',zh:'这里的冬天：壁炉、温暖、安宁。'},
+    {g:'Lifestyle',en:'Imagine welcoming friends here on a summer evening.',zh:'想象夏夜在这里招待朋友。'},
+    {g:'Room',en:'A kitchen where the whole family ends up.',zh:'全家人最后都会聚到的厨房。'},
+    {g:'Room',en:'The owner\u2019s retreat — your hotel at home.',zh:'主人的私享空间 — 家中的酒店套房。'},
+    {g:'Room',en:'Movie nights start here.',zh:'电影之夜，从这里开始。'},
+    {g:'Neighbourhood',en:'Why families move to this community.',zh:'家庭为何选择这个社区。'},
+    {g:'Neighbourhood',en:'Top schools, parks, and quiet streets.',zh:'名校、公园与宁静的街道。'},
+    {g:'Neighbourhood',en:'The hidden gems the locals love.',zh:'本地人钟爱的隐藏宝藏。'},
+    {g:'Neighbourhood',en:'Steps to trails and slow weekend mornings.',zh:'步行即达步道，享受悠闲的周末早晨。'},
+    {g:'Market',en:'Why this home is priced where it is.',zh:'这套房子为何如此定价。'},
+    {g:'Market',en:'What this month\u2019s numbers mean for sellers.',zh:'本月数据，对卖家意味着什么。'},
+    {g:'Market',en:'For every 100 homes listed, here\u2019s what actually sold.',zh:'每上市 100 套房，真正成交的是这些。'},
+    {g:'Activity',en:'Open house this weekend — come by.',zh:'本周末开放参观 — 欢迎到访。'},
+    {g:'Activity',en:'Busy showing day. Strong interest.',zh:'看房不断，反响热烈。'},
+    {g:'Activity',en:'Offer night — here\u2019s how it went.',zh:'Offer 之夜 — 结果如何。'},
+    {g:'Story',en:'After 18 wonderful years, a new chapter begins.',zh:'美好的十八年后，新的篇章开启。'},
+    {g:'Story',en:'The next chapter starts now.',zh:'新的篇章，此刻开始。'},
+    {g:'Success',en:'Just sold — over asking.',zh:'刚刚成交 — 高于要价。'},
+    {g:'Success',en:'Sold fast. Here\u2019s what worked.',zh:'快速成交。成功的关键在这里。'},
+    {g:'Success',en:'Another happy seller. Key handover day.',zh:'又一位满意的卖家。交钥匙的日子。'},
+    {g:'Success',en:'Lessons for sellers from this sale.',zh:'这次成交，给卖家的启示。'}
+  ];
+
+  // ---------- state + storage (graceful: IndexedDB local, memory fallback) ----------
+  let queue=[]; let editingId=null; let db=null;
+  let gh={owner:'',repo:'',path:'queue.json',statusUrl:'',token:''};
+  let statusMap={};
+  const DB='pls-scheduler', STORE='queue', SET='settings';
+  function openDB(){return new Promise(res=>{try{
+    const r=indexedDB.open(DB,1);
+    r.onupgradeneeded=e=>{const d=e.target.result;if(!d.objectStoreNames.contains(STORE))d.createObjectStore(STORE,{keyPath:'id'});if(!d.objectStoreNames.contains(SET))d.createObjectStore(SET,{keyPath:'k'});};
+    r.onsuccess=e=>{db=e.target.result;res(true);};
+    r.onerror=()=>res(false);
+  }catch(e){res(false);}});}
+  function dbAll(){return new Promise(res=>{if(!db)return res([]);try{const tx=db.transaction(STORE,'readonly').objectStore(STORE).getAll();tx.onsuccess=()=>res(tx.result||[]);tx.onerror=()=>res([]);}catch(e){res([]);}});}
+  function dbPut(o){if(!db)return;try{db.transaction(STORE,'readwrite').objectStore(STORE).put(o);}catch(e){}}
+  function dbDel(id){if(!db)return;try{db.transaction(STORE,'readwrite').objectStore(STORE).delete(id);}catch(e){}}
+  function setGet(k){return new Promise(res=>{if(!db)return res(null);try{const t=db.transaction(SET,'readonly').objectStore(SET).get(k);t.onsuccess=()=>res(t.result?t.result.v:null);t.onerror=()=>res(null);}catch(e){res(null);}});}
+  function setPut(k,v){if(!db)return;try{db.transaction(SET,'readwrite').objectStore(SET).put({k,v});}catch(e){}}
+
+  const $=id=>document.getElementById(id);
+  const uid=()=>{try{return crypto.randomUUID();}catch(e){return 'p'+Date.now()+Math.random().toString(16).slice(2,8);}};
+
+  // ---------- build platform chips ----------
+  function buildPlats(){
+    const wrap=$('plats');wrap.innerHTML='';
+    [['auto','Auto-posts via API'],['assist','Assisted — you tap publish (copy + download + Pushover nudge)']].forEach(([tier,desc])=>{
+      const box=document.createElement('div');box.className='tier '+tier;
+      box.innerHTML='<div class="th"><span class="dot"></span>'+(tier==='auto'?'Tier 1 · '+desc:'Tier 2 · '+desc)+'</div>';
+      const chips=document.createElement('div');chips.className='chips';
+      PLATFORMS.filter(p=>p.tier===tier).forEach(p=>{
+        const c=document.createElement('button');c.className='chip';c.dataset.key=p.key;
+        c.innerHTML=p.label+' <span class="lg">'+(p.lang==='en'?'EN':'中文')+'</span>';
+        c.onclick=()=>c.classList.toggle('on');
+        chips.appendChild(c);
+      });
+      box.appendChild(chips);wrap.appendChild(box);
+    });
+  }
+  function selectedTargets(){
+    const out=[];document.querySelectorAll('#plats .chip.on').forEach(c=>{const p=PMAP[c.dataset.key];out.push({platform:p.key,label:p.label,lang:p.lang,tier:p.tier,status:'queued'});});return out;
+  }
+
+  // ---------- caption bank dropdowns ----------
+  function buildBanks(){
+    ['En','Zh'].forEach(L=>{
+      const sel=$('bank'+L);const groups={};
+      BANK.forEach((b,i)=>{(groups[b.g]=groups[b.g]||[]).push(i);});
+      Object.keys(groups).forEach(g=>{
+        const og=document.createElement('optgroup');og.label=g;
+        groups[g].forEach(i=>{const o=document.createElement('option');o.value=i;o.textContent=(L==='En'?BANK[i].en:BANK[i].zh).slice(0,42);og.appendChild(o);});
+        sel.appendChild(og);
+      });
+      sel.onchange=()=>{if(sel.value==='')return;const t=$('cap'+L);const add=(L==='En'?BANK[sel.value].en:BANK[sel.value].zh);t.value=t.value?(t.value.replace(/\s*$/,'')+'\n'+add):add;cc(L);sel.value='';};
+    });
+  }
+  window.cc=L=>{$('cc'+L).textContent=$('cap'+L).value.length;};
+
+  // ---------- media preview ----------
+  function mediaList(){
+    const base=$('baseUrl').value.trim();
+    return $('media').value.split('\n').map(s=>s.trim()).filter(Boolean).map(name=>{
+      const url=/^https?:\/\//i.test(name)?name:(base+name);
+      const type=/\.(mp4|mov|webm|m4v)$/i.test(name)?'video':'image';
+      return {filename:name.split('/').pop(),url,type};
+    });
+  }
+  function renderMediaPrev(){
+    const p=$('mediaPrev');p.innerHTML='';
+    mediaList().forEach(m=>{
+      if(m.type==='image'){const im=document.createElement('img');im.src=m.url;im.onerror=()=>{im.replaceWith(fileTag(m.filename));};p.appendChild(im);}
+      else p.appendChild(fileTag('🎬 '+m.filename));
+    });
+  }
+  function fileTag(t){const d=document.createElement('div');d.className='file';d.textContent=t;return d;}
+  $('media').addEventListener('input',renderMediaPrev);
+  $('baseUrl').addEventListener('input',()=>{renderMediaPrev();setPut('baseUrl',$('baseUrl').value);});
+
+  // ---------- add / edit ----------
+  function defaultWhen(){const d=new Date(Date.now()+3600000);d.setMinutes(0,0,0);const pad=n=>String(n).padStart(2,'0');return d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate())+'T'+pad(d.getHours())+':'+pad(d.getMinutes());}
+  function resetForm(){editingId=null;$('formTitle').textContent='New post';$('addBtn').textContent='Add to queue';$('addBtn').classList.remove('editing');
+    $('title').value='';$('when').value=defaultWhen();$('media').value='';$('capEn').value='';$('capZh').value='';$('linkEn').value='';$('linkZh').value='';cc('En');cc('Zh');renderMediaPrev();
+    document.querySelectorAll('#plats .chip.on').forEach(c=>c.classList.remove('on'));}
+  $('addBtn').onclick=()=>{
+    const targets=selectedTargets();
+    if(!$('when').value){alert('Pick a schedule time.');return;}
+    if(targets.length===0){alert('Select at least one platform.');return;}
+    const post={
+      id:editingId||uid(),
+      created:editingId?(queue.find(p=>p.id===editingId)||{}).created||new Date().toISOString():new Date().toISOString(),
+      scheduledFor:new Date($('when').value).toISOString(),
+      scheduledLocal:$('when').value,
+      status:'queued',
+      title:$('title').value.trim()||'(untitled)',
+      media:mediaList(),
+      captions:{en:$('capEn').value,zh:$('capZh').value},
+      commentLinks:{en:$('linkEn').value.trim(),zh:$('linkZh').value.trim()},
+      targets
+    };
+    if(editingId){queue=queue.map(p=>p.id===editingId?post:p);}else{queue.push(post);}
+    dbPut(post);resetForm();render();
+  };
+
+  function editPost(id){
+    const p=queue.find(x=>x.id===id);if(!p)return;editingId=id;
+    $('formTitle').textContent='Edit post';$('addBtn').textContent='Save changes';$('addBtn').classList.add('editing');
+    $('title').value=p.title==='(untitled)'?'':p.title;
+    $('when').value=p.scheduledLocal||defaultWhen();
+    $('media').value=(p.media||[]).map(m=>m.filename).join('\n');
+    $('capEn').value=p.captions.en||'';$('capZh').value=p.captions.zh||'';cc('En');cc('Zh');
+    $('linkEn').value=p.commentLinks.en||'';$('linkZh').value=p.commentLinks.zh||'';
+    document.querySelectorAll('#plats .chip').forEach(c=>c.classList.toggle('on',(p.targets||[]).some(t=>t.platform===c.dataset.key)));
+    renderMediaPrev();window.scrollTo({top:0,behavior:'smooth'});
+  }
+  function delPost(id){if(!confirm('Delete this post?'))return;queue=queue.filter(p=>p.id!==id);dbDel(id);if(editingId===id)resetForm();render();}
+
+  // ---------- render queue ----------
+  function fmtWhen(iso){const d=new Date(iso);return d.toLocaleString([], {weekday:'short',month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'});}
+  function render(){
+    queue.sort((a,b)=>new Date(a.scheduledFor)-new Date(b.scheduledFor));
+    $('qcount').textContent=queue.length;
+    const wrap=$('queue');
+    if(!queue.length){wrap.innerHTML='<div class="empty">No posts yet. Build one on the left.</div>';return;}
+    const now=Date.now();wrap.innerHTML='';
+    queue.forEach(p=>{
+      const due=new Date(p.scheduledFor).getTime()<=now;
+      const el=document.createElement('div');el.className='post'+(due?' due':'');
+      const cap=(p.captions.en||p.captions.zh||'').slice(0,120);
+      const tgs=(p.targets||[]).map(t=>'<span class="tg '+t.tier+'">'+t.label+' '+(t.lang==='en'?'EN':'中文')+tgMark(p.id,t.platform)+'</span>').join('');
+      el.innerHTML='<div class="pt"><span class="ptitle">'+esc(p.title)+overallPill(p.id)+'</span><span class="when">'+fmtWhen(p.scheduledFor)+'</span></div>'+
+        (cap?'<div class="pcap">'+esc(cap)+'</div>':'')+
+        '<div class="tgs">'+tgs+'</div>'+
+        '<div class="pact"><button data-e="'+p.id+'">Edit</button><button class="del" data-d="'+p.id+'">Delete</button></div>';
+      wrap.appendChild(el);
+    });
+    wrap.querySelectorAll('[data-e]').forEach(b=>b.onclick=()=>editPost(b.dataset.e));
+    wrap.querySelectorAll('[data-d]').forEach(b=>b.onclick=()=>delPost(b.dataset.d));
+  }
+  function esc(s){return String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
+
+  // ---------- export / import ----------
+  function queueJSON(){return JSON.stringify({version:1,generated:new Date().toISOString(),posts:queue},null,2);}
+  $('exportBtn').onclick=()=>{const blob=new Blob([queueJSON()],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='queue.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1500);};
+  $('copyBtn').onclick=()=>{navigator.clipboard.writeText(queueJSON()).then(()=>{$('copyBtn').textContent='Copied!';setTimeout(()=>$('copyBtn').textContent='Copy',1200);});};
+  const dlg=$('ioDlg');
+  $('importBtn').onclick=()=>{$('ioText').value='';dlg.showModal();};
+  $('ioClose').onclick=()=>dlg.close();
+  $('ioAction').onclick=()=>{try{const data=JSON.parse($('ioText').value);const posts=Array.isArray(data)?data:data.posts;if(!Array.isArray(posts))throw 0;queue=posts;queue.forEach(dbPut);dlg.close();render();}catch(e){alert('Could not parse that JSON.');}};
+
+  // ---------- GitHub two-file sync (composer OWNS queue.json; Action OWNS status.json) ----------
+  function utf8b64(s){return btoa(unescape(encodeURIComponent(s)));}
+  function b64utf8(b){return decodeURIComponent(escape(atob(String(b).replace(/\n/g,''))));}
+  function ghH(){return {'Authorization':'Bearer '+gh.token,'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'};}
+  function ghUrl(path){return 'https://api.github.com/repos/'+gh.owner+'/'+gh.repo+'/contents/'+(path||gh.path);}
+  function needGh(){if(!gh.owner||!gh.repo||!gh.token){openGh();return false;}return true;}
+
+  async function pushQueue(){
+    if(!needGh())return;
+    try{
+      let sha=null;
+      const g=await fetch(ghUrl()+'?ref=HEAD',{headers:ghH()});
+      if(g.ok){sha=(await g.json()).sha;}
+      const body={message:'Update queue.json '+new Date().toISOString(),content:utf8b64(queueJSON())};if(sha)body.sha=sha;
+      const r=await fetch(ghUrl(),{method:'PUT',headers:ghH(),body:JSON.stringify(body)});
+      if(!r.ok){const e=await r.json().catch(()=>({}));throw new Error(r.status+' '+(e.message||''));}
+      toast('Pushed queue.json ✓');
+    }catch(e){alert('Push failed: '+e.message+'\n\nNeeds a fine-grained token with Contents: read & write on that repo.');}
+  }
+  async function pullQueue(){
+    if(!needGh())return;
+    if(queue.length && !confirm('Replace the local queue with the version in the repo?'))return;
+    try{
+      const g=await fetch(ghUrl()+'?ref=HEAD',{headers:ghH()});
+      if(!g.ok)throw new Error(g.status);
+      const data=JSON.parse(b64utf8((await g.json()).content));
+      queue=Array.isArray(data)?data:(data.posts||[]);queue.forEach(dbPut);render();toast('Pulled queue.json ✓');
+    }catch(e){alert('Pull failed: '+e.message);}
+  }
+  async function fetchStatus(){
+    try{
+      let txt=null;
+      if(gh.statusUrl){const r=await fetch(gh.statusUrl+(gh.statusUrl.includes('?')?'&':'?')+'t='+Date.now());if(r.ok)txt=await r.text();}
+      else if(gh.owner&&gh.repo&&gh.token){const r=await fetch(ghUrl('status.json')+'?ref=HEAD',{headers:ghH()});if(r.ok)txt=b64utf8((await r.json()).content);}
+      statusMap=txt?(JSON.parse(txt).statuses||{}):{};
+    }catch(e){statusMap={};}
+    render();
+  }
+  function tgMark(id,key){const s=statusMap[id];if(!s||!s.targets)return '';const t=s.targets[key];if(!t)return '';const m={posted:' <span class="ok">✓</span>',failed:' <span class="no">✕</span>',nudged:' <span class="wait">⏳</span>'};return m[t.status]||'';}
+  function overallPill(id){const s=statusMap[id];if(!s||!s.overall||s.overall==='queued')return '';return '<span class="ovl '+s.overall+'">'+s.overall+'</span>';}
+
+  function openGh(){$('ghRepo').value=(gh.owner&&gh.repo)?gh.owner+'/'+gh.repo:'';$('ghPath').value=gh.path||'queue.json';$('ghStatus').value=gh.statusUrl||'';$('ghToken').value=gh.token||'';$('ghDlg').showModal();}
+  $('ghSave').onclick=()=>{const r=($('ghRepo').value||'').trim().split('/');gh={owner:(r[0]||'').trim(),repo:(r[1]||'').trim(),path:($('ghPath').value||'queue.json').trim(),statusUrl:($('ghStatus').value||'').trim(),token:$('ghToken').value.trim()};setPut('gh',gh);$('ghDlg').close();fetchStatus();toast('Sync settings saved');};
+  $('ghCancel').onclick=()=>$('ghDlg').close();
+  $('pushBtn').onclick=pushQueue;$('pullBtn').onclick=pullQueue;$('statusBtn').onclick=fetchStatus;$('ghBtn').onclick=openGh;
+  function toast(msg){let t=$('toast');if(!t){t=document.createElement('div');t.id='toast';document.body.appendChild(t);}t.textContent=msg;t.className='show';clearTimeout(t._t);t._t=setTimeout(()=>t.className='',2200);}
+
+  // ---------- init ----------
+  buildPlats();buildBanks();resetForm();
+  openDB().then(async()=>{
+    const b=await setGet('baseUrl');if(b){$('baseUrl').value=b;}
+    const g=await setGet('gh');if(g){gh=g;}
+    const saved=await dbAll();if(saved&&saved.length){queue=saved;}
+    render();fetchStatus();
+  });
+})();
+</script>
+</body>
+</html>
