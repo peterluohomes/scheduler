@@ -1,17 +1,17 @@
 {
   "version": 1,
-  "generated": null,
   "posts": [
     {
-      "id": "test-telegram-001",
+      "id": "test-email-pushover-002",
       "scheduledFor": "2026-06-25T00:00:00.000Z",
       "status": "queued",
-      "title": "Scheduler test",
+      "title": "Email + nudge test",
       "media": [],
-      "captions": { "en": "✅ Live test — the scheduler chain works." },
+      "captions": { "en": "Testing the email send and the Pushover nudge." },
       "commentLinks": { "en": "" },
       "targets": [
-        { "platform": "telegram", "label": "Telegram", "lang": "en", "tier": "auto", "status": "queued" }
+        { "platform": "email", "label": "Email", "lang": "en", "tier": "auto", "status": "queued" },
+        { "platform": "wechat", "label": "WeChat 朋友圈", "lang": "zh", "tier": "assist", "status": "queued" }
       ]
     }
   ]
