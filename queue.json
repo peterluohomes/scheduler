@@ -2,16 +2,19 @@
   "version": 1,
   "posts": [
     {
-      "id": "test-email-pushover-002",
+      "id": "test-manual-003",
       "scheduledFor": "2026-06-25T00:00:00.000Z",
       "status": "queued",
-      "title": "Email + nudge test",
+      "title": "Manual page test — Just Sold",
       "media": [],
-      "captions": { "en": "Testing the email send and the Pushover nudge." },
-      "commentLinks": { "en": "" },
+      "captions": {
+        "en": "",
+        "zh": "列治文山好消息：又一套房子高于要价成交！想知道您家现在值多少？请私信我。"
+      },
+      "commentLinks": { "en": "", "zh": "https://peterluo.homes/valuation" },
       "targets": [
-        { "platform": "email", "label": "Email", "lang": "en", "tier": "auto", "status": "queued" },
-        { "platform": "wechat", "label": "WeChat 朋友圈", "lang": "zh", "tier": "assist", "status": "queued" }
+        { "platform": "wechat", "label": "WeChat 朋友圈", "lang": "zh", "tier": "assist", "status": "queued" },
+        { "platform": "red", "label": "小红书 RED", "lang": "zh", "tier": "assist", "status": "queued" }
       ]
     }
   ]
