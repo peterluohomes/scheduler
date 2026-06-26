@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-06-25T23:31:47.865671+00:00",
+  "updated": "2026-06-26T23:35:20.536134+00:00",
   "statuses": {
     "test-telegram-001": {
       "overall": "posted",
@@ -39,6 +39,21 @@
           "status": "nudged",
           "info": "ok",
           "at": "2026-06-25T23:31:47.865671+00:00"
+        }
+      }
+    },
+    "e57252af-dd38-4579-a2ea-1fb76d04c7cc": {
+      "overall": "partial",
+      "targets": {
+        "telegram": {
+          "status": "posted",
+          "info": "ok",
+          "at": "2026-06-26T23:35:20.536134+00:00"
+        },
+        "wechat": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-06-26T23:35:20.536134+00:00"
         }
       }
     }
