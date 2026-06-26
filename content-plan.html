@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weekly Content Plan · Pinnacle Listing System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#16243f;--navy-soft:#22324f;--gold:#bb9b46;--gold-deep:#9a7e33;
+    --cream:#f6f2e8;--cream-2:#fbf9f3;--ink:#1d2433;--muted:#6b7385;--line:#e3dccb;
+    --shadow:0 1px 2px rgba(22,36,63,.06),0 8px 28px rgba(22,36,63,.07);
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",system-ui,sans-serif;line-height:1.55;font-size:16px}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 18px 80px}
+
+  header.hero{background:var(--navy);color:var(--cream);padding:46px 18px 40px;text-align:center;border-bottom:3px solid var(--gold)}
+  .hero .eyebrow{font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:14px}
+  .hero h1{font-family:"Playfair Display",serif;font-weight:600;font-size:clamp(1.9rem,5.4vw,2.9rem);line-height:1.1;margin:0 0 12px}
+  .hero p{max-width:640px;margin:0 auto;color:#cfd6e4;font-size:1.02rem}
+  .pillars{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:20px}
+  .pillars span{border:1px solid rgba(187,155,70,.5);color:var(--gold);border-radius:999px;padding:5px 15px;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;font-weight:600}
+
+  section{margin-top:46px}
+  .sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:18px}
+  .sec-num{font-family:"Playfair Display",serif;font-style:italic;color:var(--gold);font-size:1.15rem;font-weight:500}
+  h2{font-family:"Playfair Display",serif;font-weight:600;font-size:clamp(1.4rem,3.6vw,1.85rem);margin:0;color:var(--navy);line-height:1.15}
+  .lead{color:var(--muted);margin:-6px 0 0;max-width:720px}
+
+  /* jobs strip */
+  .jobs{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin-top:8px}
+  .job{background:var(--cream-2);border:1px solid var(--line);border-radius:13px;padding:14px 16px;box-shadow:var(--shadow)}
+  .job .jt{font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-deep);font-weight:700;margin-bottom:5px}
+  .job b{font-family:"Playfair Display",serif;color:var(--navy);font-size:1rem;display:block;margin-bottom:3px}
+  .job p{margin:0;font-size:.85rem;color:#475066}
+
+  /* mandate band */
+  .mandate{margin-top:30px}
+  .mhead{font-family:"Playfair Display",serif;font-weight:600;font-size:clamp(1.3rem,3.4vw,1.7rem);color:var(--navy);margin:0 0 4px}
+  .msub{color:var(--muted);margin:0 0 16px;max-width:720px}
+  .mgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .mcard{background:var(--cream-2);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow);border-top:3px solid var(--gold)}
+  .mcard .mt{font-size:.65rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-deep);font-weight:700;margin-bottom:7px}
+  .mcard h3{font-family:"Playfair Display",serif;color:var(--navy);font-size:1.18rem;font-weight:600;margin:0 0 8px;line-height:1.15}
+  .mcard p{margin:0;font-size:.92rem;color:#3c455a;line-height:1.55}
+  .mcard p b{color:var(--navy)}
+  .msplit{margin-top:14px;background:var(--navy);color:var(--cream);border:1px solid var(--gold);border-radius:14px;padding:18px 20px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .msplit .se{padding-left:14px;border-left:3px solid var(--gold)}
+  .msplit .st{font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:5px}
+  .msplit b.big{font-family:"Playfair Display",serif;font-size:1.05rem;color:#fff;font-weight:600;display:block;margin-bottom:4px}
+  .msplit p{margin:0;font-size:.88rem;color:#dbe1ec;line-height:1.5}
+  .msplit .tail{grid-column:1/-1;margin:2px 0 0;font-size:.9rem;color:var(--gold);font-style:italic;text-align:center}
+  @media (max-width:620px){.mgrid,.msplit{grid-template-columns:1fr}}
+
+  .principles{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+  .principle{background:var(--cream-2);border:1px solid var(--line);border-radius:14px;padding:16px 18px;box-shadow:var(--shadow)}
+  .principle b{display:block;font-family:"Playfair Display",serif;color:var(--navy);font-size:1.05rem;margin-bottom:5px;font-weight:600}
+  .principle p{margin:0;font-size:.92rem;color:#475066}
+  .principle .ratio{color:var(--gold-deep);font-weight:700}
+
+  .platforms{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:14px}
+  .plat{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 18px 18px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+  .plat::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--gold)}
+  .plat h3{margin:0 0 2px;font-family:"Playfair Display",serif;color:var(--navy);font-size:1.18rem;font-weight:600;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .plat .lang{font-size:.64rem;letter-spacing:.05em;text-transform:uppercase;font-weight:700;color:var(--gold-deep);border:1px solid var(--line);border-radius:6px;padding:2px 7px}
+  .plat .role{font-size:.84rem;color:var(--muted);margin:6px 0 10px;font-style:italic}
+  .plat ul{margin:0;padding-left:0;list-style:none}
+  .plat li{font-size:.9rem;padding:3px 0 3px 16px;position:relative;color:#3c455a}
+  .plat li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--gold)}
+  .plat .freq{margin-top:11px;font-size:.82rem;font-weight:600;color:var(--navy);background:var(--cream);border-radius:8px;padding:6px 10px;display:inline-block}
+
+  .legend{display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:10px}
+  .fmt{border:1px solid var(--line);border-radius:11px;padding:11px 13px;background:var(--cream-2)}
+  .fmt .tag{display:inline-block;font-size:.66rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:3px 9px;border-radius:999px;margin-bottom:7px;background:var(--navy);color:var(--cream)}
+  .fmt.lp .tag{background:var(--gold);color:var(--navy)}
+  .fmt p{margin:0;font-size:.83rem;color:#475066;line-height:1.45}
+
+  /* format deep-dive */
+  .fund{background:var(--navy);color:var(--cream);border-radius:14px;padding:20px 22px;margin-bottom:18px;border:1px solid var(--gold)}
+  .fund h3{font-family:"Playfair Display",serif;color:var(--gold);margin:0 0 12px;font-size:1.12rem;font-weight:600}
+  .fund .ftwo{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+  .fund .fi b{display:block;color:#fff;font-weight:600;margin-bottom:4px;font-size:.96rem}
+  .fund .fi p{margin:0;font-size:.88rem;color:#dbe1ec;line-height:1.5}
+  .fund .fi p b{display:inline;color:var(--gold)}
+  .fcards{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:16px}
+  .fcard{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 19px 19px;box-shadow:var(--shadow);display:flex;flex-direction:column}
+  .fcard.wide{grid-column:1/-1}
+  .fc-head{display:flex;align-items:center;gap:10px;margin-bottom:11px;flex-wrap:wrap}
+  .fc-head .tag{display:inline-block;font-size:.66rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:3px 10px;border-radius:999px;background:var(--navy);color:var(--cream)}
+  .fcard.conv .fc-head .tag{background:var(--gold);color:var(--navy)}
+  .fc-len{font-size:.76rem;color:var(--muted);font-weight:600}
+  .fc-is{margin:0 0 13px;font-size:.92rem;color:#333c50;line-height:1.5}
+  .fc-is b{color:var(--navy)}
+  .fc-l{font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;font-weight:700;color:var(--gold-deep);margin:0 0 6px}
+  .fc-block{margin-bottom:13px}
+  .fc-block ul{margin:0;padding-left:0;list-style:none}
+  .fc-block li{font-size:.87rem;color:#3c455a;padding:3px 0 3px 15px;position:relative;line-height:1.45}
+  .fc-block li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--gold)}
+  .fc-block li b{color:var(--navy)}
+  .subfmt{border-left:3px solid var(--line);padding:2px 0 2px 13px;margin:0 0 11px}
+  .subfmt .sn{font-family:"Playfair Display",serif;color:var(--navy);font-weight:600;font-size:.98rem;display:block;margin-bottom:3px}
+  .subfmt p{margin:0;font-size:.86rem;color:#3c455a;line-height:1.5}
+  .subfmt p b{color:var(--navy)}
+  .hookbox{background:var(--cream);border-left:3px solid var(--gold);border-radius:0 10px 10px 0;padding:11px 14px;margin-bottom:13px}
+  .hookbox .fc-l{margin-bottom:7px}
+  .hookbox p{margin:0 0 7px;font-size:.86rem;color:#3c455a;line-height:1.45}
+  .hooklist{margin:0;padding:0;list-style:none}
+  .hooklist li{font-size:.86rem;color:var(--navy);padding:4px 0 4px 16px;position:relative;line-height:1.4;font-style:italic}
+  .hooklist li::before{content:"\201C";position:absolute;left:0;top:2px;color:var(--gold);font-size:1.1rem;font-style:normal;font-family:Georgia,serif}
+  .hookbad{font-size:.82rem;color:#9a4d3f;margin:8px 0 0;font-style:italic}
+  .fc-why{background:var(--cream-2);border-radius:10px;padding:11px 13px;margin-top:auto}
+  .fc-why p{margin:0;font-size:.86rem;color:#475066;line-height:1.5}
+  .fc-why p b{color:var(--navy)}
+
+  /* ---- EXECUTION GRID ---- */
+  .gridnote{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:14px;font-size:.83rem;color:var(--muted)}
+  .gridnote .k{display:inline-flex;align-items:center;gap:7px}
+  .swatch{width:14px;height:14px;border-radius:4px;display:inline-block;border:1px solid var(--line)}
+  .swatch.lps{background:var(--gold);border-color:var(--gold-deep)}
+  .swatch.rests{background:#eef1f6}
+  .gridwrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);background:#fff}
+  table.grid{border-collapse:separate;border-spacing:0;min-width:1000px;width:100%}
+  .grid th,.grid td{vertical-align:top;border-bottom:1px solid var(--line);border-right:1px solid var(--line)}
+  .grid thead th{position:sticky;top:0;background:var(--navy);color:var(--cream);font-weight:600;font-size:.74rem;letter-spacing:.07em;text-transform:uppercase;padding:11px 10px;text-align:left;z-index:3}
+  .grid thead th .sub{display:block;font-weight:500;font-size:.62rem;letter-spacing:.04em;color:var(--gold);margin-top:2px;text-transform:uppercase}
+  .grid td:first-child,.grid th:first-child{position:sticky;left:0;z-index:2;min-width:128px;max-width:128px}
+  .grid thead th:first-child{z-index:4}
+  .grid tbody td:first-child{background:var(--cream-2);font-weight:700;color:var(--navy);font-size:.84rem;padding:11px 10px}
+  .grid tbody td:first-child small{display:block;font-weight:600;color:var(--gold-deep);font-size:.68rem;margin-top:3px;letter-spacing:.02em}
+  .grid tbody td{padding:9px 9px;min-width:124px;background:#fff}
+  .grid tbody tr:nth-child(even) td{background:#fcfaf5}
+  .grid tbody tr:nth-child(even) td:first-child{background:#f4efe2}
+  .gc{display:flex;flex-direction:column;gap:3px}
+  .gp{align-self:flex-start;font-size:.62rem;font-weight:700;letter-spacing:.03em;text-transform:uppercase;padding:2px 7px;border-radius:999px;background:#eef1f6;color:var(--navy-soft);border:1px solid #e0e5ee}
+  .gp.vid{background:#e7edf6}
+  .gp.story{background:#efe7d6;color:var(--gold-deep)}
+  .gl{font-size:.72rem;color:var(--muted);font-weight:600}
+  .gx{font-size:.76rem;color:#3c455a;line-height:1.35}
+  .gc.lp{background:rgba(187,155,70,.13);margin:-9px;padding:9px;border-radius:0}
+  .lpbadge{align-self:flex-start;font-size:.58rem;font-weight:800;letter-spacing:.06em;background:var(--gold);color:var(--navy);padding:2px 7px;border-radius:999px;margin-top:2px}
+  .rest{color:#c4c0b3;font-size:1.1rem;text-align:center;display:block;padding-top:6px}
+
+  /* market rotation */
+  .cycle{background:var(--navy);color:var(--cream);border:1px solid var(--gold);border-radius:14px;padding:16px 18px;margin-bottom:16px;display:flex;gap:14px;align-items:flex-start;flex-wrap:wrap}
+  .cycle .cyl{font-family:"Playfair Display",serif;color:var(--gold);font-size:1.05rem;font-weight:600;min-width:140px}
+  .cycle p{margin:0;font-size:.88rem;color:#dbe1ec;flex:1;min-width:240px;line-height:1.5}
+  .cycle p b{color:#fff}
+  .rotation{display:grid;grid-template-columns:repeat(auto-fit,minmax(228px,1fr));gap:14px}
+  .wk{background:#fff;border:1px solid var(--line);border-radius:14px;padding:15px 17px 17px;box-shadow:var(--shadow);border-top:3px solid var(--navy-soft);display:flex;flex-direction:column}
+  .wk.drop{border-top-color:var(--gold);background:linear-gradient(#fffdf7,#fff)}
+  .wk .wktop{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin-bottom:7px}
+  .wk .wkno{font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold-deep);font-weight:700}
+  .wk .when{font-size:.58rem;letter-spacing:.04em;text-transform:uppercase;font-weight:700;color:var(--muted);background:var(--cream);border:1px solid var(--line);border-radius:6px;padding:2px 7px}
+  .wk.drop .when{color:var(--navy);background:var(--gold);border-color:var(--gold-deep)}
+  .wk h3{margin:0 0 6px;font-family:"Playfair Display",serif;color:var(--navy);font-size:1.1rem;font-weight:600;line-height:1.15}
+  .wk .hook{font-style:italic;color:var(--gold-deep);font-size:.9rem;margin:0 0 8px;line-height:1.4}
+  .wk .ans{font-size:.84rem;color:#475066;margin:0 0 11px;line-height:1.45}
+  .wk .ans b{color:var(--navy)}
+  .wk .loop{margin-top:auto}
+  .wk .loopl{font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-bottom:6px}
+  .chips{display:flex;gap:5px;flex-wrap:wrap}
+  .chip{font-size:.62rem;font-weight:600;letter-spacing:.02em;padding:2px 8px;border-radius:999px;background:#eef1f6;color:var(--navy-soft);border:1px solid #e0e5ee}
+  .wk.drop .chip{background:rgba(187,155,70,.16);border-color:var(--gold-deep);color:var(--gold-deep)}
+
+  /* always-on layer */
+  .layer{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:14px}
+  .lcard{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 18px;box-shadow:var(--shadow);border-left:4px solid var(--navy-soft)}
+  .lcard.conv{border-left-color:var(--gold)}
+  .lcard h3{margin:0 0 3px;font-family:"Playfair Display",serif;color:var(--navy);font-size:1.12rem;font-weight:600;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+  .lcard .tagm{font-size:.6rem;letter-spacing:.08em;text-transform:uppercase;font-weight:700;color:#fff;background:var(--navy-soft);border-radius:6px;padding:2px 7px}
+  .lcard.conv .tagm{background:var(--gold);color:var(--navy)}
+  .lcard .role{font-size:.82rem;color:var(--muted);font-style:italic;margin:0 0 9px}
+  .lcard ul{margin:0;padding-left:0;list-style:none}
+  .lcard li{font-size:.86rem;padding:4px 0 4px 16px;position:relative;color:#3c455a}
+  .lcard li::before{content:"";position:absolute;left:0;top:12px;width:5px;height:5px;border-radius:50%;background:var(--gold)}
+  .lcard li b{color:var(--navy)}
+
+  .callout{background:var(--navy);color:var(--cream);border-radius:16px;padding:24px 24px 22px;border:1px solid var(--gold)}
+  .callout h3{font-family:"Playfair Display",serif;color:var(--gold);margin:0 0 10px;font-size:1.25rem;font-weight:600}
+  .callout ul{margin:0;padding-left:20px}
+  .callout li{margin:7px 0;color:#dbe1ec;font-size:.94rem}
+  .callout li b{color:#fff}
+
+  footer{margin-top:50px;text-align:center;color:var(--muted);font-size:.82rem}
+  footer .mark{font-family:"Playfair Display",serif;color:var(--gold-deep);font-style:italic}
+
+  @media (max-width:560px){
+    .grid td:first-child,.grid th:first-child{min-width:104px;max-width:104px}
+  }
+
+  /* live week view */
+  .wv-head{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+  .wv-head h2{margin:0}
+  .wv-ctrl{display:flex;align-items:center;gap:8px;margin-left:auto;flex-wrap:wrap}
+  .wv-ctrl button{border:1px solid var(--line);background:#fff;color:var(--navy);border-radius:8px;padding:7px 11px;font-size:.82rem;font-weight:600;cursor:pointer;font-family:inherit}
+  .wv-ctrl button:hover{border-color:var(--gold)}
+  .wv-ctrl .wlabel{font-weight:700;color:var(--navy);font-size:.9rem;min-width:160px;text-align:center}
+  .wv-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:8px}
+  .wv-day{background:var(--cream-2);border:1px solid var(--line);border-radius:11px;padding:9px;min-height:92px}
+  .wv-day.today{border-color:var(--gold);box-shadow:0 0 0 2px rgba(187,155,70,.25)}
+  .wv-dh{font-size:.64rem;letter-spacing:.05em;text-transform:uppercase;font-weight:700;color:var(--gold-deep);margin-bottom:8px;display:flex;justify-content:space-between;align-items:baseline}
+  .wv-dh .dnum{font-family:"Playfair Display",serif;color:var(--navy);font-size:1rem;font-weight:600}
+  .wv-empty{color:#c4c0b3;font-size:.8rem;text-align:center;padding-top:8px}
+  .wv-post{background:#fff;border:1px solid var(--line);border-radius:9px;padding:8px 9px;margin-bottom:7px}
+  .wv-post .wp-time{font-size:.7rem;font-weight:700;color:var(--gold-deep)}
+  .wv-post .wp-title{font-size:.82rem;font-weight:600;color:var(--navy);line-height:1.25;margin:2px 0 6px}
+  .wv-tgs{display:flex;gap:4px;flex-wrap:wrap}
+  .wv-tg{font-size:.6rem;font-weight:700;padding:2px 6px;border-radius:999px;background:#eef1f6;color:var(--navy-soft);border:1px solid #e0e5ee;display:inline-flex;gap:3px;align-items:center}
+  .wv-tg.assist{background:rgba(166,121,42,.13);color:var(--gold-deep);border-color:rgba(166,121,42,.3)}
+  .wv-tg .ok{color:#2f7d57}.wv-tg .wait{color:#a6792a}.wv-tg .no{color:#a33}
+  .wv-msg{margin-top:12px;font-size:.85rem;color:var(--muted)}
+  .wv-msg.err{background:#fff;border:1px solid #e6b8b0;border-left:4px solid #c4574a;border-radius:10px;padding:11px 13px;color:#8a3a30}
+  @media (max-width:760px){
+    .wv-grid{grid-template-columns:1fr}
+    .wv-day{min-height:0}
+    .wv-day.noposts{padding:7px 9px}
+    .wv-day.noposts .wv-empty{padding-top:0;text-align:left}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="eyebrow">Pinnacle Listing System · Social Media</div>
+  <h1>The Weekly Content Plan</h1>
+  <p>A repeatable seven-day rhythm for winning listings — what to post, in which format, on which platform, every day. Built to reach English-speaking and Chinese home sellers in parallel, turning one listing into a month of content in both.</p>
+  <div class="pillars"><span>Prepare</span><span>Market</span><span>Negotiate</span></div>
+</header>
+
+<div class="wrap">
+
+  <!-- MANDATE -->
+  <section class="mandate">
+    <h2 class="mhead">Who this plan serves</h2>
+    <p class="msub">Two clarifications that shape every choice below — read them first.</p>
+    <div class="mgrid">
+      <div class="mcard">
+        <div class="mt">The audience</div>
+        <h3>Home sellers — not buyers</h3>
+        <p>Every theme, format, and CTA here is built to <b>win listings</b>, not collect buyer leads. Sellers choosing a listing agent do high-trust, high-consideration research — they hire the person they've watched show up credibly over months. This is a <b>credibility engine</b>, not a lead funnel.</p>
+      </div>
+      <div class="mcard">
+        <div class="mt">The reach</div>
+        <h3>Two communities, run in parallel</h3>
+        <p>English-speaking <b>and</b> Chinese sellers across Richmond Hill, Markham, and York Region — as two parallel tracks, <b>not one translated feed</b>. Each post is written natively in its language, on the platforms that community already gathers on.</p>
+      </div>
+    </div>
+    <div class="msplit">
+      <div class="se">
+        <div class="st">English side</div>
+        <b class="big">Reach</b>
+        <p>Instagram, Facebook, YouTube, Threads, Nextdoor — the discovery channels where new sellers find you. Mostly automatable.</p>
+      </div>
+      <div class="se">
+        <div class="st">Chinese side</div>
+        <b class="big">Trust</b>
+        <p>WeChat 朋友圈 + 小红书 — where Chinese sellers vet you before they ever call. Hand-posted, by design.</p>
+      </div>
+      <p class="tail">Reach grows the audience; trust converts it. You run both, every week.</p>
+    </div>
+  </section>
+
+  <!-- LIVE WEEK VIEW -->
+  <section class="mandate">
+    <div class="wv-head">
+      <h2 class="mhead">This week — scheduled</h2>
+      <div class="wv-ctrl">
+        <button id="wvPrev">◀</button>
+        <span class="wlabel" id="wvLabel">…</span>
+        <button id="wvNext">▶</button>
+        <button id="wvToday">Today</button>
+        <button id="wvRefresh">↻</button>
+        <button id="wvGear" title="Sources">⚙</button>
+      </div>
+    </div>
+    <p class="msub">Your real queue, laid onto the calendar. Pulled live from <code>queue.json</code>; ✓ posted and ⏳ waiting come from <code>status.json</code>.</p>
+    <div class="wv-grid" id="wvGrid"></div>
+    <div class="wv-msg" id="wvMsg"></div>
+  </section>
+
+  <!-- FOUR JOBS -->
+  <section>
+    <div class="sec-head"><span class="sec-num">i.</span><div><h2>Every platform does one of four jobs</h2><p class="lead">Adding a platform only helps when it fills a job you don't already cover. These are the eleven you've considered, sorted.</p></div></div>
+    <div class="jobs">
+      <div class="job"><div class="jt">Content · Reach</div><b>7 platforms</b><p>Instagram, Facebook, WeChat, 小红书, YouTube, Threads, LinkedIn. The daily grid below.</p></div>
+      <div class="job"><div class="jt">Trust · Local</div><b>Nextdoor</b><p>Verified English-speaking homeowners in your farm. The complement to WeChat.</p></div>
+      <div class="job"><div class="jt">Conversion · Nurture</div><b>WhatsApp · Telegram</b><p>Where conversations land and past clients stay warm. Not posting channels.</p></div>
+      <div class="job"><div class="jt">Listen · Skip</div><b>Reddit / Pinterest / Discord</b><p>Reddit to research, Pinterest to automate-or-skip, Discord only if a community appears.</p></div>
+    </div>
+  </section>
+
+  <!-- PRINCIPLES -->
+  <section>
+    <div class="sec-head"><span class="sec-num">ii.</span><div><h2>Five rules underneath everything</h2></div></div>
+    <div class="principles">
+      <div class="principle"><b>Consistency beats volume</b><p>A sustainable load held for a year outperforms 20 posts in a week then silence. Pick what you can hold through closing weeks.</p></div>
+      <div class="principle"><b>Most posts don't sell</b><p>Roughly <span class="ratio">1 in 4–5</span> posts drives to a landing page. The rest build trust. Too many links and both the algorithm and your audience tune out.</p></div>
+      <div class="principle"><b>Every post earns a micro-CTA</b><p>Even with no link: "save this," "comment SOLD," "DM your postal code." A next step turns a scroller into a conversation.</p></div>
+      <div class="principle"><b>Parallel, not translated</b><p>Produce a piece once, then write a <b>native</b> English and a <b>native</b> 中文 version — two parallel posts for two communities, not one run through translation. Same asset, two audiences.</p></div>
+      <div class="principle"><b>Protect your reach</b><p>Link in the <b>first comment</b> on FB/IG, link sticker in Stories, "link in bio" for IG feed. Links in the post body get throttled.</p></div>
+    </div>
+  </section>
+
+  <!-- PLATFORM ROLES -->
+  <section>
+    <div class="sec-head"><span class="sec-num">iii.</span><div><h2>The seven content platforms</h2><p class="lead">Weighted to your seller-side, bilingual GTA audience. Trust and conversion platforms are in Section vi.</p></div></div>
+    <div class="platforms">
+      <div class="plat"><h3>Instagram <span class="lang">EN + 中文</span></h3><div class="role">Your anchor — every format lives here.</div><ul><li>Reels for reach, carousels for depth, Stories daily</li><li>Younger move-up buyers; sellers vetting you</li><li>Feed can't hold links — use bio + Story stickers</li></ul><div class="freq">~6 feed/Reels + Stories most days</div></div>
+      <div class="plat"><h3>Facebook <span class="lang">EN + 中文</span></h3><div class="role">Where your existing network lives.</div><ul><li>Past clients see you even without engaging</li><li>Chinese GTA groups for listing reach</li><li>Home of your ?img= OG-preview Just Sold posts</li></ul><div class="freq">~6 posts / week</div></div>
+      <div class="plat"><h3>WeChat 朋友圈 <span class="lang">中文</span></h3><div class="role">Highest-trust channel for Chinese buyers.</div><ul><li>Moments — low-friction, post almost daily</li><li>Lifestyle, listings, Just Sold, market notes</li><li>公众号 for the monthly market article</li></ul><div class="freq">~6 Moments / week</div></div>
+      <div class="plat"><h3>小红书 RED <span class="lang">中文</span></h3><div class="role">Where Chinese buyers research.</div><ul><li>Community + lifestyle is the native winner</li><li>Image notes with text overlay + short video</li><li>Soft authority — RECO + platform rules apply</li></ul><div class="freq">~3 notes / week</div></div>
+      <div class="plat"><h3>YouTube <span class="lang">EN +字幕</span></h3><div class="role">The searchable archive that keeps working.</div><ul><li>Long community guides + full tours live for years</li><li>Biggest untapped channel — most agents skip it</li><li>Source footage for the week's Reels</li></ul><div class="freq">1 long + 1 Short / week</div></div>
+      <div class="plat"><h3>Threads <span class="lang">EN</span></h3><div class="role">Text commentary — runs off your IG.</div><ul><li>Near-zero setup; shares your Instagram login</li><li>Your market takes as 2–3 line text posts</li><li>Repurpose, don't create — no filming needed</li></ul><div class="freq">~3 text posts / week</div></div>
+      <div class="plat"><h3>LinkedIn <span class="lang">EN</span></h3><div class="role">Optional — investors & referrals.</div><ul><li>Repurpose Monday market + Friday wins</li><li>Thought-leadership angle, not lifestyle</li><li>Skip when the week is full</li></ul><div class="freq">1–2 / week (repurposed)</div></div>
+    </div>
+  </section>
+
+  <!-- FORMAT GUIDE -->
+  <section>
+    <div class="sec-head"><span class="sec-num">iv.</span><div><h2>The formats, explained from scratch</h2><p class="lead">Every tag in the grid, in plain language — what to actually shoot or make, what to put in the first two seconds, and why each one behaves the way it does.</p></div></div>
+
+    <div class="fund">
+      <h3>Two ideas to understand before anything else</h3>
+      <div class="ftwo">
+        <div class="fi"><b>1. "Reach engine" vs "nurture"</b><p>Some formats get pushed by the algorithm to people who <b>don't follow you yet</b> — that's how you get found by new sellers. Short video is the strongest of these. Everything else (carousels, images, Stories) mostly reaches the audience you <b>already have</b>. So: short video <b>grows</b> the audience; the rest <b>nurture</b> it. You need both.</p></div>
+        <div class="fi"><b>2. The 2-second hook</b><p>People decide in under two seconds whether to keep watching or scroll past. The app measures this — if viewers swipe away instantly, it stops showing your video to anyone. So you "hook" them immediately with a bold line, a question, or a striking image. <b>Never</b> open with "Hi everyone, welcome back…" — they're already gone.</p></div>
+      </div>
+    </div>
+
+    <div class="fcards">
+
+      <!-- SHORT VIDEO -->
+      <div class="fcard wide">
+        <div class="fc-head"><span class="tag">Short video</span><span class="fc-len">15–60s · vertical 9:16</span></div>
+        <p class="fc-is"><b>What it is:</b> A short portrait video that fills the phone screen — Instagram Reels, TikTok, YouTube Shorts, 小红书. The single most important format in social media today, and your main tool for being discovered.</p>
+        <div class="fc-block"><div class="fc-l">What to shoot</div><ul>
+          <li>A 20-second walk through <b>one</b> room with a single line of narration</li>
+          <li>A community moment — panning across a park, a main street, a school</li>
+          <li>One market stat read aloud over your screen-recorded dashboard chart</li>
+          <li>"3 things sellers get wrong" — you talking to camera, one tip</li>
+        </ul></div>
+        <p class="fc-is" style="margin-bottom:13px"><b>Golden rule:</b> one idea per video. Don't try to tour a whole house in 30 seconds — it becomes a blur nobody remembers.</p>
+        <div class="hookbox"><div class="fc-l">The hook — first 2 seconds</div><p>Open with one of these:</p>
+          <ul class="hooklist">
+            <li>This Richmond Hill home sold for $200K over asking — here's why.</li>
+            <li>Thinking of selling this spring? Watch this first.</li>
+            <li>A striking visual: drone rising over the backyard, or the best room first</li>
+            <li>Big text on screen: "The #1 mistake home sellers make"</li>
+          </ul>
+          <p class="hookbad">Avoid: "Hi everyone, today I want to talk about…" — too slow, they scroll.</p>
+        </div>
+        <div class="fc-why"><p><b>Why it's the reach engine:</b> Of every format, this is the one Instagram and TikTok push hardest to <b>strangers in your area</b> — people who've never heard of you. That's how new sellers find you. Treat it as your growth tool.</p></div>
+      </div>
+
+      <!-- MID VIDEO -->
+      <div class="fcard wide">
+        <div class="fc-head"><span class="tag">Mid video</span><span class="fc-len">60–90s · vertical</span></div>
+        <p class="fc-is"><b>What it is:</b> A slightly longer vertical video — still short, but with room to tell a small <b>story</b> instead of a single beat. This is where three of your most powerful content types live:</p>
+
+        <div class="subfmt"><span class="sn">Room story</span><p>Pick <b>one</b> room and tell it as a moment of life, not a spec sheet. Don't say "the primary bedroom is 14×16 with a walk-in closet." Say: "Imagine waking up here on a Saturday — east sun through these windows, coffee on the balcony before the house wakes up." You're selling the <b>feeling</b> of living there. <i>Example:</i> 75 seconds on a kitchen — open a cupboard, show the island, talk about where homework gets done and where the wine gets poured. One room, one mood.</p></div>
+
+        <div class="subfmt"><span class="sn">Behind-the-scenes (BTS)</span><p>Show the work most agents <b>hide</b> — what actually goes into marketing a home. <i>Examples:</i> setting up for the photoshoot and directing angles, reviewing the floor plan, walking the property before a showing making notes, prepping the feature sheet. The message a future seller receives: "<b>This</b> is the effort I'd put into selling <b>your</b> home." It sells you, not the house — which is exactly what wins listings.</p></div>
+
+        <div class="subfmt"><span class="sn">Staging day</span><p>Film the transformation — a staged home sells faster and for more, and the before/after is dramatic, watchable content. Show the empty echoing room → furniture arriving → the stylist placing the last cushion → the final reveal. <i>Example:</i> a time-lapse of a living room going from bare to styled, with a line about how staging helps buyers picture themselves living there. "Watch this empty house become a home" is one of the most-watched things an agent can post.</p></div>
+
+        <div class="hookbox"><div class="fc-l">The hook</div><p>Same 2-second rule. Open on the most dramatic frame — show the <b>finished</b> styled room first, then cut to "here's how we got here." Or open with a line like:</p>
+          <ul class="hooklist"><li>Most agents don't show you this part.</li><li>This room looked completely different an hour ago.</li></ul>
+        </div>
+        <div class="fc-why"><p><b>Why it works:</b> Long enough to make someone <b>feel</b> something or trust your process, short enough to hold attention. Room stories sell the home; BTS and staging sell you.</p></div>
+      </div>
+
+      <!-- LONG VIDEO -->
+      <div class="fcard">
+        <div class="fc-head"><span class="tag">Long video</span><span class="fc-len">3–10 min · YouTube</span></div>
+        <p class="fc-is"><b>What it is:</b> A full-length video that lives on YouTube <b>permanently</b>. Not built for virality — built for depth and search.</p>
+        <div class="fc-block"><div class="fc-l">What to make</div><ul>
+          <li>A full home tour — walk the whole property, room by room</li>
+          <li>A community guide: "Everything about living in Cathedraltown, Markham"</li>
+          <li>A monthly market update walking through your dashboard charts</li>
+          <li>A "how to prepare your home to sell" guide</li>
+        </ul></div>
+        <div class="hookbox"><div class="fc-l">The hook</div><p>People who search are more patient, but still say in the first 10 seconds exactly what they'll get:</p><ul class="hooklist"><li>I'll walk you through every street in this community and what homes actually sell for.</li></ul></div>
+        <div class="fc-why"><p><b>Why it's different:</b> YouTube is a <b>search engine</b>, not a scroll feed. Someone Googling a community can find your video months or years later — it builds a permanent library that keeps working. It's also your <b>source footage</b>: film once, then cut your Reels, carousels, and Stories out of it.</p></div>
+      </div>
+
+      <!-- CAROUSEL -->
+      <div class="fcard">
+        <div class="fc-head"><span class="tag">Carousel</span><span class="fc-len">3–10 images · swipe</span></div>
+        <p class="fc-is"><b>What it is:</b> A multi-image post you swipe sideways through (Instagram, Facebook, 小红书, LinkedIn). Each slide is a photo or a graphic.</p>
+        <div class="fc-block"><div class="fc-l">What to make</div><ul>
+          <li><b>Room-by-room:</b> slide 1 kitchen, slide 2 living, slide 3 primary…</li>
+          <li><b>Story arc:</b> slide 1 the problem ("sat unsold 90 days") → what you did → result ("sold in 8 days, over asking")</li>
+          <li><b>Teaching:</b> "5 things to fix before you list" — one tip per slide</li>
+          <li><b>Before/after</b> staging — swipe to reveal the transformation</li>
+        </ul></div>
+        <div class="hookbox"><div class="fc-l">The hook</div><p>Slide 1 is everything — a bold image or big-text promise, with an arrow telling them to swipe:</p><ul class="hooklist"><li>Swipe to see how we sold this in a week →</li></ul></div>
+        <div class="fc-why"><p><b>Why it works:</b> Swiping = time spent, which the algorithm rewards with more reach. Best for <b>depth</b> when you have several things to show. Always end on a CTA slide ("DM me for the full list").</p></div>
+      </div>
+
+      <!-- SINGLE IMAGE -->
+      <div class="fcard">
+        <div class="fc-head"><span class="tag">Single image</span><span class="fc-len">one photo</span></div>
+        <p class="fc-is"><b>What it is:</b> One strong photograph with a caption. The simplest post there is.</p>
+        <div class="fc-block"><div class="fc-l">What to make</div><ul>
+          <li>Your Just Sold hero shot (with the SOLD sign)</li>
+          <li>A single stunning listing photo</li>
+          <li>A "Just Listed" announcement</li>
+        </ul></div>
+        <div class="fc-why"><p><b>Why it's lower-reach:</b> A static image gets the <b>least</b> push of any format — it doesn't hold attention like video or swiping. Use it when the image itself carries weight (a gorgeous home, a SOLD sign) or for record posts, not to reach new people. Let the <b>caption</b> do the work the image can't.</p></div>
+      </div>
+
+      <!-- TEXT ON IMAGE -->
+      <div class="fcard">
+        <div class="fc-head"><span class="tag">Text-on-image</span><span class="fc-len">designed graphic</span></div>
+        <p class="fc-is"><b>What it is:</b> A photo or coloured background with text laid over it — a stat, a quote, a tip. Made in Canva in minutes.</p>
+        <div class="fc-block"><div class="fc-l">What to make</div><ul>
+          <li>"Richmond Hill homes averaged X days on market last month"</li>
+          <li>A myth-bust: "You don't need 20% down to buy."</li>
+          <li>A Tao Te Ching line paired with a market lesson (fits your voice)</li>
+        </ul></div>
+        <div class="fc-why"><p><b>Why it works:</b> Packages information so it's readable at a <b>glance</b> while scrolling — the eye reads text instantly, which stops the thumb. Perfect for your Monday market stats. Use a consistent navy/gold template so people recognize it as yours.</p></div>
+      </div>
+
+      <!-- TEXT POST -->
+      <div class="fcard">
+        <div class="fc-head"><span class="tag">Text post</span><span class="fc-len">words only</span></div>
+        <p class="fc-is"><b>What it is:</b> Just text, no image — native to Threads and LinkedIn. Your lowest-effort format.</p>
+        <div class="fc-block"><div class="fc-l">What to write</div><ul>
+          <li>A market take in 2–3 lines</li>
+          <li>A short observation or a question that invites replies</li>
+        </ul></div>
+        <div class="hookbox"><div class="fc-l">Example</div><ul class="hooklist"><li>GTA inventory ticked up a third straight month. For sellers that means one thing: pricing right in week one matters more than it has in two years.</li></ul></div>
+        <div class="fc-why"><p><b>Why it works:</b> No design, no filming — and on Threads/LinkedIn, text travels. Positions you as a <b>thinker</b>, not just a lister. Reuse the exact insight you put on a stat card.</p></div>
+      </div>
+
+      <!-- STORY -->
+      <div class="fcard">
+        <div class="fc-head"><span class="tag">Story</span><span class="fc-len">24-hour vertical</span></div>
+        <p class="fc-is"><b>What it is:</b> Full-screen vertical photos/clips that <b>vanish after 24 hours</b> (Instagram, WhatsApp, WeChat, Facebook). Casual and raw — they don't have to be polished.</p>
+        <div class="fc-block"><div class="fc-l">What to make</div><ul>
+          <li>Live open-house frames ("come by, open till 4")</li>
+          <li>A quick poll ("which kitchen do you prefer?")</li>
+          <li>Small behind-the-scenes moments too minor for a real post</li>
+          <li>The <b>link sticker</b> — the one place you can put a tappable link</li>
+        </ul></div>
+        <div class="fc-why"><p><b>Why it works:</b> Keeps you top-of-mind with your <b>existing</b> followers daily without cluttering your feed. Low-stakes because they disappear. The link sticker is the key tool — it's how you drive traffic from Instagram, where feed posts can't hold clickable links.</p></div>
+      </div>
+
+      <!-- LANDING PAGE -->
+      <div class="fcard conv wide">
+        <div class="fc-head"><span class="tag">Landing page</span><span class="fc-len">the conversion post</span></div>
+        <p class="fc-is"><b>What it is:</b> Not a media format exactly — it's any post whose <b>job</b> is to send someone to a web page that captures their info: a home-valuation form, a listing page, an open-house RSVP. The "landing page" is where they land after they click. This is the only kind of post that <b>asks</b> for something.</p>
+        <div class="fc-block"><div class="fc-l">How the link actually gets there</div><ul>
+          <li><b>Facebook / Instagram feed:</b> put the link in the <b>first comment</b>, not the post body — links in the body get throttled.</li>
+          <li><b>Instagram feed:</b> you can't make links clickable at all, so you say "link in bio."</li>
+          <li><b>Stories:</b> use a link sticker — tappable, sends them straight to the page.</li>
+        </ul></div>
+        <div class="fc-block"><div class="fc-l">Why only about 1 in 5 posts</div><ul>
+          <li>These are the only posts that ask. If every post is "click here," people tune out and the algorithm suppresses you for sending traffic off-platform. You <b>earn</b> the right with value posts, then convert sparingly.</li>
+        </ul></div>
+        <div class="hookbox"><div class="fc-l">Full example, start to finish</div><p>Friday Just Sold image → caption "Curious what your home's worth? Link in first comment for an instant estimate" → they tap → land on your valuation page → enter their address → <b>now they're a lead in your pipeline.</b></p></div>
+        <div class="fc-why"><p><b>Remember:</b> only three of these go out a week (Wed listing, Fri valuation, Sat register). Your own dashboard link is the gentle exception — it's authority, not a capture form, so it doesn't count against the three.</p></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EXECUTION GRID -->
+  <section>
+    <div class="sec-head"><span class="sec-num">v.</span><div><h2>The execution grid</h2><p class="lead">The do-it-without-thinking view. Read down a platform or across a day. Swipe sideways on mobile — the platform column stays put.</p></div></div>
+    <div class="gridnote">
+      <span class="k"><span class="swatch lps"></span> Gold cell = a link goes out (first comment / bio / sticker)</span>
+      <span class="k"><span class="swatch rests"></span> Pill = format</span>
+      <span class="k">— = rest, don't force filler</span>
+    </div>
+    <div class="gridwrap">
+      <table class="grid">
+        <thead>
+          <tr>
+            <th>Platform</th>
+            <th>Mon<span class="sub">Market</span></th>
+            <th>Tue<span class="sub">Community</span></th>
+            <th>Wed<span class="sub">Listing</span></th>
+            <th>Thu<span class="sub">Behind-scenes</span></th>
+            <th>Fri<span class="sub">Just Sold</span></th>
+            <th>Sat<span class="sub">Open house</span></th>
+            <th>Sun<span class="sub">Long-form</span></th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr>
+            <td>Instagram<small>feed / Reels · 6–7/wk</small></td>
+            <td><div class="gc"><span class="gp">Text-on-image</span><span class="gl">1 image</span><span class="gx">Save · "DM REPORT"</span></div></td>
+            <td><div class="gc"><span class="gp vid">Short video</span><span class="gl">45–60s</span><span class="gx">"Which community next?"</span></div></td>
+            <td><div class="gc"><span class="gp">Carousel</span><span class="gl">5–8 slides</span><span class="gx">"DM for full tour"</span></div></td>
+            <td><div class="gc"><span class="gp vid">Mid video</span><span class="gl">60–90s</span><span class="gx">"Comment if you agree"</span></div></td>
+            <td><div class="gc"><span class="gp">Carousel</span><span class="gl">3–4 slides</span><span class="gx">"Comment SOLD" · link in bio</span></div></td>
+            <td><div class="gc"><span class="gp vid">Short video</span><span class="gl">20–30s</span><span class="gx">"Open 2–4 — address below"</span></div></td>
+            <td><div class="gc"><span class="gp vid">Short video</span><span class="gl">30s teaser</span><span class="gx">"Full tour on YouTube → bio"</span></div></td>
+          </tr>
+
+          <tr>
+            <td>IG Stories<small>most days</small></td>
+            <td><div class="gc"><span class="gp story">Story</span><span class="gl">2–3 frames</span><span class="gx">Stat + poll · "DM REPORT"</span></div></td>
+            <td><div class="gc"><span class="gp story">Story</span><span class="gl">1–2 frames</span><span class="gx">Community clip + question</span></div></td>
+            <td><div class="gc"><span class="gp story">Story</span><span class="gl">2–3 frames</span><span class="gx">Listing peek · "DM"</span></div></td>
+            <td><div class="gc"><span class="gp story">Story</span><span class="gl">1–2 frames</span><span class="gx">Staging BTS</span></div></td>
+            <td><div class="gc"><span class="gp story">Story</span><span class="gl">2–3 frames</span><span class="gx">Just Sold · "DM VALUE"</span></div></td>
+            <td><div class="gc lp"><span class="gp story">Story</span><span class="gl">6–8 frames · live</span><span class="gx">Open house all day</span><span class="lpbadge">LINK → register</span></div></td>
+            <td><div class="gc lp"><span class="gp story">Story</span><span class="gl">1–2 frames</span><span class="gx">New video out</span><span class="lpbadge">LINK → YouTube</span></div></td>
+          </tr>
+
+          <tr>
+            <td>Facebook<small>6/wk</small></td>
+            <td><div class="gc"><span class="gp">Text-on-image</span><span class="gl">1 image</span><span class="gx">Save · "DM REPORT"</span></div></td>
+            <td><div class="gc"><span class="gp vid">Short video</span><span class="gl">45–60s</span><span class="gx">Share Tue Reel</span></div></td>
+            <td><div class="gc lp"><span class="gp">Carousel</span><span class="gl">active listing</span><span class="gx">"Book a showing"</span><span class="lpbadge">LINK → listing (1st comment)</span></div></td>
+            <td><div class="gc vid"><span class="gp vid">Mid video</span><span class="gl">60–90s</span><span class="gx">"This is real marketing"</span></div></td>
+            <td><div class="gc lp"><span class="gp">Single image</span><span class="gl">Just Sold · ?img= OG</span><span class="gx">"DM VALUE"</span><span class="lpbadge">LINK → valuation (1st comment)</span></div></td>
+            <td><div class="gc"><span class="gp vid">Short video</span><span class="gl">20–30s</span><span class="gx">"Open today — address in comments"</span></div></td>
+            <td><div class="gc"><span class="gp vid">Long video</span><span class="gl">share YT</span><span class="gx">"Watch + comment"</span></div></td>
+          </tr>
+
+          <tr>
+            <td>WeChat 朋友圈<small>6/wk · 中文</small></td>
+            <td><div class="gc"><span class="gp">Text-on-image</span><span class="gl">1 图</span><span class="gx">私信 REPORT</span></div></td>
+            <td><div class="gc"><span class="gp vid">Short video</span><span class="gl">45–60s</span><span class="gx">评论社区</span></div></td>
+            <td><div class="gc"><span class="gp">Carousel</span><span class="gl">看房图文</span><span class="gx">私信看房 (附链接)</span></div></td>
+            <td><div class="gc vid"><span class="gp vid">Mid video</span><span class="gl">60–90s</span><span class="gx">幕后准备 · 评论</span></div></td>
+            <td><div class="gc"><span class="gp">Single image</span><span class="gl">已售 · 1 图</span><span class="gx">私信估价 (附链接)</span></div></td>
+            <td><div class="gc"><span class="gp story">Story/clip</span><span class="gl">实时</span><span class="gx">今天开放参观</span></div></td>
+            <td><div class="gc"><span class="gp">Text-on-image</span><span class="gl">personal</span><span class="gx">随笔 · 无 CTA (建立温度)</span></div></td>
+          </tr>
+
+          <tr>
+            <td>小红书 RED<small>3/wk · 中文</small></td>
+            <td><div class="gc"><span class="gp">Text-on-image</span><span class="gl">数据笔记</span><span class="gx">收藏 (选发)</span></div></td>
+            <td><div class="gc"><span class="gp">Carousel</span><span class="gl">图文笔记</span><span class="gx">"在Markham的一天" · 收藏+评论</span></div></td>
+            <td><span class="rest">—</span></td>
+            <td><span class="rest">—</span></td>
+            <td><span class="rest">—</span></td>
+            <td><div class="gc"><span class="gp vid">Short video</span><span class="gl">30–45s</span><span class="gx">今天开放 · 评论看地址</span></div></td>
+            <td><span class="rest">—</span></td>
+          </tr>
+
+          <tr>
+            <td>YouTube<small>1 long + 1 Short</small></td>
+            <td><span class="rest">—</span></td>
+            <td><span class="rest">—</span></td>
+            <td><span class="rest">—</span></td>
+            <td><div class="gc vid"><span class="gp vid">Short</span><span class="gl">30–60s</span><span class="gx">Cut from footage · subscribe</span></div></td>
+            <td><span class="rest">—</span></td>
+            <td><span class="rest">—</span></td>
+            <td><div class="gc vid"><span class="gp vid">Long video</span><span class="gl">3–10 min</span><span class="gx">Tour / community · subscribe + DM</span></div></td>
+          </tr>
+
+          <tr>
+            <td>Threads<small>3/wk · EN</small></td>
+            <td><div class="gc"><span class="gp">Text post</span><span class="gl">2–3 lines</span><span class="gx">Market take · reply/DM</span></div></td>
+            <td><span class="rest">—</span></td>
+            <td><div class="gc"><span class="gp">Text post</span><span class="gl">2–3 lines</span><span class="gx">Listing thought / question</span></div></td>
+            <td><span class="rest">—</span></td>
+            <td><div class="gc"><span class="gp">Text post</span><span class="gl">2–3 lines</span><span class="gx">Win reflection · reply</span></div></td>
+            <td><span class="rest">—</span></td>
+            <td><span class="rest">—</span></td>
+          </tr>
+
+          <tr>
+            <td>LinkedIn<small>1–2/wk · EN</small></td>
+            <td><div class="gc"><span class="gp">Text + image</span><span class="gl">repurposed</span><span class="gx">Market take · comment</span></div></td>
+            <td><span class="rest">—</span></td>
+            <td><span class="rest">—</span></td>
+            <td><span class="rest">—</span></td>
+            <td><div class="gc"><span class="gp">Text + image</span><span class="gl">repurposed</span><span class="gx">Client win · DM/connect</span></div></td>
+            <td><span class="rest">—</span></td>
+            <td><span class="rest">—</span></td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- MARKET CHART ROTATION -->
+  <section>
+    <div class="sec-head"><span class="sec-num">vi.</span><div><h2>The monthly market-chart rotation</h2><p class="lead">Your dashboard at peterluo.homes/market refreshes once a month when TRREB Market Watch drops. One chart owns each week — one idea, fully repurposed — so a single dataset becomes four Mondays of market content instead of one crowded post.</p></div></div>
+
+    <div class="cycle">
+      <div class="cyl">Only Week 1 chases the date</div>
+      <p>The fresh-data cluster fires <b>between the 4th and 10th — on the first Monday after the numbers are actually live.</b> TRREB's release date drifts (sometimes the 3rd, sometimes pushed by a holiday), so confirm it landed before you build Week 1. Weeks 2–4 run off the same monthly dataset as context and evergreen angles — they don't need to chase the calendar.</p>
+    </div>
+
+    <div class="rotation">
+
+      <div class="wk drop">
+        <div class="wktop"><span class="wkno">Week 1 · Drop</span><span class="when">4th–10th</span></div>
+        <h3>TTM Dollar Volume</h3>
+        <p class="hook">"Here's how much money the GTA market just moved."</p>
+        <p class="ans">The headline number — biggest and freshest. Reframes momentum as <b>liquidity</b>: is the market expanding or contracting year over year? <b>Screen-record the chart</b> with a 30s voiceover — that's your Reel, no filming.</p>
+        <div class="loop"><div class="loopl">Full cluster fires</div><div class="chips"><span class="chip">Reel (screen-rec)</span><span class="chip">Stat card</span><span class="chip">Newsletter</span><span class="chip">RED 图文</span><span class="chip">公众号</span></div></div>
+      </div>
+
+      <div class="wk">
+        <div class="wktop"><span class="wkno">Week 2 · Context</span><span class="when">evergreen</span></div>
+        <h3>Rainbow Year-over-Year</h3>
+        <p class="hook">"Where this month sits against the last six."</p>
+        <p class="ans">Each year 2020–2026 its own colour on one axis. Answers <b>"is now a good time, or should I wait?"</b> in a single glance — when this month's line sits above the last six, the chart makes your case for you.</p>
+        <div class="loop"><div class="loopl">Repurpose</div><div class="chips"><span class="chip">Stat card</span><span class="chip">Carousel</span><span class="chip">Threads / LinkedIn take</span><span class="chip">RED note</span></div></div>
+      </div>
+
+      <div class="wk">
+        <div class="wktop"><span class="wkno">Week 3 · Seller hook</span><span class="when">evergreen</span></div>
+        <h3>Waterfall Listing-Flow</h3>
+        <p class="hook">"For every 100 homes listed, this many sold — and this many expired unsold."</p>
+        <p class="ans">Your strongest seller argument. Those expired/terminated bars <b>are</b> the case for hiring you — homes don't fail on the market, they fail on pricing and marketing. Ties straight into your expired-listings tool.</p>
+        <div class="loop"><div class="loopl">Repurpose</div><div class="chips"><span class="chip">Carousel</span><span class="chip">Reel</span><span class="chip">Threads</span><span class="chip">FB + 朋友圈</span></div></div>
+      </div>
+
+      <div class="wk">
+        <div class="wktop"><span class="wkno">Week 4 · Local</span><span class="when">evergreen</span></div>
+        <h3>Community / Segment Cut</h3>
+        <p class="hook">"Your block's numbers."</p>
+        <p class="ans">One neighbourhood or segment from the same dataset — Richmond Hill vs Markham, a single community, or a follow-up stat. Lighter and hyperlocal, it pulls the month back to <b>your farm</b> and feeds the email "reply for your street's numbers" ask.</p>
+        <div class="loop"><div class="loopl">Repurpose</div><div class="chips"><span class="chip">中文 note</span><span class="chip">Stat card</span><span class="chip">Email ask</span><span class="chip">RED + 朋友圈</span></div></div>
+      </div>
+
+    </div>
+
+    <p class="lead" style="margin-top:14px">The <b>dashboard link itself</b> ("see the live charts → peterluo.homes/market") is a soft authority CTA on your own site — fine to use any week, and it doesn't count against the three hard conversion links in the weekly grid.</p>
+  </section>
+
+  <!-- ALWAYS-ON LAYER -->
+  <section>
+    <div class="sec-head"><span class="sec-num">vii.</span><div><h2>The always-on layer</h2><p class="lead">These don't run on a daily posting clock — they catch the conversations your content starts. <b>Email is the anchor</b>: the one channel you own outright, where every social platform is rented.</p></div></div>
+    <div class="layer">
+      <div class="lcard conv"><h3>Email <span class="tagm">Owned hub</span></h3><div class="role">The anchor — you own it, no algorithm.</div><ul><li><b>Monthly "Dear Friend" newsletter</b> — anchored by the Week 1 chart. One chart, three sentences, link to the live dashboard, "reply with your address for your block's numbers."</li><li><b>Triggered nurture drips</b> — your tracker's Post-Closing sequence (photo d1, review ask d21, equity nudge d180) is already an email drip in disguise.</li><li><b>Occasional Just Sold</b> neighbourhood blast — sparingly.</li><li>Owned-channel cadence, never social. Monthly + triggered only. Platforms can throttle or vanish; your list can't.</li></ul></div>
+      <div class="lcard conv"><h3>WhatsApp <span class="tagm">Conversion</span></h3><div class="role">Where the "DM" CTAs actually land.</div><ul><li><b>Click-to-chat link</b> (wa.me) — the destination for every "DM VALUE / REPORT" above. Frictionless.</li><li><b>Status</b> (24h) — recycle Friday's Just Sold + Saturday's open-house clips.</li><li><b>Broadcast Lists</b> — fire on your tracker's Post-Closing Nurture days, not the weekly calendar.</li><li>Reaches South Asian / Persian GTA buyers who aren't on WeChat.</li></ul></div>
+      <div class="lcard"><h3>Nextdoor <span class="tagm">Trust</span></h3><div class="role">English-side complement to WeChat.</div><ul><li><b>1 genuine reply / week</b> — answer a local question, no pitch. Be the neighbour first.</li><li><b>Business Page</b> — collect past-client reviews; trust + proximity is the whole game.</li><li>Keep promotion in the Business section, never the main feed (gets flagged).</li><li>Check your farm pockets have real activity before investing time.</li></ul></div>
+      <div class="lcard conv"><h3>Telegram <span class="tagm">Optional</span></h3><div class="role">Investor-segment broadcast.</div><ul><li><b>Channel</b> mirrors Mon market / Wed listing / Fri Just Sold — zero algorithm, every subscriber sees it.</li><li>No cold discovery — only grows if you funnel WeChat + past clients in.</li><li>Start only if you have an audience to seed.</li></ul></div>
+      <div class="lcard"><h3>Reddit <span class="tagm">Listen</span></h3><div class="role">Research, not posting.</div><ul><li>Scan r/TorontoRealEstate + local subs weekly for what buyers/sellers worry about — fuel for Mon & Tue content.</li><li>Self-promotion gets you banned. Answer genuinely, rarely, with no pitch.</li></ul></div>
+    </div>
+  </section>
+
+  <!-- PRODUCTION -->
+  <section>
+    <div class="callout">
+      <h3>The one habit that makes this survivable</h3>
+      <ul>
+        <li><b>Batch on one day.</b> Film Sunday's long video and pull every clip, carousel frame, and stat card from that single shoot. One session feeds the week.</li>
+        <li><b>One asset, every format.</b> A home tour becomes 1 YouTube long → 3 Reels → 1 carousel → 6 Story frames → a 中文 RED note → 3 Threads lines. Re-cut, don't re-create.</li>
+        <li><b>Only 3 link moments a week.</b> Wed listing, Fri valuation, Sat register. Spacing them is what makes them land — don't add a fourth.</li>
+        <li><b>Consent + compliance first.</b> Seller sign-off on personal stories; RECO rules on "Coming Soon," sold claims, and brokerage ID before anything goes live.</li>
+        <li><b>The market cluster is monthly, not weekly.</b> Build it once when TRREB drops (4th–10th), then the rotation feeds three more Mondays on its own. Don't confuse it with the Sunday listing-footage batch.</li>
+        <li><b>When you're slammed, keep 朋友圈 + one Reel + Stories.</b> Those three hold your presence through a closing week. Drop the rest guilt-free.</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p><span class="mark">Pinnacle Listing System</span> — Prepare · Market · Negotiate<br>A living plan. Adjust the day themes to your real listing pipeline.</p>
+  </footer>
+
+</div>
+<dialog id="wvDlg" style="border:none;border-radius:14px;padding:0;box-shadow:0 20px 60px rgba(0,0,0,.3);max-width:520px;width:92%">
+  <div style="background:#16243f;color:#f6f2e8;padding:14px 18px;font-family:'Playfair Display',serif">Schedule sources</div>
+  <div style="padding:16px 18px">
+    <div style="margin-bottom:12px"><label style="display:block;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:#9a7e33;margin-bottom:5px">queue.json URL</label><input id="wvQ" style="width:100%;border:1px solid #e3dccb;border-radius:9px;padding:9px 11px;font-family:inherit;font-size:.82rem"></div>
+    <div><label style="display:block;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:#9a7e33;margin-bottom:5px">status.json URL</label><input id="wvS" style="width:100%;border:1px solid #e3dccb;border-radius:9px;padding:9px 11px;font-family:inherit;font-size:.82rem"></div>
+    <p style="font-size:.76rem;color:#6b7385;margin:10px 0 0">Read-only. The repo (or these two files) must be publicly readable.</p>
+  </div>
+  <div style="display:flex;gap:8px;justify-content:flex-end;padding:0 18px 16px">
+    <button id="wvSave" style="border:1px solid #e3dccb;background:#fff;color:#16243f;border-radius:8px;padding:8px 14px;font-weight:600;cursor:pointer;font-family:inherit">Save</button>
+    <button id="wvCancel" style="border:1px solid #e3dccb;background:#fff;color:#6b7385;border-radius:8px;padding:8px 14px;font-weight:600;cursor:pointer;font-family:inherit">Close</button>
+  </div>
+</dialog>
+
+<script>
+(function(){
+  const $=id=>document.getElementById(id);
+  const DEF_Q='https://raw.githubusercontent.com/peterluohomes/scheduler/main/queue.json';
+  const DEF_S='https://raw.githubusercontent.com/peterluohomes/scheduler/main/status.json';
+  const mem={};
+  const lsGet=k=>{try{return localStorage.getItem(k);}catch(e){return mem[k]||null;}};
+  const lsSet=(k,v)=>{try{localStorage.setItem(k,v);}catch(e){mem[k]=v;}};
+  let cfg={q:lsGet('wv_q')||DEF_Q,s:lsGet('wv_s')||DEF_S};
+  let queue={posts:[]},statuses={},weekOffset=0;
+
+  const ASSIST=new Set(['wechat','red','whatsapp','nextdoor']);
+  const SHORT={instagram_en:'IG',instagram_zh:'IG中',facebook_en:'FB',facebook_zh:'FB中',youtube:'YT',threads:'TH',telegram:'TG',email:'EM',wechat:'微信',red:'RED',whatsapp:'WA',nextdoor:'ND'};
+
+  function startOfWeek(d){const x=new Date(d);x.setHours(0,0,0,0);const day=(x.getDay()+6)%7;x.setDate(x.getDate()-day);return x;} // Monday
+  function dayKey(d){return d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate();}
+  function fmtTime(iso){try{return new Date(iso).toLocaleTimeString([], {hour:'numeric',minute:'2-digit'});}catch(e){return '';}}
+
+  async function load(){
+    let err='';
+    try{const r=await fetch(cfg.q+(cfg.q.includes('?')?'&':'?')+'t='+Date.now());if(!r.ok)throw new Error('queue.json '+r.status);const d=await r.json();queue=d&&d.posts?d:{posts:Array.isArray(d)?d:[]};}
+    catch(e){err='Could not load queue.json — '+e.message+'. Tap ⚙ to set the URL, and make sure the repo is public.';queue={posts:[]};}
+    try{const r=await fetch(cfg.s+(cfg.s.includes('?')?'&':'?')+'t='+Date.now());if(r.ok){const d=await r.json();statuses=d.statuses||{};}}catch(e){statuses={};}
+    render(err);
+  }
+
+  function statusMark(pid,key){
+    const s=statuses[pid]&&statuses[pid].targets&&statuses[pid].targets[key];
+    if(!s)return '';
+    const m={posted:'<span class="ok">✓</span>',failed:'<span class="no">✕</span>',nudged:'<span class="wait">⏳</span>'};
+    return m[s.status]?(' '+m[s.status]):'';
+  }
+
+  function render(err){
+    const grid=$('wvGrid');grid.innerHTML='';
+    const base=startOfWeek(new Date());base.setDate(base.getDate()+weekOffset*7);
+    const days=[];for(let i=0;i<7;i++){const d=new Date(base);d.setDate(d.getDate()+i);days.push(d);}
+    const last=new Date(days[6]);
+    const fmtMD=d=>d.toLocaleDateString([], {month:'short',day:'numeric'});
+    $('wvLabel').textContent=fmtMD(days[0])+' – '+fmtMD(last)+', '+last.getFullYear();
+
+    // group posts by local day key
+    const byDay={};
+    (queue.posts||[]).forEach(p=>{
+      if(!p.scheduledFor)return;const d=new Date(p.scheduledFor);if(isNaN(d))return;
+      (byDay[dayKey(d)]=byDay[dayKey(d)]||[]).push(p);
+    });
+    const todayKey=dayKey(new Date());
+    const names=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
+
+    days.forEach((d,i)=>{
+      const k=dayKey(d);const posts=(byDay[k]||[]).sort((a,b)=>new Date(a.scheduledFor)-new Date(b.scheduledFor));
+      const col=document.createElement('div');
+      col.className='wv-day'+(k===todayKey?' today':'')+(posts.length?'':' noposts');
+      let h='<div class="wv-dh"><span>'+names[i]+'</span><span class="dnum">'+d.getDate()+'</span></div>';
+      if(!posts.length){h+='<div class="wv-empty">—</div>';}
+      else{
+        posts.forEach(p=>{
+          const tgs=(p.targets||[]).map(t=>'<span class="wv-tg'+(ASSIST.has(t.platform)?' assist':'')+'">'+(SHORT[t.platform]||t.platform)+statusMark(p.id,t.platform)+'</span>').join('');
+          h+='<div class="wv-post"><div class="wp-time">'+fmtTime(p.scheduledFor)+'</div><div class="wp-title">'+esc(p.title||'(untitled)')+'</div><div class="wv-tgs">'+tgs+'</div></div>';
+        });
+      }
+      col.innerHTML=h;grid.appendChild(col);
+    });
+
+    const msg=$('wvMsg');
+    if(err){msg.className='wv-msg err';msg.textContent=err;}
+    else{const total=(queue.posts||[]).length;msg.className='wv-msg';msg.textContent=total?(total+' post(s) in the queue · navigate weeks with ◀ ▶'):'Queue is empty — schedule posts in the composer, then ⬆ Push.';}
+  }
+  function esc(s){return String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
+
+  $('wvPrev').onclick=()=>{weekOffset--;render();};
+  $('wvNext').onclick=()=>{weekOffset++;render();};
+  $('wvToday').onclick=()=>{weekOffset=0;render();};
+  $('wvRefresh').onclick=load;
+  $('wvGear').onclick=()=>{$('wvQ').value=cfg.q;$('wvS').value=cfg.s;$('wvDlg').showModal();};
+  $('wvCancel').onclick=()=>$('wvDlg').close();
+  $('wvSave').onclick=()=>{cfg.q=$('wvQ').value.trim()||DEF_Q;cfg.s=$('wvS').value.trim()||DEF_S;lsSet('wv_q',cfg.q);lsSet('wv_s',cfg.s);$('wvDlg').close();load();};
+
+  load();
+})();
+</script>
+</body>
+</html>
