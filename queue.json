@@ -1,1 +1,45 @@
-{ "version": 1, "posts": [] }
+{
+  "version": 1,
+  "generated": "2026-06-26T22:50:26.276Z",
+  "posts": [
+    {
+      "id": "5c55f8c6-77b8-416b-9c13-fb68330e4343",
+      "created": "2026-06-26T22:49:12.959Z",
+      "scheduledFor": "2026-06-26T22:46:00.000Z",
+      "scheduledLocal": "2026-06-26T18:46",
+      "status": "queued",
+      "title": "18 Hayfield Cres - Sold in 3 Days",
+      "media": [
+        {
+          "filename": "pl16.png",
+          "url": "https://media.peterluo.homes/pl16.png",
+          "type": "image"
+        }
+      ],
+      "captions": {
+        "en": "English Caption - 2026.06.26",
+        "zh": ""
+      },
+      "commentLinks": {
+        "en": "peterluo.homes/valuation",
+        "zh": ""
+      },
+      "targets": [
+        {
+          "platform": "telegram",
+          "label": "Telegram",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "wechat",
+          "label": "WeChat 朋友圈",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        }
+      ]
+    }
+  ]
+}
