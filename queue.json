@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-06-26T23:21:44.778Z",
+  "generated": "2026-06-27T00:15:45.877Z",
   "posts": [
     {
       "id": "e57252af-dd38-4579-a2ea-1fb76d04c7cc",
@@ -35,6 +35,84 @@
         {
           "platform": "wechat",
           "label": "WeChat 朋友圈",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        }
+      ]
+    },
+    {
+      "id": "3eca0593-99d1-4834-9fed-f609b8ed831e",
+      "created": "2026-06-27T00:14:17.860Z",
+      "scheduledFor": "2026-06-27T00:01:00.000Z",
+      "scheduledLocal": "2026-06-26T20:01",
+      "status": "queued",
+      "title": "18 hayfield Cres - sold",
+      "media": [
+        {
+          "filename": "pl16.png",
+          "url": "https://media.peterluo.homes/pl16.png",
+          "type": "image"
+        }
+      ],
+      "captions": {
+        "en": "English Caption 1\nEnglish Caption 2\nEnglish Caption 3\nEnglish Caption 4\n",
+        "zh": "全家人最后都会聚到的厨房。"
+      },
+      "commentLinks": {
+        "en": "peterluo.homes/valuation",
+        "zh": ""
+      },
+      "targets": [
+        {
+          "platform": "telegram",
+          "label": "Telegram",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "red",
+          "label": "小红书 RED",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        }
+      ]
+    },
+    {
+      "id": "0b236ed5-4d05-4c95-ad74-3ee4faa1321c",
+      "created": "2026-06-27T00:15:39.469Z",
+      "scheduledFor": "2026-06-27T00:19:00.000Z",
+      "scheduledLocal": "2026-06-26T20:19",
+      "status": "queued",
+      "title": "18 hayfield Cres - sold",
+      "media": [
+        {
+          "filename": "pl16.png",
+          "url": "https://media.peterluo.homes/pl16.png",
+          "type": "image"
+        }
+      ],
+      "captions": {
+        "en": "English Caption 1\nEnglish Caption 2",
+        "zh": "想象夏夜在这里招待朋友。"
+      },
+      "commentLinks": {
+        "en": "peterluo.homes/valuation",
+        "zh": ""
+      },
+      "targets": [
+        {
+          "platform": "telegram",
+          "label": "Telegram",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "red",
+          "label": "小红书 RED",
           "lang": "zh",
           "tier": "assist",
           "status": "queued"
