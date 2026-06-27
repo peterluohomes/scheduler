@@ -1,10 +1,6 @@
 name: scheduler
 
 on:
-  schedule:
-    # Every 15 minutes. GitHub's minimum is 5 min, and scheduled runs are often
-    # several minutes late under load — fine for "post around this time".
-    - cron: "*/15 * * * *"
   workflow_dispatch:
     # Manual "Run workflow" button, useful for testing.
     inputs:
