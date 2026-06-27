@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-06-26T23:35:20.536134+00:00",
+  "updated": "2026-06-27T00:20:17.652340+00:00",
   "statuses": {
     "test-telegram-001": {
       "overall": "posted",
@@ -54,6 +54,36 @@
           "status": "nudged",
           "info": "ok",
           "at": "2026-06-26T23:35:20.536134+00:00"
+        }
+      }
+    },
+    "3eca0593-99d1-4834-9fed-f609b8ed831e": {
+      "overall": "partial",
+      "targets": {
+        "telegram": {
+          "status": "posted",
+          "info": "ok",
+          "at": "2026-06-27T00:20:17.652340+00:00"
+        },
+        "red": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-06-27T00:20:17.652340+00:00"
+        }
+      }
+    },
+    "0b236ed5-4d05-4c95-ad74-3ee4faa1321c": {
+      "overall": "partial",
+      "targets": {
+        "telegram": {
+          "status": "posted",
+          "info": "ok",
+          "at": "2026-06-27T00:20:17.652340+00:00"
+        },
+        "red": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-06-27T00:20:17.652340+00:00"
         }
       }
     }
