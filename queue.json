@@ -1,27 +1,21 @@
 {
   "version": 1,
-  "generated": "2026-06-27T00:15:45.877Z",
+  "generated": "2026-06-28T19:33:18.536Z",
   "posts": [
     {
-      "id": "e57252af-dd38-4579-a2ea-1fb76d04c7cc",
-      "created": "2026-06-26T23:21:41.523Z",
-      "scheduledFor": "2026-06-26T23:35:00.000Z",
-      "scheduledLocal": "2026-06-26T19:35",
+      "id": "dbaee8c1-5b33-44db-a62f-98bb68c1d6b8",
+      "created": "2026-06-28T19:25:33.776Z",
+      "scheduledFor": "2026-06-22T13:00:00.000Z",
+      "scheduledLocal": "2026-06-22T09:00",
       "status": "queued",
-      "title": "18 hayfield Cres - sold in 3 days",
-      "media": [
-        {
-          "filename": "pl16.png",
-          "url": "https://media.peterluo.homes/pl16.png",
-          "type": "image"
-        }
-      ],
+      "title": "Market · 6/22",
+      "media": [],
       "captions": {
-        "en": "English Caption 1\nEnglish Caption 2\nEnglish Caption 3\nEnglish Caption 4",
-        "zh": ""
+        "en": "Days on market: what the trend is telling us.",
+        "zh": "房屋在售天数：趋势在说什么。"
       },
       "commentLinks": {
-        "en": "peterluo.homes/valuation",
+        "en": "",
         "zh": ""
       },
       "targets": [
@@ -30,6 +24,34 @@
           "label": "Telegram",
           "lang": "en",
           "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "facebook_en",
+          "label": "Facebook",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "instagram_en",
+          "label": "Instagram",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "facebook_zh",
+          "label": "Facebook",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "instagram_zh",
+          "label": "Instagram",
+          "lang": "zh",
+          "tier": "assist",
           "status": "queued"
         },
         {
@@ -38,29 +60,62 @@
           "lang": "zh",
           "tier": "assist",
           "status": "queued"
-        }
-      ]
-    },
-    {
-      "id": "3eca0593-99d1-4834-9fed-f609b8ed831e",
-      "created": "2026-06-27T00:14:17.860Z",
-      "scheduledFor": "2026-06-27T00:01:00.000Z",
-      "scheduledLocal": "2026-06-26T20:01",
-      "status": "queued",
-      "title": "18 hayfield Cres - sold",
-      "media": [
+        },
         {
-          "filename": "pl16.png",
-          "url": "https://media.peterluo.homes/pl16.png",
-          "type": "image"
+          "platform": "red",
+          "label": "小红书 RED",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "linkedin",
+          "label": "LinkedIn",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "whatsapp",
+          "label": "WhatsApp",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "nextdoor",
+          "label": "Nextdoor",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "threads",
+          "label": "Threads",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
         }
       ],
+      "day": "mon",
+      "weekStart": "2026-06-22",
+      "property": "",
+      "folder": "images/news/"
+    },
+    {
+      "id": "347f29b4-58b5-40aa-ab7f-20d45b9a0101",
+      "created": "2026-06-28T19:25:33.776Z",
+      "scheduledFor": "2026-06-23T22:30:00.000Z",
+      "scheduledLocal": "2026-06-23T18:30",
+      "status": "queued",
+      "title": "Community · 6/23",
+      "media": [],
       "captions": {
-        "en": "English Caption 1\nEnglish Caption 2\nEnglish Caption 3\nEnglish Caption 4\n",
-        "zh": "全家人最后都会聚到的厨房。"
+        "en": "Steps to trails and slow weekend mornings.",
+        "zh": "步行即达步道，享受悠闲的周末早晨。"
       },
       "commentLinks": {
-        "en": "peterluo.homes/valuation",
+        "en": "",
         "zh": ""
       },
       "targets": [
@@ -69,6 +124,41 @@
           "label": "Telegram",
           "lang": "en",
           "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "facebook_en",
+          "label": "Facebook",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "instagram_en",
+          "label": "Instagram",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "facebook_zh",
+          "label": "Facebook",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "instagram_zh",
+          "label": "Instagram",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "wechat",
+          "label": "WeChat 朋友圈",
+          "lang": "zh",
+          "tier": "assist",
           "status": "queued"
         },
         {
@@ -77,29 +167,41 @@
           "lang": "zh",
           "tier": "assist",
           "status": "queued"
-        }
-      ]
-    },
-    {
-      "id": "0b236ed5-4d05-4c95-ad74-3ee4faa1321c",
-      "created": "2026-06-27T00:15:39.469Z",
-      "scheduledFor": "2026-06-27T00:19:00.000Z",
-      "scheduledLocal": "2026-06-26T20:19",
-      "status": "queued",
-      "title": "18 hayfield Cres - sold",
-      "media": [
+        },
         {
-          "filename": "pl16.png",
-          "url": "https://media.peterluo.homes/pl16.png",
-          "type": "image"
+          "platform": "youtube",
+          "label": "YouTube",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "whatsapp",
+          "label": "WhatsApp",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
         }
       ],
+      "day": "tue",
+      "weekStart": "2026-06-22",
+      "property": "",
+      "folder": "images/"
+    },
+    {
+      "id": "039d9ea7-ae3f-4fb0-84ef-019e9b855a6b",
+      "created": "2026-06-28T19:25:33.776Z",
+      "scheduledFor": "2026-06-24T16:00:00.000Z",
+      "scheduledLocal": "2026-06-24T12:00",
+      "status": "queued",
+      "title": "Listing · 6/24",
+      "media": [],
       "captions": {
-        "en": "English Caption 1\nEnglish Caption 2",
-        "zh": "想象夏夜在这里招待朋友。"
+        "en": "Walk in. Take a breath. You’re home.",
+        "zh": "走进来，深呼吸，到家了。"
       },
       "commentLinks": {
-        "en": "peterluo.homes/valuation",
+        "en": "",
         "zh": ""
       },
       "targets": [
@@ -111,9 +213,501 @@
           "status": "queued"
         },
         {
+          "platform": "facebook_en",
+          "label": "Facebook",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "instagram_en",
+          "label": "Instagram",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "facebook_zh",
+          "label": "Facebook",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "instagram_zh",
+          "label": "Instagram",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "wechat",
+          "label": "WeChat 朋友圈",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
           "platform": "red",
           "label": "小红书 RED",
           "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "whatsapp",
+          "label": "WhatsApp",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "nextdoor",
+          "label": "Nextdoor",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "threads",
+          "label": "Threads",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        }
+      ],
+      "day": "wed",
+      "weekStart": "2026-06-22",
+      "property": "",
+      "folder": "{property}/listing/"
+    },
+    {
+      "id": "6a52228e-8888-46b6-908f-397d5819b9e1",
+      "created": "2026-06-28T19:25:33.776Z",
+      "scheduledFor": "2026-06-25T22:30:00.000Z",
+      "scheduledLocal": "2026-06-25T18:30",
+      "status": "queued",
+      "title": "Behind-scenes · 6/25",
+      "media": [],
+      "captions": {
+        "en": "Decluttering today so it photographs beautifully tomorrow.",
+        "zh": "今天整理收纳，明天拍出美照。"
+      },
+      "commentLinks": {
+        "en": "",
+        "zh": ""
+      },
+      "targets": [
+        {
+          "platform": "telegram",
+          "label": "Telegram",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "facebook_en",
+          "label": "Facebook",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "instagram_en",
+          "label": "Instagram",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "facebook_zh",
+          "label": "Facebook",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "instagram_zh",
+          "label": "Instagram",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "wechat",
+          "label": "WeChat 朋友圈",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "red",
+          "label": "小红书 RED",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "youtube",
+          "label": "YouTube",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "linkedin",
+          "label": "LinkedIn",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "whatsapp",
+          "label": "WhatsApp",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        }
+      ],
+      "day": "thu",
+      "weekStart": "2026-06-22",
+      "property": "",
+      "folder": "{property}/preparing/"
+    },
+    {
+      "id": "3c3ce737-0988-440d-b766-c64a2e8c7169",
+      "created": "2026-06-28T19:25:33.776Z",
+      "scheduledFor": "2026-06-26T16:00:00.000Z",
+      "scheduledLocal": "2026-06-26T12:00",
+      "status": "queued",
+      "title": "Just Sold · 6/26",
+      "media": [],
+      "captions": {
+        "en": "Lessons for sellers from this sale.",
+        "zh": "这次成交，给卖家的启示。"
+      },
+      "commentLinks": {
+        "en": "",
+        "zh": ""
+      },
+      "targets": [
+        {
+          "platform": "telegram",
+          "label": "Telegram",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "facebook_en",
+          "label": "Facebook",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "instagram_en",
+          "label": "Instagram",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "facebook_zh",
+          "label": "Facebook",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "instagram_zh",
+          "label": "Instagram",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "wechat",
+          "label": "WeChat 朋友圈",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "red",
+          "label": "小红书 RED",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "linkedin",
+          "label": "LinkedIn",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "whatsapp",
+          "label": "WhatsApp",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "nextdoor",
+          "label": "Nextdoor",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "threads",
+          "label": "Threads",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        }
+      ],
+      "day": "fri",
+      "weekStart": "2026-06-22",
+      "property": "",
+      "folder": "{property}/sold/"
+    },
+    {
+      "id": "9b061f38-0ca8-47e3-9682-ce472a03f537",
+      "created": "2026-06-28T19:25:33.776Z",
+      "scheduledFor": "2026-06-27T14:00:00.000Z",
+      "scheduledLocal": "2026-06-27T10:00",
+      "status": "queued",
+      "title": "Open house · 6/27",
+      "media": [],
+      "captions": {
+        "en": "The door’s open this Saturday.",
+        "zh": "本周六，大门为你敞开。"
+      },
+      "commentLinks": {
+        "en": "",
+        "zh": ""
+      },
+      "targets": [
+        {
+          "platform": "telegram",
+          "label": "Telegram",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "facebook_en",
+          "label": "Facebook",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "instagram_en",
+          "label": "Instagram",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "facebook_zh",
+          "label": "Facebook",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "instagram_zh",
+          "label": "Instagram",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "wechat",
+          "label": "WeChat 朋友圈",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "red",
+          "label": "小红书 RED",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "whatsapp",
+          "label": "WhatsApp",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "youtube",
+          "label": "YouTube",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        }
+      ],
+      "day": "sat",
+      "weekStart": "2026-06-22",
+      "property": "",
+      "folder": "{property}/listing/"
+    },
+    {
+      "id": "436584d2-eb84-4fea-b5f9-bbc757c7564b",
+      "created": "2026-06-28T19:25:33.776Z",
+      "scheduledFor": "2026-06-28T19:40:00.000Z",
+      "scheduledLocal": "2026-06-28T15:40",
+      "status": "queued",
+      "title": "Long-form · 6/28",
+      "media": [],
+      "captions": {
+        "en": "Some homes just feel right.",
+        "zh": "有些家，就是对的感觉。"
+      },
+      "commentLinks": {
+        "en": "",
+        "zh": ""
+      },
+      "targets": [
+        {
+          "platform": "telegram",
+          "label": "Telegram",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "youtube",
+          "label": "YouTube",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "email",
+          "label": "Email",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "facebook_en",
+          "label": "Facebook",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "instagram_en",
+          "label": "Instagram",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "linkedin",
+          "label": "LinkedIn",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "facebook_zh",
+          "label": "Facebook",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "instagram_zh",
+          "label": "Instagram",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "wechat",
+          "label": "WeChat 朋友圈",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "red",
+          "label": "小红书 RED",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "whatsapp",
+          "label": "WhatsApp",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "nextdoor",
+          "label": "Nextdoor",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        }
+      ],
+      "day": "sun",
+      "weekStart": "2026-06-22",
+      "folder": "156-tower-hill-rd/listing/"
+    },
+    {
+      "id": "b5ed4cda-97d3-4eb2-a203-061bfd61cf49",
+      "created": "2026-06-28T19:29:04.287Z",
+      "scheduledFor": "2026-06-28T20:00:00.000Z",
+      "scheduledLocal": "2026-06-28T16:00",
+      "status": "queued",
+      "title": "(untitled)",
+      "media": [],
+      "captions": {
+        "en": "",
+        "zh": ""
+      },
+      "commentLinks": {
+        "en": "",
+        "zh": ""
+      },
+      "targets": [
+        {
+          "platform": "email",
+          "label": "Email",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "facebook_en",
+          "label": "Facebook",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "instagram_en",
+          "label": "Instagram",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "linkedin",
+          "label": "LinkedIn",
+          "lang": "en",
           "tier": "assist",
           "status": "queued"
         }
