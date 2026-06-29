@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-06-29T01:13:09.608Z",
+  "updated": "2026-06-29T01:58:30.378Z",
   "days": {
     "mon": {
       "theme": "Market",
@@ -116,13 +116,14 @@
         "red",
         "whatsapp",
         "youtube"
-      ]
+      ],
+      "pin": "Open house this weekend — come by."
     },
     "sun": {
-      "theme": "Long-form",
+      "theme": "Openhouse",
       "media": "🎬",
-      "time": "21:40",
-      "group": "First impression",
+      "time": "09:00",
+      "group": "Activity",
       "folder": "156-tower-hill-rd/listing/",
       "targets": [
         "telegram",
@@ -133,7 +134,7 @@
         "instagram_en",
         "instagram_zh"
       ],
-      "pin": "Some homes just feel right."
+      "pin": "Open house this weekend — come by."
     }
   }
 }
