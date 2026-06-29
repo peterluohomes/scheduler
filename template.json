@@ -1,0 +1,139 @@
+{
+  "version": 1,
+  "updated": "2026-06-29T01:13:09.608Z",
+  "days": {
+    "mon": {
+      "theme": "Market",
+      "media": "📷",
+      "time": "09:00",
+      "group": "Market",
+      "folder": "images/news/",
+      "targets": [
+        "telegram",
+        "facebook_en",
+        "instagram_en",
+        "facebook_zh",
+        "instagram_zh",
+        "wechat",
+        "red",
+        "linkedin",
+        "whatsapp",
+        "nextdoor",
+        "threads",
+        "youtube"
+      ]
+    },
+    "tue": {
+      "theme": "Community",
+      "media": "🎬",
+      "time": "18:30",
+      "group": "Neighbourhood",
+      "folder": "images/",
+      "targets": [
+        "telegram",
+        "facebook_en",
+        "instagram_en",
+        "facebook_zh",
+        "instagram_zh",
+        "wechat",
+        "red",
+        "youtube",
+        "whatsapp"
+      ]
+    },
+    "wed": {
+      "theme": "Listing",
+      "media": "📷",
+      "time": "12:00",
+      "group": "First impression",
+      "folder": "{property}/listing/",
+      "targets": [
+        "telegram",
+        "facebook_en",
+        "instagram_en",
+        "facebook_zh",
+        "instagram_zh",
+        "wechat",
+        "red",
+        "whatsapp",
+        "nextdoor",
+        "threads"
+      ],
+      "pin": ""
+    },
+    "thu": {
+      "theme": "Behind-scenes",
+      "media": "🎬",
+      "time": "18:30",
+      "group": "Preparation",
+      "folder": "{property}/preparing/",
+      "targets": [
+        "telegram",
+        "facebook_en",
+        "instagram_en",
+        "facebook_zh",
+        "instagram_zh",
+        "wechat",
+        "red",
+        "youtube",
+        "linkedin",
+        "whatsapp"
+      ]
+    },
+    "fri": {
+      "theme": "Just Sold",
+      "media": "📷",
+      "time": "12:00",
+      "group": "Success",
+      "folder": "{property}/sold/",
+      "targets": [
+        "telegram",
+        "facebook_en",
+        "instagram_en",
+        "facebook_zh",
+        "instagram_zh",
+        "wechat",
+        "red",
+        "linkedin",
+        "whatsapp",
+        "nextdoor",
+        "threads"
+      ]
+    },
+    "sat": {
+      "theme": "Open house",
+      "media": "🎬",
+      "time": "10:00",
+      "group": "Activity",
+      "folder": "{property}/listing/",
+      "targets": [
+        "telegram",
+        "facebook_en",
+        "instagram_en",
+        "facebook_zh",
+        "instagram_zh",
+        "wechat",
+        "red",
+        "whatsapp",
+        "youtube"
+      ]
+    },
+    "sun": {
+      "theme": "Long-form",
+      "media": "🎬",
+      "time": "21:40",
+      "group": "First impression",
+      "folder": "156-tower-hill-rd/listing/",
+      "targets": [
+        "telegram",
+        "youtube",
+        "wechat",
+        "facebook_en",
+        "facebook_zh",
+        "instagram_en",
+        "instagram_zh"
+      ],
+      "pin": "Some homes just feel right."
+    }
+  }
+}
