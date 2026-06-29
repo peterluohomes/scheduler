@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-06-29T01:58:30.378Z",
+  "updated": "2026-06-29T01:59:08.378Z",
   "days": {
     "mon": {
       "theme": "Market",
@@ -38,7 +38,8 @@
         "wechat",
         "red",
         "youtube",
-        "whatsapp"
+        "whatsapp",
+        "linkedin"
       ]
     },
     "wed": {
@@ -57,7 +58,8 @@
         "red",
         "whatsapp",
         "nextdoor",
-        "threads"
+        "threads",
+        "linkedin"
       ],
       "pin": ""
     },
@@ -127,12 +129,14 @@
       "folder": "156-tower-hill-rd/listing/",
       "targets": [
         "telegram",
-        "youtube",
         "wechat",
         "facebook_en",
-        "facebook_zh",
         "instagram_en",
-        "instagram_zh"
+        "instagram_zh",
+        "youtube",
+        "threads",
+        "email",
+        "facebook_zh"
       ],
       "pin": "Open house this weekend — come by."
     }
