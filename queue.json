@@ -1,18 +1,18 @@
 {
   "version": 1,
-  "generated": "2026-06-29T01:33:42.009Z",
+  "generated": "2026-06-29T01:48:24.240Z",
   "posts": [
     {
-      "id": "6cace46d-edb8-4bfd-aa45-7370c287399d",
-      "created": "2026-06-29T01:33:14.446Z",
+      "id": "e13f8716-dee3-406f-97d2-b54ac680d89a",
+      "created": "2026-06-29T01:47:21.735Z",
       "scheduledFor": "2026-06-22T13:00:00.000Z",
       "scheduledLocal": "2026-06-22T09:00",
       "status": "queued",
       "title": "Market · 6/22",
       "media": [],
       "captions": {
-        "en": "Why this home is priced where it is.",
-        "zh": "这套房子为何如此定价。"
+        "en": "What this month’s numbers mean for sellers.",
+        "zh": "本月数据，对卖家意味着什么。"
       },
       "commentLinks": {
         "en": "",
@@ -110,16 +110,16 @@
       "folder": "images/news/"
     },
     {
-      "id": "92f585b1-6602-4ba5-b147-1c32054dc290",
-      "created": "2026-06-29T01:33:14.446Z",
+      "id": "76595f9f-b807-414b-8d4a-a62c066b3797",
+      "created": "2026-06-29T01:47:21.735Z",
       "scheduledFor": "2026-06-23T22:30:00.000Z",
       "scheduledLocal": "2026-06-23T18:30",
       "status": "queued",
       "title": "Community · 6/23",
       "media": [],
       "captions": {
-        "en": "Why families move to this community.",
-        "zh": "家庭为何选择这个社区。"
+        "en": "Top schools, parks, and quiet streets.",
+        "zh": "名校、公园与宁静的街道。"
       },
       "commentLinks": {
         "en": "",
@@ -196,16 +196,16 @@
       "folder": "images/"
     },
     {
-      "id": "1708c338-a664-4e70-af54-ef988e2a4551",
-      "created": "2026-06-29T01:33:14.446Z",
+      "id": "8fff3c99-2841-4777-a429-a4be23fcb118",
+      "created": "2026-06-29T01:47:21.735Z",
       "scheduledFor": "2026-06-24T16:00:00.000Z",
       "scheduledLocal": "2026-06-24T12:00",
       "status": "queued",
       "title": "Listing · 6/24",
       "media": [],
       "captions": {
-        "en": "The kind of home that makes you smile before you even walk in.",
-        "zh": "还没进门，就让你会心一笑的家。"
+        "en": "Curb appeal that stops you in your tracks.",
+        "zh": "让人驻足的门面魅力。"
       },
       "commentLinks": {
         "en": "",
@@ -289,16 +289,16 @@
       "folder": "{property}/listing/"
     },
     {
-      "id": "987718b6-9cb5-43eb-9e27-d71f96b26737",
-      "created": "2026-06-29T01:33:14.446Z",
+      "id": "19411d2f-6079-41c7-938c-d8f0b44033f5",
+      "created": "2026-06-29T01:47:21.735Z",
       "scheduledFor": "2026-06-25T22:30:00.000Z",
       "scheduledLocal": "2026-06-25T18:30",
       "status": "queued",
       "title": "Behind-scenes · 6/25",
       "media": [],
       "captions": {
-        "en": "The checklist that gets you top dollar.",
-        "zh": "让你卖出好价钱的准备清单。"
+        "en": "The journey before it goes live.",
+        "zh": "上市前的精心准备。"
       },
       "commentLinks": {
         "en": "",
@@ -382,16 +382,16 @@
       "folder": "{property}/preparing/"
     },
     {
-      "id": "481cba14-f043-4312-abab-3abbeabf1967",
-      "created": "2026-06-29T01:33:14.447Z",
+      "id": "249ef160-e39f-490b-a7ec-46a81b1c2087",
+      "created": "2026-06-29T01:47:21.735Z",
       "scheduledFor": "2026-06-26T16:00:00.000Z",
       "scheduledLocal": "2026-06-26T12:00",
       "status": "queued",
       "title": "Just Sold · 6/26",
       "media": [],
       "captions": {
-        "en": "Just sold — over asking.",
-        "zh": "刚刚成交 — 高于要价。"
+        "en": "Sold fast. Here’s what worked.",
+        "zh": "快速成交。成功的关键在这里。"
       },
       "commentLinks": {
         "en": "",
@@ -482,16 +482,16 @@
       "folder": "{property}/sold/"
     },
     {
-      "id": "c47e454c-6af3-4792-9899-dbb997265bcd",
-      "created": "2026-06-29T01:33:14.447Z",
+      "id": "de55ddf4-b191-4bfd-8f12-d7359c67788e",
+      "created": "2026-06-29T01:47:21.735Z",
       "scheduledFor": "2026-06-27T14:00:00.000Z",
       "scheduledLocal": "2026-06-27T10:00",
       "status": "queued",
       "title": "Open house · 6/27",
       "media": [],
       "captions": {
-        "en": "Open house this weekend — come by.",
-        "zh": "本周末开放参观 — 欢迎到访。"
+        "en": "Busy showing day. Strong interest.",
+        "zh": "看房不断，反响热烈。"
       },
       "commentLinks": {
         "en": "",
@@ -568,8 +568,8 @@
       "folder": "{property}/listing/"
     },
     {
-      "id": "8a9b203a-ba69-4460-8858-85906983285c",
-      "created": "2026-06-29T01:33:14.447Z",
+      "id": "a1bcb3c5-23c5-4b1a-85c2-337e9a782da5",
+      "created": "2026-06-29T01:47:21.735Z",
       "scheduledFor": "2026-06-29T01:40:00.000Z",
       "scheduledLocal": "2026-06-28T21:40",
       "status": "queued",
@@ -582,12 +582,12 @@
         }
       ],
       "captions": {
-        "en": "Some homes just feel right.\nGetting the light right before photo day.",
-        "zh": "有些家，就是对的感觉。"
+        "en": "Some homes just feel right.\nFirst we prepare. Then we launch.\nThe checklist that gets you top dollar.",
+        "zh": "有些家，就是对的感觉。\n拍摄日前，先把光线调到最好。"
       },
       "commentLinks": {
-        "en": "",
-        "zh": ""
+        "en": "peterluo.homes/valuation",
+        "zh": "peterluo.homes/valuation"
       },
       "targets": [
         {
@@ -600,6 +600,13 @@
         {
           "platform": "youtube",
           "label": "YouTube",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "threads",
+          "label": "Threads",
           "lang": "en",
           "tier": "auto",
           "status": "queued"
@@ -643,27 +650,6 @@
           "platform": "wechat",
           "label": "WeChat 朋友圈",
           "lang": "zh",
-          "tier": "assist",
-          "status": "queued"
-        },
-        {
-          "platform": "red",
-          "label": "小红书 RED",
-          "lang": "zh",
-          "tier": "assist",
-          "status": "queued"
-        },
-        {
-          "platform": "whatsapp",
-          "label": "WhatsApp",
-          "lang": "en",
-          "tier": "assist",
-          "status": "queued"
-        },
-        {
-          "platform": "nextdoor",
-          "label": "Nextdoor",
-          "lang": "en",
           "tier": "assist",
           "status": "queued"
         }
