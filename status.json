@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-06-29T01:36:08.358500+00:00",
+  "updated": "2026-06-29T01:41:06.918157+00:00",
   "statuses": {
     "test-telegram-001": {
       "overall": "posted",
@@ -378,7 +378,7 @@
         "youtube": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-06-29T01:36:08.358500+00:00"
+          "at": "2026-06-29T01:41:06.918157+00:00"
         },
         "facebook_en": {
           "status": "nudged",
@@ -414,6 +414,66 @@
           "status": "nudged",
           "info": "ok",
           "at": "2026-06-29T01:36:08.358500+00:00"
+        }
+      }
+    },
+    "8a9b203a-ba69-4460-8858-85906983285c": {
+      "overall": "queued",
+      "targets": {
+        "telegram": {
+          "status": "posted",
+          "info": "ok",
+          "at": "2026-06-29T01:41:06.918157+00:00"
+        },
+        "youtube": {
+          "status": "pending",
+          "info": "handler not built yet",
+          "at": "2026-06-29T01:41:06.918157+00:00"
+        },
+        "email": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-06-29T01:41:06.918157+00:00"
+        },
+        "facebook_en": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-06-29T01:41:06.918157+00:00"
+        },
+        "instagram_en": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-06-29T01:41:06.918157+00:00"
+        },
+        "facebook_zh": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-06-29T01:41:06.918157+00:00"
+        },
+        "instagram_zh": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-06-29T01:41:06.918157+00:00"
+        },
+        "wechat": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-06-29T01:41:06.918157+00:00"
+        },
+        "red": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-06-29T01:41:06.918157+00:00"
+        },
+        "whatsapp": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-06-29T01:41:06.918157+00:00"
+        },
+        "nextdoor": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-06-29T01:41:06.918157+00:00"
         }
       }
     }
