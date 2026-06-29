@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-06-29T01:51:07.988320+00:00",
+  "updated": "2026-06-29T01:56:05.270465+00:00",
   "statuses": {
     "test-telegram-001": {
       "overall": "posted",
@@ -488,7 +488,7 @@
         "youtube": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-06-29T01:51:07.988320+00:00"
+          "at": "2026-06-29T01:56:05.270465+00:00"
         },
         "facebook_en": {
           "status": "nudged",
@@ -524,6 +524,56 @@
           "status": "nudged",
           "info": "ok",
           "at": "2026-06-29T01:51:07.988320+00:00"
+        }
+      }
+    },
+    "a1bcb3c5-23c5-4b1a-85c2-337e9a782da5": {
+      "overall": "queued",
+      "targets": {
+        "telegram": {
+          "status": "posted",
+          "info": "ok",
+          "at": "2026-06-29T01:56:05.270465+00:00"
+        },
+        "youtube": {
+          "status": "pending",
+          "info": "handler not built yet",
+          "at": "2026-06-29T01:56:05.270465+00:00"
+        },
+        "threads": {
+          "status": "pending",
+          "info": "handler not built yet",
+          "at": "2026-06-29T01:56:05.270465+00:00"
+        },
+        "email": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-06-29T01:56:05.270465+00:00"
+        },
+        "facebook_en": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-06-29T01:56:05.270465+00:00"
+        },
+        "instagram_en": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-06-29T01:56:05.270465+00:00"
+        },
+        "facebook_zh": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-06-29T01:56:05.270465+00:00"
+        },
+        "instagram_zh": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-06-29T01:56:05.270465+00:00"
+        },
+        "wechat": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-06-29T01:56:05.270465+00:00"
         }
       }
     }
