@@ -1,18 +1,18 @@
 {
   "version": 1,
-  "generated": "2026-06-29T01:13:29.945Z",
+  "generated": "2026-06-29T01:20:47.087Z",
   "posts": [
     {
-      "id": "1a58be6d-2c2d-4188-bc1a-0366fe357886",
-      "created": "2026-06-29T01:13:13.428Z",
+      "id": "4dc607a0-50fd-4c9c-aea0-adcf9bf07e3c",
+      "created": "2026-06-29T01:20:04.182Z",
       "scheduledFor": "2026-06-22T13:00:00.000Z",
       "scheduledLocal": "2026-06-22T09:00",
       "status": "queued",
       "title": "Market · 6/22",
       "media": [],
       "captions": {
-        "en": "What buyers are paying right now.",
-        "zh": "买家现在愿意出的价。"
+        "en": "Inventory is shifting. Here’s the read.",
+        "zh": "库存在变化，这是我的解读。"
       },
       "commentLinks": {
         "en": "",
@@ -110,16 +110,16 @@
       "folder": "images/news/"
     },
     {
-      "id": "d05f3159-9a97-48f1-89b8-85d5dc26b894",
-      "created": "2026-06-29T01:13:13.428Z",
+      "id": "d4c7c766-42bd-4a17-9681-e21c367f41a4",
+      "created": "2026-06-29T01:20:04.182Z",
       "scheduledFor": "2026-06-23T22:30:00.000Z",
       "scheduledLocal": "2026-06-23T18:30",
       "status": "queued",
       "title": "Community · 6/23",
       "media": [],
       "captions": {
-        "en": "Minutes to transit, easy to everywhere.",
-        "zh": "几分钟到公共交通，去哪都方便。"
+        "en": "The community you’ve been looking for.",
+        "zh": "你一直在找的社区。"
       },
       "commentLinks": {
         "en": "",
@@ -196,16 +196,16 @@
       "folder": "images/"
     },
     {
-      "id": "73572934-2452-42be-9ef6-2476b96f0b10",
-      "created": "2026-06-29T01:13:13.428Z",
+      "id": "2fb5a8bc-c056-4146-9016-b9756b1b0504",
+      "created": "2026-06-29T01:20:04.182Z",
       "scheduledFor": "2026-06-24T16:00:00.000Z",
       "scheduledLocal": "2026-06-24T12:00",
       "status": "queued",
       "title": "Listing · 6/24",
       "media": [],
       "captions": {
-        "en": "Light, space, and a warm hello.",
-        "zh": "采光、空间，与温暖的问候。"
+        "en": "You’ll know it in the foyer.",
+        "zh": "在门厅，你就会知道。"
       },
       "commentLinks": {
         "en": "",
@@ -289,16 +289,16 @@
       "folder": "{property}/listing/"
     },
     {
-      "id": "8e126db0-f037-4abe-8248-35325083dd19",
-      "created": "2026-06-29T01:13:13.428Z",
+      "id": "c068addc-2a21-4ade-b2a0-7271263dc50c",
+      "created": "2026-06-29T01:20:04.182Z",
       "scheduledFor": "2026-06-25T22:30:00.000Z",
       "scheduledLocal": "2026-06-25T18:30",
       "status": "queued",
       "title": "Behind-scenes · 6/25",
       "media": [],
       "captions": {
-        "en": "Fresh paint, clean lines, ready for buyers.",
-        "zh": "焕新油漆，干净利落，迎接买家。"
+        "en": "Behind every great listing is a great prep week.",
+        "zh": "每个出色房源背后，都有一周的精心筹备。"
       },
       "commentLinks": {
         "en": "",
@@ -382,16 +382,16 @@
       "folder": "{property}/preparing/"
     },
     {
-      "id": "50a11965-f52c-4931-a7f8-d609e50481e4",
-      "created": "2026-06-29T01:13:13.428Z",
+      "id": "1d1ca0f0-ca86-4c87-8acb-c04ca4f2b614",
+      "created": "2026-06-29T01:20:04.182Z",
       "scheduledFor": "2026-06-26T16:00:00.000Z",
       "scheduledLocal": "2026-06-26T12:00",
       "status": "queued",
       "title": "Just Sold · 6/26",
       "media": [],
       "captions": {
-        "en": "Another address, another success story.",
-        "zh": "又一个地址，又一个成功故事。"
+        "en": "From listed to sold — smoothly.",
+        "zh": "从上市到成交 — 一路顺畅。"
       },
       "commentLinks": {
         "en": "",
@@ -482,16 +482,16 @@
       "folder": "{property}/sold/"
     },
     {
-      "id": "b9deb989-8bfa-4de3-86ae-03904f914548",
-      "created": "2026-06-29T01:13:13.429Z",
+      "id": "0ea52027-22f9-4e99-9f46-690a77435bd5",
+      "created": "2026-06-29T01:20:04.182Z",
       "scheduledFor": "2026-06-27T14:00:00.000Z",
       "scheduledLocal": "2026-06-27T10:00",
       "status": "queued",
       "title": "Open house · 6/27",
       "media": [],
       "captions": {
-        "en": "Come see it in person this weekend.",
-        "zh": "本周末，来现场亲眼看看。"
+        "en": "Interest is heating up on this one.",
+        "zh": "这套房，热度正在上升。"
       },
       "commentLinks": {
         "en": "",
@@ -568,13 +568,29 @@
       "folder": "{property}/listing/"
     },
     {
-      "id": "952a2c21-34e7-4d93-b0bd-6e2404bf5202",
-      "created": "2026-06-29T01:13:13.429Z",
-      "scheduledFor": "2026-06-29T01:40:00.000Z",
-      "scheduledLocal": "2026-06-28T21:40",
+      "id": "e46fb03e-8e8f-41ed-b0ff-60e4e3af7811",
+      "created": "2026-06-29T01:20:04.182Z",
+      "scheduledFor": "2026-06-29T01:27:00.000Z",
+      "scheduledLocal": "2026-06-28T21:27",
       "status": "queued",
       "title": "Long-form · 6/28",
-      "media": [],
+      "media": [
+        {
+          "filename": "156-tower-hill-rd-listing-1.jpg",
+          "url": "https://media.peterluo.homes/156-tower-hill-rd/listing/156-tower-hill-rd-listing-1.jpg",
+          "type": "image"
+        },
+        {
+          "filename": "156-tower-hill-rd-listing-2.jpg",
+          "url": "https://media.peterluo.homes/156-tower-hill-rd/listing/156-tower-hill-rd-listing-2.jpg",
+          "type": "image"
+        },
+        {
+          "filename": "156-tower-hill-rd-listing-3.jpg",
+          "url": "https://media.peterluo.homes/156-tower-hill-rd/listing/156-tower-hill-rd-listing-3.jpg",
+          "type": "image"
+        }
+      ],
       "captions": {
         "en": "Some homes just feel right.",
         "zh": "有些家，就是对的感觉。"
@@ -599,15 +615,15 @@
           "status": "queued"
         },
         {
-          "platform": "wechat",
-          "label": "WeChat 朋友圈",
-          "lang": "zh",
+          "platform": "facebook_en",
+          "label": "Facebook",
+          "lang": "en",
           "tier": "assist",
           "status": "queued"
         },
         {
-          "platform": "facebook_en",
-          "label": "Facebook",
+          "platform": "instagram_en",
+          "label": "Instagram",
           "lang": "en",
           "tier": "assist",
           "status": "queued"
@@ -620,15 +636,15 @@
           "status": "queued"
         },
         {
-          "platform": "instagram_en",
+          "platform": "instagram_zh",
           "label": "Instagram",
-          "lang": "en",
+          "lang": "zh",
           "tier": "assist",
           "status": "queued"
         },
         {
-          "platform": "instagram_zh",
-          "label": "Instagram",
+          "platform": "wechat",
+          "label": "WeChat 朋友圈",
           "lang": "zh",
           "tier": "assist",
           "status": "queued"
@@ -636,7 +652,6 @@
       ],
       "day": "sun",
       "weekStart": "2026-06-22",
-      "property": "",
       "folder": "156-tower-hill-rd/listing/"
     }
   ]
