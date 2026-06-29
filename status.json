@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-06-29T01:21:06.670689+00:00",
+  "updated": "2026-06-29T01:26:04.568295+00:00",
   "statuses": {
     "test-telegram-001": {
       "overall": "posted",
@@ -288,7 +288,7 @@
         "youtube": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-06-29T01:21:06.670689+00:00"
+          "at": "2026-06-29T01:26:04.568295+00:00"
         },
         "facebook_en": {
           "status": "nudged",
