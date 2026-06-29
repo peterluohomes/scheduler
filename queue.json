@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-06-29T02:05:58.799Z",
+  "generated": "2026-06-29T16:52:10.205Z",
   "posts": [
     {
       "id": "fe84a6dc-b3a6-41df-8147-55dc46ecaa2c",
@@ -671,6 +671,115 @@
       "day": "sun",
       "weekStart": "2026-06-22",
       "folder": "156-tower-hill-rd/listing/"
+    },
+    {
+      "id": "09b0bab1-2cb0-47e5-a403-cefb5d97bcbf",
+      "created": "2026-06-29T16:51:45.363Z",
+      "scheduledFor": "2026-06-29T13:00:00.000Z",
+      "scheduledLocal": "2026-06-29T09:00",
+      "status": "queued",
+      "title": "Extra · 156-twer-hill-rd · 6/29",
+      "media": [],
+      "captions": {
+        "en": "",
+        "zh": ""
+      },
+      "commentLinks": {
+        "en": "",
+        "zh": ""
+      },
+      "targets": [
+        {
+          "platform": "telegram",
+          "label": "Telegram",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "facebook_en",
+          "label": "Facebook",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "instagram_en",
+          "label": "Instagram",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "facebook_zh",
+          "label": "Facebook",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "instagram_zh",
+          "label": "Instagram",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "wechat",
+          "label": "WeChat 朋友圈",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "red",
+          "label": "小红书 RED",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "linkedin",
+          "label": "LinkedIn",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "whatsapp",
+          "label": "WhatsApp",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "nextdoor",
+          "label": "Nextdoor",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "threads",
+          "label": "Threads",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "youtube",
+          "label": "YouTube",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        }
+      ],
+      "day": "mon",
+      "weekStart": "2026-06-29",
+      "property": "156-twer-hill-rd",
+      "folder": "images/news/",
+      "recurring": false,
+      "recSlot": null
     }
   ]
 }
