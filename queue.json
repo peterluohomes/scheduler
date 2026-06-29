@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-06-29T16:52:10.205Z",
+  "generated": "2026-06-29T16:54:27.654Z",
   "posts": [
     {
       "id": "fe84a6dc-b3a6-41df-8147-55dc46ecaa2c",
@@ -201,106 +201,6 @@
       "weekStart": "2026-06-22",
       "property": "",
       "folder": "images/"
-    },
-    {
-      "id": "4b24baa4-491f-463f-9800-2c8c0a849bd3",
-      "created": "2026-06-29T01:59:11.711Z",
-      "scheduledFor": "2026-06-24T16:00:00.000Z",
-      "scheduledLocal": "2026-06-24T12:00",
-      "status": "queued",
-      "title": "Listing · 6/24",
-      "media": [],
-      "captions": {
-        "en": "Walk in. Take a breath. You’re home.",
-        "zh": "走进来，深呼吸，到家了。"
-      },
-      "commentLinks": {
-        "en": "",
-        "zh": ""
-      },
-      "targets": [
-        {
-          "platform": "telegram",
-          "label": "Telegram",
-          "lang": "en",
-          "tier": "auto",
-          "status": "queued"
-        },
-        {
-          "platform": "facebook_en",
-          "label": "Facebook",
-          "lang": "en",
-          "tier": "assist",
-          "status": "queued"
-        },
-        {
-          "platform": "instagram_en",
-          "label": "Instagram",
-          "lang": "en",
-          "tier": "assist",
-          "status": "queued"
-        },
-        {
-          "platform": "facebook_zh",
-          "label": "Facebook",
-          "lang": "zh",
-          "tier": "assist",
-          "status": "queued"
-        },
-        {
-          "platform": "instagram_zh",
-          "label": "Instagram",
-          "lang": "zh",
-          "tier": "assist",
-          "status": "queued"
-        },
-        {
-          "platform": "wechat",
-          "label": "WeChat 朋友圈",
-          "lang": "zh",
-          "tier": "assist",
-          "status": "queued"
-        },
-        {
-          "platform": "red",
-          "label": "小红书 RED",
-          "lang": "zh",
-          "tier": "assist",
-          "status": "queued"
-        },
-        {
-          "platform": "whatsapp",
-          "label": "WhatsApp",
-          "lang": "en",
-          "tier": "assist",
-          "status": "queued"
-        },
-        {
-          "platform": "nextdoor",
-          "label": "Nextdoor",
-          "lang": "en",
-          "tier": "assist",
-          "status": "queued"
-        },
-        {
-          "platform": "threads",
-          "label": "Threads",
-          "lang": "en",
-          "tier": "auto",
-          "status": "queued"
-        },
-        {
-          "platform": "linkedin",
-          "label": "LinkedIn",
-          "lang": "en",
-          "tier": "assist",
-          "status": "queued"
-        }
-      ],
-      "day": "wed",
-      "weekStart": "2026-06-22",
-      "property": "",
-      "folder": "{property}/listing/"
     },
     {
       "id": "549571f3-80a9-4908-80e1-a94f5020dfff",
@@ -673,16 +573,16 @@
       "folder": "156-tower-hill-rd/listing/"
     },
     {
-      "id": "09b0bab1-2cb0-47e5-a403-cefb5d97bcbf",
-      "created": "2026-06-29T16:51:45.363Z",
+      "id": "0e6412de-dcd8-4d12-ad3c-1316dc53af12",
+      "created": "2026-06-29T16:53:21.127Z",
       "scheduledFor": "2026-06-29T13:00:00.000Z",
       "scheduledLocal": "2026-06-29T09:00",
       "status": "queued",
-      "title": "Extra · 156-twer-hill-rd · 6/29",
+      "title": "Market · 156-twer-hill-rd · 6/29",
       "media": [],
       "captions": {
-        "en": "",
-        "zh": ""
+        "en": "What buyers are paying right now.",
+        "zh": "买家现在愿意出的价。"
       },
       "commentLinks": {
         "en": "",
@@ -778,7 +678,692 @@
       "weekStart": "2026-06-29",
       "property": "156-twer-hill-rd",
       "folder": "images/news/",
+      "recurring": true,
+      "recSlot": null
+    },
+    {
+      "id": "09b0bab1-2cb0-47e5-a403-cefb5d97bcbf",
+      "created": "2026-06-29T16:51:45.363Z",
+      "scheduledFor": "2026-06-29T17:01:00.000Z",
+      "scheduledLocal": "2026-06-29T13:01",
+      "status": "queued",
+      "title": "Extra · 156-twer-hill-rd · 6/29",
+      "media": [
+        {
+          "filename": "justlisted.jpg",
+          "url": "https://media.peterluo.homes/156-tower-hill-rd/listing/justlisted.jpg",
+          "type": "image"
+        }
+      ],
+      "captions": {
+        "en": "The kind of home that makes you smile before you even walk in.",
+        "zh": "还没进门，就让你会心一笑的家。"
+      },
+      "commentLinks": {
+        "en": "https://imgs.peterluo.workers.dev/?img=justlisted&to=showing&cta=1&src=fb",
+        "zh": "https://imgs.peterluo.workers.dev/?img=justlisted&to=showing&cta=1&src=fb"
+      },
+      "targets": [
+        {
+          "platform": "telegram",
+          "label": "Telegram",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "youtube",
+          "label": "YouTube",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "threads",
+          "label": "Threads",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "facebook_en",
+          "label": "Facebook",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "instagram_en",
+          "label": "Instagram",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "linkedin",
+          "label": "LinkedIn",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "facebook_zh",
+          "label": "Facebook",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "instagram_zh",
+          "label": "Instagram",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "wechat",
+          "label": "WeChat 朋友圈",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "red",
+          "label": "小红书 RED",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "whatsapp",
+          "label": "WhatsApp",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "nextdoor",
+          "label": "Nextdoor",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        }
+      ],
+      "day": "mon",
+      "weekStart": "2026-06-29",
+      "folder": "images/news/",
       "recurring": false,
+      "recSlot": null,
+      "property": "156-twer-hill-rd"
+    },
+    {
+      "id": "a9e058f3-d4fc-49ed-bf25-2d5d5e8af927",
+      "created": "2026-06-29T16:53:21.127Z",
+      "scheduledFor": "2026-06-30T22:30:00.000Z",
+      "scheduledLocal": "2026-06-30T18:30",
+      "status": "queued",
+      "title": "Community · 156-twer-hill-rd · 6/30",
+      "media": [],
+      "captions": {
+        "en": "Minutes to transit, easy to everywhere.",
+        "zh": "几分钟到公共交通，去哪都方便。"
+      },
+      "commentLinks": {
+        "en": "",
+        "zh": ""
+      },
+      "targets": [
+        {
+          "platform": "telegram",
+          "label": "Telegram",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "facebook_en",
+          "label": "Facebook",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "instagram_en",
+          "label": "Instagram",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "facebook_zh",
+          "label": "Facebook",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "instagram_zh",
+          "label": "Instagram",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "wechat",
+          "label": "WeChat 朋友圈",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "red",
+          "label": "小红书 RED",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "youtube",
+          "label": "YouTube",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "whatsapp",
+          "label": "WhatsApp",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "linkedin",
+          "label": "LinkedIn",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        }
+      ],
+      "day": "tue",
+      "weekStart": "2026-06-29",
+      "property": "156-twer-hill-rd",
+      "folder": "images/",
+      "recurring": true,
+      "recSlot": null
+    },
+    {
+      "id": "bf93ccc1-ee8d-4011-a783-bb41b667c3e4",
+      "created": "2026-06-29T16:53:21.127Z",
+      "scheduledFor": "2026-07-01T16:00:00.000Z",
+      "scheduledLocal": "2026-07-01T12:00",
+      "status": "queued",
+      "title": "Listing · 156-twer-hill-rd · 7/1",
+      "media": [],
+      "captions": {
+        "en": "Light, space, and a warm hello.",
+        "zh": "采光、空间，与温暖的问候。"
+      },
+      "commentLinks": {
+        "en": "",
+        "zh": ""
+      },
+      "targets": [
+        {
+          "platform": "telegram",
+          "label": "Telegram",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "facebook_en",
+          "label": "Facebook",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "instagram_en",
+          "label": "Instagram",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "facebook_zh",
+          "label": "Facebook",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "instagram_zh",
+          "label": "Instagram",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "wechat",
+          "label": "WeChat 朋友圈",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "red",
+          "label": "小红书 RED",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "whatsapp",
+          "label": "WhatsApp",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "nextdoor",
+          "label": "Nextdoor",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "threads",
+          "label": "Threads",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "linkedin",
+          "label": "LinkedIn",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        }
+      ],
+      "day": "wed",
+      "weekStart": "2026-06-29",
+      "property": "156-twer-hill-rd",
+      "folder": "156-twer-hill-rd/listing/",
+      "recurring": true,
+      "recSlot": null
+    },
+    {
+      "id": "653d5d01-e129-4191-9eb4-e07da560894b",
+      "created": "2026-06-29T16:53:21.127Z",
+      "scheduledFor": "2026-07-02T22:30:00.000Z",
+      "scheduledLocal": "2026-07-02T18:30",
+      "status": "queued",
+      "title": "Behind-scenes · 156-twer-hill-rd · 7/2",
+      "media": [],
+      "captions": {
+        "en": "Prepping every room to show its best.",
+        "zh": "让每个房间展现最好的一面。"
+      },
+      "commentLinks": {
+        "en": "",
+        "zh": ""
+      },
+      "targets": [
+        {
+          "platform": "telegram",
+          "label": "Telegram",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "facebook_en",
+          "label": "Facebook",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "instagram_en",
+          "label": "Instagram",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "facebook_zh",
+          "label": "Facebook",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "instagram_zh",
+          "label": "Instagram",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "wechat",
+          "label": "WeChat 朋友圈",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "red",
+          "label": "小红书 RED",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "youtube",
+          "label": "YouTube",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "linkedin",
+          "label": "LinkedIn",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "whatsapp",
+          "label": "WhatsApp",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        }
+      ],
+      "day": "thu",
+      "weekStart": "2026-06-29",
+      "property": "156-twer-hill-rd",
+      "folder": "156-twer-hill-rd/preparing/",
+      "recurring": true,
+      "recSlot": null
+    },
+    {
+      "id": "f95595ff-073e-4232-8ab1-6e4713587ef9",
+      "created": "2026-06-29T16:53:21.127Z",
+      "scheduledFor": "2026-07-03T16:00:00.000Z",
+      "scheduledLocal": "2026-07-03T12:00",
+      "status": "queued",
+      "title": "Just Sold · 156-twer-hill-rd · 7/3",
+      "media": [],
+      "captions": {
+        "en": "Another address, another success story.",
+        "zh": "又一个地址，又一个成功故事。"
+      },
+      "commentLinks": {
+        "en": "",
+        "zh": ""
+      },
+      "targets": [
+        {
+          "platform": "telegram",
+          "label": "Telegram",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "facebook_en",
+          "label": "Facebook",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "instagram_en",
+          "label": "Instagram",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "facebook_zh",
+          "label": "Facebook",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "instagram_zh",
+          "label": "Instagram",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "wechat",
+          "label": "WeChat 朋友圈",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "red",
+          "label": "小红书 RED",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "linkedin",
+          "label": "LinkedIn",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "whatsapp",
+          "label": "WhatsApp",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "nextdoor",
+          "label": "Nextdoor",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "threads",
+          "label": "Threads",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        }
+      ],
+      "day": "fri",
+      "weekStart": "2026-06-29",
+      "property": "156-twer-hill-rd",
+      "folder": "156-twer-hill-rd/sold/",
+      "recurring": true,
+      "recSlot": null
+    },
+    {
+      "id": "55271d2c-9f27-4430-9f4b-62cd4e5e280c",
+      "created": "2026-06-29T16:53:21.127Z",
+      "scheduledFor": "2026-07-04T14:00:00.000Z",
+      "scheduledLocal": "2026-07-04T10:00",
+      "status": "queued",
+      "title": "Open house · 156-twer-hill-rd · 7/4",
+      "media": [],
+      "captions": {
+        "en": "Open house this weekend — come by.",
+        "zh": "本周末开放参观 — 欢迎到访。"
+      },
+      "commentLinks": {
+        "en": "",
+        "zh": ""
+      },
+      "targets": [
+        {
+          "platform": "telegram",
+          "label": "Telegram",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "facebook_en",
+          "label": "Facebook",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "instagram_en",
+          "label": "Instagram",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "facebook_zh",
+          "label": "Facebook",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "instagram_zh",
+          "label": "Instagram",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "wechat",
+          "label": "WeChat 朋友圈",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "red",
+          "label": "小红书 RED",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "whatsapp",
+          "label": "WhatsApp",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "youtube",
+          "label": "YouTube",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        }
+      ],
+      "day": "sat",
+      "weekStart": "2026-06-29",
+      "property": "156-twer-hill-rd",
+      "folder": "156-twer-hill-rd/listing/",
+      "recurring": true,
+      "recSlot": null
+    },
+    {
+      "id": "099d0944-558e-43f8-abaa-e9d84c6d2a2f",
+      "created": "2026-06-29T16:53:21.127Z",
+      "scheduledFor": "2026-07-05T13:00:00.000Z",
+      "scheduledLocal": "2026-07-05T09:00",
+      "status": "queued",
+      "title": "Openhouse · 156-twer-hill-rd · 7/5",
+      "media": [],
+      "captions": {
+        "en": "Open house this weekend — come by.",
+        "zh": "本周末开放参观 — 欢迎到访。"
+      },
+      "commentLinks": {
+        "en": "",
+        "zh": ""
+      },
+      "targets": [
+        {
+          "platform": "telegram",
+          "label": "Telegram",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "wechat",
+          "label": "WeChat 朋友圈",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "facebook_en",
+          "label": "Facebook",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "instagram_en",
+          "label": "Instagram",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "instagram_zh",
+          "label": "Instagram",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "youtube",
+          "label": "YouTube",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "threads",
+          "label": "Threads",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "email",
+          "label": "Email",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "facebook_zh",
+          "label": "Facebook",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        }
+      ],
+      "day": "sun",
+      "weekStart": "2026-06-29",
+      "property": "156-twer-hill-rd",
+      "folder": "156-tower-hill-rd/listing/",
+      "recurring": true,
       "recSlot": null
     }
   ]
