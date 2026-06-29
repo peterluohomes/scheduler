@@ -1,18 +1,18 @@
 {
   "version": 1,
-  "generated": "2026-06-29T01:48:55.423Z",
+  "generated": "2026-06-29T02:03:46.660Z",
   "posts": [
     {
-      "id": "e13f8716-dee3-406f-97d2-b54ac680d89a",
-      "created": "2026-06-29T01:47:21.735Z",
+      "id": "fe84a6dc-b3a6-41df-8147-55dc46ecaa2c",
+      "created": "2026-06-29T01:59:11.711Z",
       "scheduledFor": "2026-06-22T13:00:00.000Z",
       "scheduledLocal": "2026-06-22T09:00",
       "status": "queued",
       "title": "Market · 6/22",
       "media": [],
       "captions": {
-        "en": "What this month’s numbers mean for sellers.",
-        "zh": "本月数据，对卖家意味着什么。"
+        "en": "Days on market: what the trend is telling us.",
+        "zh": "房屋在售天数：趋势在说什么。"
       },
       "commentLinks": {
         "en": "",
@@ -110,16 +110,16 @@
       "folder": "images/news/"
     },
     {
-      "id": "76595f9f-b807-414b-8d4a-a62c066b3797",
-      "created": "2026-06-29T01:47:21.735Z",
+      "id": "c31607d1-b1e9-44e5-8287-1d81ec327854",
+      "created": "2026-06-29T01:59:11.711Z",
       "scheduledFor": "2026-06-23T22:30:00.000Z",
       "scheduledLocal": "2026-06-23T18:30",
       "status": "queued",
       "title": "Community · 6/23",
       "media": [],
       "captions": {
-        "en": "Top schools, parks, and quiet streets.",
-        "zh": "名校、公园与宁静的街道。"
+        "en": "Steps to trails and slow weekend mornings.",
+        "zh": "步行即达步道，享受悠闲的周末早晨。"
       },
       "commentLinks": {
         "en": "",
@@ -188,6 +188,13 @@
           "lang": "en",
           "tier": "assist",
           "status": "queued"
+        },
+        {
+          "platform": "linkedin",
+          "label": "LinkedIn",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
         }
       ],
       "day": "tue",
@@ -196,16 +203,16 @@
       "folder": "images/"
     },
     {
-      "id": "8fff3c99-2841-4777-a429-a4be23fcb118",
-      "created": "2026-06-29T01:47:21.735Z",
+      "id": "4b24baa4-491f-463f-9800-2c8c0a849bd3",
+      "created": "2026-06-29T01:59:11.711Z",
       "scheduledFor": "2026-06-24T16:00:00.000Z",
       "scheduledLocal": "2026-06-24T12:00",
       "status": "queued",
       "title": "Listing · 6/24",
       "media": [],
       "captions": {
-        "en": "Curb appeal that stops you in your tracks.",
-        "zh": "让人驻足的门面魅力。"
+        "en": "Walk in. Take a breath. You’re home.",
+        "zh": "走进来，深呼吸，到家了。"
       },
       "commentLinks": {
         "en": "",
@@ -281,6 +288,13 @@
           "lang": "en",
           "tier": "auto",
           "status": "queued"
+        },
+        {
+          "platform": "linkedin",
+          "label": "LinkedIn",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
         }
       ],
       "day": "wed",
@@ -289,16 +303,16 @@
       "folder": "{property}/listing/"
     },
     {
-      "id": "19411d2f-6079-41c7-938c-d8f0b44033f5",
-      "created": "2026-06-29T01:47:21.735Z",
+      "id": "549571f3-80a9-4908-80e1-a94f5020dfff",
+      "created": "2026-06-29T01:59:11.711Z",
       "scheduledFor": "2026-06-25T22:30:00.000Z",
       "scheduledLocal": "2026-06-25T18:30",
       "status": "queued",
-      "title": "Behind-scenes · 6/25",
+      "title": "Behind-scenes · 18-hayfield-cres · 6/25",
       "media": [],
       "captions": {
-        "en": "The journey before it goes live.",
-        "zh": "上市前的精心准备。"
+        "en": "What buyers never see: the work behind the listing.",
+        "zh": "买家看不到的，是房源背后的功夫。"
       },
       "commentLinks": {
         "en": "",
@@ -378,20 +392,20 @@
       ],
       "day": "thu",
       "weekStart": "2026-06-22",
-      "property": "",
-      "folder": "{property}/preparing/"
+      "property": "18-hayfield-cres",
+      "folder": "18-hayfield-cres/preparing/"
     },
     {
-      "id": "249ef160-e39f-490b-a7ec-46a81b1c2087",
-      "created": "2026-06-29T01:47:21.735Z",
+      "id": "cc4c8d1d-b86e-4356-9ef1-292d399151dd",
+      "created": "2026-06-29T01:59:11.711Z",
       "scheduledFor": "2026-06-26T16:00:00.000Z",
       "scheduledLocal": "2026-06-26T12:00",
       "status": "queued",
-      "title": "Just Sold · 6/26",
+      "title": "Just Sold · 18-hayfield-cres · 6/26",
       "media": [],
       "captions": {
-        "en": "Sold fast. Here’s what worked.",
-        "zh": "快速成交。成功的关键在这里。"
+        "en": "Lessons for sellers from this sale.",
+        "zh": "这次成交，给卖家的启示。"
       },
       "commentLinks": {
         "en": "",
@@ -478,20 +492,20 @@
       ],
       "day": "fri",
       "weekStart": "2026-06-22",
-      "property": "",
-      "folder": "{property}/sold/"
+      "property": "18-hayfield-cres",
+      "folder": "18-hayfield-cres/sold/"
     },
     {
-      "id": "de55ddf4-b191-4bfd-8f12-d7359c67788e",
-      "created": "2026-06-29T01:47:21.735Z",
+      "id": "d47a1c38-02be-40f3-8cba-76a277234cc1",
+      "created": "2026-06-29T01:59:11.711Z",
       "scheduledFor": "2026-06-27T14:00:00.000Z",
       "scheduledLocal": "2026-06-27T10:00",
       "status": "queued",
       "title": "Open house · 6/27",
       "media": [],
       "captions": {
-        "en": "Busy showing day. Strong interest.",
-        "zh": "看房不断，反响热烈。"
+        "en": "Open house this weekend — come by.",
+        "zh": "本周末开放参观 — 欢迎到访。"
       },
       "commentLinks": {
         "en": "",
@@ -568,22 +582,22 @@
       "folder": "{property}/listing/"
     },
     {
-      "id": "a1bcb3c5-23c5-4b1a-85c2-337e9a782da5",
-      "created": "2026-06-29T01:47:21.735Z",
-      "scheduledFor": "2026-06-29T01:55:00.000Z",
-      "scheduledLocal": "2026-06-28T21:55",
+      "id": "6b1c4f9a-ba5c-4793-99bc-8ebeb40c61fc",
+      "created": "2026-06-29T01:59:11.711Z",
+      "scheduledFor": "2026-06-28T13:00:00.000Z",
+      "scheduledLocal": "2026-06-28T09:00",
       "status": "queued",
-      "title": "Long-form · 6/28",
+      "title": "Openhouse · 6/28",
       "media": [
         {
-          "filename": "156-tower-hill-rd-listing-2.jpg",
-          "url": "https://media.peterluo.homes/156-tower-hill-rd/listing/156-tower-hill-rd-listing-2.jpg",
-          "type": "image"
+          "filename": "video-266.mp4",
+          "url": "https://media.peterluo.homes/156-tower-hill-rd/listing/video-266.mp4",
+          "type": "video"
         }
       ],
       "captions": {
-        "en": "Some homes just feel right.\nFirst we prepare. Then we launch.\nThe checklist that gets you top dollar.",
-        "zh": "有些家，就是对的感觉。\n拍摄日前，先把光线调到最好。"
+        "en": "Top schools, parks, and quiet streets.",
+        "zh": "\n名校、公园与宁静的街道。"
       },
       "commentLinks": {
         "en": "peterluo.homes/valuation",
