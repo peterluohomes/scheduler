@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-07-02T22:25:25.334880+00:00",
+  "updated": "2026-07-02T22:30:26.741442+00:00",
   "statuses": {
     "test-telegram-001": {
       "overall": "posted",
@@ -1278,12 +1278,12 @@
         "youtube": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-02T22:25:25.334880+00:00"
+          "at": "2026-07-02T22:30:26.741442+00:00"
         },
         "threads": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-02T22:25:25.334880+00:00"
+          "at": "2026-07-02T22:30:26.741442+00:00"
         },
         "email": {
           "status": "nudged",
@@ -1343,17 +1343,17 @@
         "telegram": {
           "status": "failed",
           "info": "400 Client Error: Bad Request for url: https://api.telegram.org/bot8890988485:AAHnSuBPuN1YgRfEpvsy1iK6j2BR1BoWdxU/sendMessage",
-          "at": "2026-07-02T22:25:25.334880+00:00"
+          "at": "2026-07-02T22:30:26.741442+00:00"
         },
         "youtube": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-02T22:25:25.334880+00:00"
+          "at": "2026-07-02T22:30:26.741442+00:00"
         },
         "threads": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-02T22:25:25.334880+00:00"
+          "at": "2026-07-02T22:30:26.741442+00:00"
         },
         "email": {
           "status": "nudged",
@@ -1404,6 +1404,116 @@
           "status": "nudged",
           "info": "ok",
           "at": "2026-07-01T15:00:30.892731+00:00"
+        }
+      }
+    },
+    "32a5dffb-7667-427e-a03a-3603617e76cc": {
+      "overall": "queued",
+      "targets": {
+        "telegram": {
+          "status": "posted",
+          "info": "ok",
+          "at": "2026-07-02T22:30:26.741442+00:00"
+        },
+        "youtube": {
+          "status": "pending",
+          "info": "handler not built yet",
+          "at": "2026-07-02T22:30:26.741442+00:00"
+        },
+        "facebook_en": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-02T22:30:26.741442+00:00"
+        },
+        "instagram_en": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-02T22:30:26.741442+00:00"
+        },
+        "linkedin": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-02T22:30:26.741442+00:00"
+        },
+        "facebook_zh": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-02T22:30:26.741442+00:00"
+        },
+        "instagram_zh": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-02T22:30:26.741442+00:00"
+        },
+        "wechat": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-02T22:30:26.741442+00:00"
+        },
+        "red": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-02T22:30:26.741442+00:00"
+        },
+        "whatsapp": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-02T22:30:26.741442+00:00"
+        }
+      }
+    },
+    "653d5d01-e129-4191-9eb4-e07da560894b": {
+      "overall": "queued",
+      "targets": {
+        "telegram": {
+          "status": "posted",
+          "info": "ok",
+          "at": "2026-07-02T22:30:26.741442+00:00"
+        },
+        "youtube": {
+          "status": "pending",
+          "info": "handler not built yet",
+          "at": "2026-07-02T22:30:26.741442+00:00"
+        },
+        "facebook_en": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-02T22:30:26.741442+00:00"
+        },
+        "instagram_en": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-02T22:30:26.741442+00:00"
+        },
+        "facebook_zh": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-02T22:30:26.741442+00:00"
+        },
+        "instagram_zh": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-02T22:30:26.741442+00:00"
+        },
+        "wechat": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-02T22:30:26.741442+00:00"
+        },
+        "red": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-02T22:30:26.741442+00:00"
+        },
+        "linkedin": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-02T22:30:26.741442+00:00"
+        },
+        "whatsapp": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-02T22:30:26.741442+00:00"
         }
       }
     }
