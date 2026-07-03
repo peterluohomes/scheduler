@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-07-03T02:49:06.020Z",
+  "generated": "2026-07-03T02:50:44.187Z",
   "posts": [
     {
       "id": "fe84a6dc-b3a6-41df-8147-55dc46ecaa2c",
@@ -2528,6 +2528,13 @@
           "platform": "youtube_en",
           "label": "YouTube",
           "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "youtube_zh",
+          "label": "YouTube 中文",
+          "lang": "zh",
           "tier": "auto",
           "status": "queued"
         },
