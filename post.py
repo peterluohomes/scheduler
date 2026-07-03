@@ -231,10 +231,17 @@ def _youtube_access_token(channel):
 
     client_id = os.environ.get("YOUTUBE_CLIENT_ID")
     client_secret = os.environ.get("YOUTUBE_CLIENT_SECRET")
-    refresh_token = os.environ.get(f"YOUTUBE_REFRESH_TOKEN_{channel.upper()}")
-    if not (client_id and client_secret and refresh_token):
-        return None, (f"YOUTUBE_CLIENT_ID / YOUTUBE_CLIENT_SECRET / "
-                       f"YOUTUBE_REFRESH_TOKEN_{channel.upper()} not set")
+    refresh_var = f"YOUTUBE_REFRESH_TOKEN_{channel.upper()}"
+    refresh_token = os.environ.get(refresh_var)
+    missing = []
+    if not client_id:
+        missing.append("YOUTUBE_CLIENT_ID")
+    if not client_secret:
+        missing.append("YOUTUBE_CLIENT_SECRET")
+    if not refresh_token:
+        missing.append(refresh_var)
+    if missing:
+        return None, f"missing env var(s): {', '.join(missing)}"
 
     try:
         r = requests.post("https://oauth2.googleapis.com/token", data={
@@ -263,7 +270,7 @@ def _send_youtube(post, target, channel):
     title = (post.get("title") or "Untitled")[:100]
     body = caption_for(post, lang).strip()
     link = comment_link_for(post, lang)
-    description = (body + (("\n\n" + link) if link else ""))[:5000]
+    description = (body + (("\n\n" + link) if link else "") + "\n\n#Shorts")[:5000]
     privacy = os.environ.get("YOUTUBE_PRIVACY_STATUS", "public")
     category_id = os.environ.get("YOUTUBE_CATEGORY_ID", "22")  # People & Blogs
 
