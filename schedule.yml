@@ -1,0 +1,67 @@
+name: scheduler
+
+on:
+  schedule:
+    # Every 15 minutes. GitHub's minimum is 5 min, and scheduled runs are often
+    # several minutes late under load — fine for "post around this time".
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+    # Manual "Run workflow" button, useful for testing.
+    inputs:
+      dry_run:
+        description: "Dry run (log only, no posting, no status write)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write   # lets the job commit status.json back to the repo
+
+concurrency:
+  group: scheduler
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run scheduler
+        env:
+          DRY_RUN: ${{ inputs.dry_run && '1' || '' }}
+          MANUAL_URL: ${{ vars.MANUAL_URL }}
+          # --- Telegram ---
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          # --- Email (Zoho example) ---
+          EMAIL_HOST: ${{ secrets.EMAIL_HOST }}
+          EMAIL_PORT: ${{ secrets.EMAIL_PORT }}
+          EMAIL_USER: ${{ secrets.EMAIL_USER }}
+          EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          # --- YouTube (two channels, one shared OAuth client) ---
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN_EN: ${{ secrets.YOUTUBE_REFRESH_TOKEN_EN }}
+          YOUTUBE_REFRESH_TOKEN_ZH: ${{ secrets.YOUTUBE_REFRESH_TOKEN_ZH }}
+          # --- Pushover (assisted-post nudges) ---
+          PUSHOVER_TOKEN: ${{ secrets.PUSHOVER_TOKEN }}
+          PUSHOVER_USER: ${{ secrets.PUSHOVER_USER }}
+        run: python post.py
+
+      - name: Commit status.json
+        if: ${{ !inputs.dry_run }}
+        run: |
+          git config user.name  "scheduler-bot"
+          git config user.email "scheduler-bot@users.noreply.github.com"
+          git add status.json
+          git diff --staged --quiet || git commit -m "Update status.json [skip ci]"
+          git push

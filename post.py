@@ -23,6 +23,8 @@ import os
 import sys
 import json
 import smtplib
+import tempfile
+import time
 import datetime as dt
 from email.message import EmailMessage
 from urllib.parse import quote
@@ -210,11 +212,141 @@ def send_pushover(post, assisted_targets):
         return "failed", str(e)[:200]
 
 
+# --- YouTube: OAuth2 refresh-token exchange + resumable upload, done with plain
+# requests calls so we don't need to add google-api-python-client as a dependency.
+# Two channels are supported (two different Google accounts) — they share one
+# OAuth client (YOUTUBE_CLIENT_ID/SECRET) but each has its own refresh token,
+# since a refresh token is tied to the specific account that consented.
+_YT_TOKEN_CACHE = {"en": {"access_token": None, "expires_at": 0},
+                    "zh": {"access_token": None, "expires_at": 0}}
+
+
+def _youtube_access_token(channel):
+    """Exchanges the long-lived refresh token for a short-lived access token,
+    cached per run/per-channel so multiple due posts don't each re-refresh."""
+    cache = _YT_TOKEN_CACHE[channel]
+    now_ts = time.time()
+    if cache["access_token"] and now_ts < cache["expires_at"] - 30:
+        return cache["access_token"], None
+
+    client_id = os.environ.get("YOUTUBE_CLIENT_ID")
+    client_secret = os.environ.get("YOUTUBE_CLIENT_SECRET")
+    refresh_token = os.environ.get(f"YOUTUBE_REFRESH_TOKEN_{channel.upper()}")
+    if not (client_id and client_secret and refresh_token):
+        return None, (f"YOUTUBE_CLIENT_ID / YOUTUBE_CLIENT_SECRET / "
+                       f"YOUTUBE_REFRESH_TOKEN_{channel.upper()} not set")
+
+    try:
+        r = requests.post("https://oauth2.googleapis.com/token", data={
+            "client_id": client_id,
+            "client_secret": client_secret,
+            "refresh_token": refresh_token,
+            "grant_type": "refresh_token",
+        }, timeout=30)
+        r.raise_for_status()
+        tok = r.json()
+        cache["access_token"] = tok["access_token"]
+        cache["expires_at"] = now_ts + tok.get("expires_in", 3600)
+        return cache["access_token"], None
+    except Exception as e:
+        return None, f"token refresh failed: {str(e)[:150]}"
+
+
+def _send_youtube(post, target, channel):
+    # YouTube needs an actual video file — a photo-only post has nothing to upload.
+    media = [m for m in media_of(post) if m.get("type") == "video"]
+    if not media:
+        return "failed", "no video in media — YouTube needs a video file"
+    video = media[0]
+
+    lang = target.get("lang", "en")
+    title = (post.get("title") or "Untitled")[:100]
+    body = caption_for(post, lang).strip()
+    link = comment_link_for(post, lang)
+    description = (body + (("\n\n" + link) if link else ""))[:5000]
+    privacy = os.environ.get("YOUTUBE_PRIVACY_STATUS", "public")
+    category_id = os.environ.get("YOUTUBE_CATEGORY_ID", "22")  # People & Blogs
+
+    if DRY_RUN:
+        log(f"  DRY youtube[{channel}] -> {title!r} ({video['url']}) privacy={privacy}")
+        return "posted", "dry-run"
+
+    access_token, err = _youtube_access_token(channel)
+    if err:
+        return "failed", err
+
+    tmp_path = None
+    try:
+        # 1) pull the source video down to a temp file (composer's media is a
+        #    hosted URL, e.g. on R2 — YouTube needs the raw bytes, not a link)
+        with requests.get(video["url"], stream=True, timeout=120) as dl:
+            dl.raise_for_status()
+            content_type = dl.headers.get("Content-Type") or "video/mp4"
+            fd, tmp_path = tempfile.mkstemp(suffix=".mp4")
+            with os.fdopen(fd, "wb") as f:
+                for chunk in dl.iter_content(chunk_size=1024 * 1024):
+                    if chunk:
+                        f.write(chunk)
+        size = os.path.getsize(tmp_path)
+        if size == 0:
+            return "failed", "downloaded video was empty"
+
+        # 2) open a resumable upload session
+        metadata = {
+            "snippet": {"title": title, "description": description, "categoryId": category_id},
+            "status": {"privacyStatus": privacy, "selfDeclaredMadeForKids": False},
+        }
+        init = requests.post(
+            "https://www.googleapis.com/upload/youtube/v3/videos"
+            "?uploadType=resumable&part=snippet,status",
+            headers={
+                "Authorization": f"Bearer {access_token}",
+                "Content-Type": "application/json; charset=UTF-8",
+                "X-Upload-Content-Type": content_type,
+                "X-Upload-Content-Length": str(size),
+            },
+            json=metadata, timeout=30,
+        )
+        init.raise_for_status()
+        upload_url = init.headers.get("Location")
+        if not upload_url:
+            return "failed", "no resumable upload URL returned"
+
+        # 3) push the bytes (single-shot; fine for typical listing-video sizes)
+        with open(tmp_path, "rb") as f:
+            up = requests.put(
+                upload_url,
+                headers={"Content-Type": content_type, "Content-Length": str(size)},
+                data=f, timeout=900,
+            )
+        up.raise_for_status()
+        video_id = up.json().get("id", "")
+        return "posted", (f"https://youtu.be/{video_id}" if video_id else "ok")
+    except Exception as e:
+        return "failed", str(e)[:200]
+    finally:
+        if tmp_path and os.path.exists(tmp_path):
+            try:
+                os.remove(tmp_path)
+            except Exception:
+                pass
+
+
+def send_youtube_en(post, target):
+    return _send_youtube(post, target, "en")
+
+
+def send_youtube_zh(post, target):
+    return _send_youtube(post, target, "zh")
+
+
 # Auto-tier handlers. Platforms without an entry return ("pending", ...) and
 # will be retried on later runs once their handler is added.
 HANDLERS = {
     "telegram": send_telegram,
     "email": send_email,
+    "youtube_en": send_youtube_en,
+    "youtube_zh": send_youtube_zh,
 }
 
 
