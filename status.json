@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-07-03T19:10:42.764944+00:00",
+  "updated": "2026-07-03T19:15:43.995614+00:00",
   "statuses": {
     "test-telegram-001": {
       "overall": "posted",
@@ -1543,7 +1543,7 @@
         "threads": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-03T19:10:42.764944+00:00"
+          "at": "2026-07-03T19:15:43.995614+00:00"
         },
         "facebook_en": {
           "status": "nudged",
@@ -1603,7 +1603,7 @@
         "threads": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-03T19:10:42.764944+00:00"
+          "at": "2026-07-03T19:15:43.995614+00:00"
         },
         "facebook_en": {
           "status": "nudged",
