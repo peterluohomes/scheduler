@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-07-03T02:45:44.937Z",
+  "generated": "2026-07-03T02:49:06.020Z",
   "posts": [
     {
       "id": "fe84a6dc-b3a6-41df-8147-55dc46ecaa2c",
@@ -2394,31 +2394,26 @@
       ]
     },
     {
-      "id": "32a5dffb-7667-427e-a03a-3603617e76cc",
-      "created": "2026-06-29T10:51:56.673Z",
-      "scheduledFor": "2026-07-03T00:30:00.000Z",
-      "scheduledLocal": "2026-07-02T20:30",
+      "id": "653d5d01-e129-4191-9eb4-e07da560894b",
+      "created": "2026-06-29T16:53:21.127Z",
+      "scheduledFor": "2026-07-03T02:54:00.000Z",
+      "scheduledLocal": "2026-07-02T22:54",
       "status": "queued",
       "title": "Behind-scenes · 156-twer-hill-rd · 7/2",
       "media": [
         {
-          "filename": "justlisted.jpg",
-          "url": "https://media.peterluo.homes/156-tower-hill-rd/listing/justlisted.jpg",
-          "type": "image"
-        },
-        {
-          "filename": "forsale-2.jpg",
-          "url": "https://media.peterluo.homes/156-tower-hill-rd/listing/forsale-2.jpg",
-          "type": "image"
+          "filename": "netflix.mp4",
+          "url": "https://media.peterluo.homes/evergreen/MKT/snapshot/netflix.mp4",
+          "type": "video"
         }
       ],
       "captions": {
-        "en": "Small fixes, big difference before we list.\nThe kind of home that makes you smile before you even walk in.",
-        "zh": "上市前的小修小补，效果大不同。\n还没进门，就让你会心一笑的家。"
+        "en": "Prepping every room to show its best.",
+        "zh": "让每个房间展现最好的一面。"
       },
       "commentLinks": {
-        "en": "https://imgs.peterluo.workers.dev/?img=justlisted&to=showing&cta=1&src=fb",
-        "zh": "https://imgs.peterluo.workers.dev/?img=justlisted&to=showing&cta=1&src=fb"
+        "en": "",
+        "zh": ""
       },
       "targets": [
         {
@@ -2429,9 +2424,9 @@
           "status": "queued"
         },
         {
-          "platform": "youtube",
-          "label": "YouTube",
-          "lang": "en",
+          "platform": "youtube_zh",
+          "label": "YouTube 中文",
+          "lang": "zh",
           "tier": "auto",
           "status": "queued"
         },
@@ -2500,26 +2495,26 @@
       "property": "156-twer-hill-rd"
     },
     {
-      "id": "653d5d01-e129-4191-9eb4-e07da560894b",
-      "created": "2026-06-29T16:53:21.127Z",
-      "scheduledFor": "2026-07-03T02:54:00.000Z",
-      "scheduledLocal": "2026-07-02T22:54",
+      "id": "32a5dffb-7667-427e-a03a-3603617e76cc",
+      "created": "2026-06-29T10:51:56.673Z",
+      "scheduledFor": "2026-07-03T02:59:00.000Z",
+      "scheduledLocal": "2026-07-02T22:59",
       "status": "queued",
       "title": "Behind-scenes · 156-twer-hill-rd · 7/2",
       "media": [
         {
-          "filename": "netflix.mp4",
-          "url": "https://media.peterluo.homes/evergreen/MKT/snapshot/netflix.mp4",
+          "filename": "newsroom.mp4",
+          "url": "https://media.peterluo.homes/evergreen/MKT/snapshot/newsroom.mp4",
           "type": "video"
         }
       ],
       "captions": {
-        "en": "Prepping every room to show its best.",
-        "zh": "让每个房间展现最好的一面。"
+        "en": "Small fixes, big difference before we list.\nThe kind of home that makes you smile before you even walk in.",
+        "zh": "上市前的小修小补，效果大不同。\n还没进门，就让你会心一笑的家。"
       },
       "commentLinks": {
-        "en": "",
-        "zh": ""
+        "en": "https://imgs.peterluo.workers.dev/?img=justlisted&to=showing&cta=1&src=fb",
+        "zh": "https://imgs.peterluo.workers.dev/?img=justlisted&to=showing&cta=1&src=fb"
       },
       "targets": [
         {
@@ -2530,9 +2525,9 @@
           "status": "queued"
         },
         {
-          "platform": "youtube_zh",
-          "label": "YouTube 中文",
-          "lang": "zh",
+          "platform": "youtube_en",
+          "label": "YouTube",
+          "lang": "en",
           "tier": "auto",
           "status": "queued"
         },
