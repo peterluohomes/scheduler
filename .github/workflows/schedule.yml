@@ -1,6 +1,10 @@
 name: scheduler
 
 on:
+  schedule:
+    # Every 15 minutes. GitHub's minimum is 5 min, and scheduled runs are often
+    # several minutes late under load — fine for "post around this time".
+    - cron: "*/15 * * * *"
   workflow_dispatch:
     # Manual "Run workflow" button, useful for testing.
     inputs:
@@ -43,6 +47,11 @@ jobs:
           EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
           EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          # --- YouTube (two channels, one shared OAuth client) ---
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN_EN: ${{ secrets.YOUTUBE_REFRESH_TOKEN_EN }}
+          YOUTUBE_REFRESH_TOKEN_ZH: ${{ secrets.YOUTUBE_REFRESH_TOKEN_ZH }}
           # --- Pushover (assisted-post nudges) ---
           PUSHOVER_TOKEN: ${{ secrets.PUSHOVER_TOKEN }}
           PUSHOVER_USER: ${{ secrets.PUSHOVER_USER }}
