@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-07-03T14:55:46.111862+00:00",
+  "updated": "2026-07-03T16:00:44.905001+00:00",
   "statuses": {
     "test-telegram-001": {
       "overall": "posted",
@@ -1529,6 +1529,126 @@
           "status": "posted",
           "info": "https://youtu.be/D5PH49U0im8",
           "at": "2026-07-03T04:43:04.389978+00:00"
+        }
+      }
+    },
+    "694c0e41-6f3e-4077-ab80-452bdabc9e95": {
+      "overall": "queued",
+      "targets": {
+        "telegram": {
+          "status": "posted",
+          "info": "ok",
+          "at": "2026-07-03T16:00:44.905001+00:00"
+        },
+        "threads": {
+          "status": "pending",
+          "info": "handler not built yet",
+          "at": "2026-07-03T16:00:44.905001+00:00"
+        },
+        "facebook_en": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-03T16:00:44.905001+00:00"
+        },
+        "instagram_en": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-03T16:00:44.905001+00:00"
+        },
+        "facebook_zh": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-03T16:00:44.905001+00:00"
+        },
+        "instagram_zh": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-03T16:00:44.905001+00:00"
+        },
+        "wechat": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-03T16:00:44.905001+00:00"
+        },
+        "red": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-03T16:00:44.905001+00:00"
+        },
+        "linkedin": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-03T16:00:44.905001+00:00"
+        },
+        "whatsapp": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-03T16:00:44.905001+00:00"
+        },
+        "nextdoor": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-03T16:00:44.905001+00:00"
+        }
+      }
+    },
+    "f95595ff-073e-4232-8ab1-6e4713587ef9": {
+      "overall": "queued",
+      "targets": {
+        "telegram": {
+          "status": "posted",
+          "info": "ok",
+          "at": "2026-07-03T16:00:44.905001+00:00"
+        },
+        "threads": {
+          "status": "pending",
+          "info": "handler not built yet",
+          "at": "2026-07-03T16:00:44.905001+00:00"
+        },
+        "facebook_en": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-03T16:00:44.905001+00:00"
+        },
+        "instagram_en": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-03T16:00:44.905001+00:00"
+        },
+        "facebook_zh": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-03T16:00:44.905001+00:00"
+        },
+        "instagram_zh": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-03T16:00:44.905001+00:00"
+        },
+        "wechat": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-03T16:00:44.905001+00:00"
+        },
+        "red": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-03T16:00:44.905001+00:00"
+        },
+        "linkedin": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-03T16:00:44.905001+00:00"
+        },
+        "whatsapp": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-03T16:00:44.905001+00:00"
+        },
+        "nextdoor": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-03T16:00:44.905001+00:00"
         }
       }
     }
