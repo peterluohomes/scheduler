@@ -82,6 +82,26 @@ def media_of(post):
 
 
 # ----------------------------------------------------------------------------- handlers
+def _telegram_message_url(chat, message_id):
+    """Build a clickable link to a sent Telegram message, when possible.
+
+    Public channels/supergroups (chat given as @username) get a fully public
+    https://t.me/<username>/<id> link. Private channels (numeric chat id like
+    -1001234567890) get the https://t.me/c/<internal_id>/<id> form, which
+    works for anyone already in the channel but isn't a public link.
+    Plain private chats (small positive/negative IDs with no -100 prefix)
+    have no shareable link, so we return None.
+    """
+    if not message_id:
+        return None
+    chat = str(chat)
+    if chat.startswith("@"):
+        return f"https://t.me/{chat[1:]}/{message_id}"
+    if chat.startswith("-100"):
+        return f"https://t.me/c/{chat[4:]}/{message_id}"
+    return None
+
+
 def send_telegram(post, target):
     token = os.environ.get("TELEGRAM_BOT_TOKEN")
     chat = os.environ.get("TELEGRAM_CHAT_ID")
@@ -119,7 +139,9 @@ def send_telegram(post, target):
         else:
             r = requests.post(f"{api}/sendMessage", data={"chat_id": chat, "text": text}, timeout=60)
             r.raise_for_status()
-        return "posted", "ok"
+        message_id = (r.json().get("result") or {}).get("message_id")
+        url = _telegram_message_url(chat, message_id)
+        return "posted", (url or "ok")
     except Exception as e:
         return "failed", str(e)[:200]
 
@@ -423,7 +445,10 @@ def main():
 
             log(f"Post {pid[:8]} '{post.get('title','')}' -> {key}")
             st, info = handler(post, tgt)
-            tstates[key] = {"status": st, "info": info, "at": now.isoformat()}
+            entry = {"status": st, "info": info, "at": now.isoformat()}
+            if isinstance(info, str) and info.startswith("http"):
+                entry["url"] = info
+            tstates[key] = entry
             changed = True
 
         # one consolidated Pushover nudge for all assisted targets on this post
