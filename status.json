@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-07-05T17:10:38.771447+00:00",
+  "updated": "2026-07-05T17:15:38.620006+00:00",
   "statuses": {
     "test-telegram-001": {
       "overall": "posted",
@@ -1663,7 +1663,7 @@
         "youtube": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-05T17:10:38.771447+00:00"
+          "at": "2026-07-05T17:15:38.620006+00:00"
         },
         "facebook_en": {
           "status": "nudged",
@@ -1713,7 +1713,7 @@
         "youtube": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-05T17:10:38.771447+00:00"
+          "at": "2026-07-05T17:15:38.620006+00:00"
         },
         "facebook_en": {
           "status": "nudged",
@@ -1768,7 +1768,7 @@
         "threads": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-05T17:10:38.771447+00:00"
+          "at": "2026-07-05T17:15:38.620006+00:00"
         },
         "wechat": {
           "status": "nudged",
