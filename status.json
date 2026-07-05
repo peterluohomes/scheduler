@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-07-05T16:40:36.757435+00:00",
+  "updated": "2026-07-05T16:45:37.589010+00:00",
   "statuses": {
     "test-telegram-001": {
       "overall": "posted",
@@ -1663,7 +1663,7 @@
         "youtube": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-05T16:40:36.757435+00:00"
+          "at": "2026-07-05T16:45:37.589010+00:00"
         },
         "facebook_en": {
           "status": "nudged",
@@ -1713,7 +1713,7 @@
         "youtube": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-05T16:40:36.757435+00:00"
+          "at": "2026-07-05T16:45:37.589010+00:00"
         },
         "facebook_en": {
           "status": "nudged",
@@ -1904,6 +1904,21 @@
           "status": "nudged",
           "info": "ok",
           "at": "2026-07-05T16:35:40.037159+00:00"
+        },
+        "email": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-05T16:45:37.589010+00:00"
+        },
+        "red": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-05T16:45:37.589010+00:00"
+        },
+        "whatsapp": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-05T16:45:37.589010+00:00"
         }
       }
     }
