@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-07-05T16:26:29.379Z",
+  "generated": "2026-07-05T16:41:07.836Z",
   "posts": [
     {
       "id": "fe84a6dc-b3a6-41df-8147-55dc46ecaa2c",
@@ -2883,16 +2883,12 @@
     {
       "id": "099d0944-558e-43f8-abaa-e9d84c6d2a2f",
       "created": "2026-06-29T16:53:21.127Z",
-      "scheduledFor": "2026-07-05T16:29:00.000Z",
-      "scheduledLocal": "2026-07-05T12:29",
+      "scheduledFor": "2026-07-05T16:38:00.000Z",
+      "scheduledLocal": "2026-07-05T12:38",
       "status": "queued",
       "title": "Ravine lot, Walkout Basement",
-      "layout": "Listing Marketing",
-      "domain": "Property Marketing",
-      "pillar": "Buyer Avatar Match",
-      "theme": "Multi-generation BUY-019",
+      "breadcrumb": "",
       "propertyAddress": "156 Tower Hill Rd",
-      "surface": "Telegram, YouTube (EN/中文), Facebook, Email, WeChat Moments",
       "media": [
         {
           "filename": "keynote.mp4",
@@ -2913,6 +2909,20 @@
           "platform": "telegram",
           "label": "Telegram",
           "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "youtube_en",
+          "label": "YouTube",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "youtube_zh",
+          "label": "YouTube 中文",
+          "lang": "zh",
           "tier": "auto",
           "status": "queued"
         },
@@ -2940,6 +2950,13 @@
         {
           "platform": "instagram_en",
           "label": "Instagram",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "linkedin",
+          "label": "LinkedIn",
           "lang": "en",
           "tier": "assist",
           "status": "queued"
@@ -2976,8 +2993,8 @@
     {
       "id": "0b07f574-1602-4725-aa0e-c82c4b116dd7",
       "created": "2026-07-05T16:16:34.777Z",
-      "scheduledFor": "2026-07-05T16:32:00.000Z",
-      "scheduledLocal": "2026-07-05T12:32",
+      "scheduledFor": "2026-07-05T16:45:00.000Z",
+      "scheduledLocal": "2026-07-05T12:45",
       "status": "queued",
       "title": "Market Intelligence Minute: Reading the Trend",
       "layout": "Content Marketing",
