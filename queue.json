@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-07-05T18:05:08.569Z",
+  "generated": "2026-07-05T18:26:46.872Z",
   "posts": [
     {
       "id": "fe84a6dc-b3a6-41df-8147-55dc46ecaa2c",
@@ -2881,228 +2881,6 @@
       "recSlot": null
     },
     {
-      "id": "2e264eb0-7fdf-45a9-ada2-fc67161ea159",
-      "created": "2026-07-05T17:00:39.162Z",
-      "scheduledFor": "2026-07-05T17:55:00.000Z",
-      "scheduledLocal": "2026-07-05T13:55",
-      "status": "queued",
-      "title": "Test-2-Market Intelligence Minute: Reading the Trend",
-      "breadcrumb": "Content Marketing › Market Education › Market Intelligence › Monthly Snapshot Explainer",
-      "propertyAddress": "",
-      "media": [
-        {
-          "filename": "newsroom.mp4",
-          "url": "http://media.peterluo.homes/evergreen/MKT/snapshot/newsroom.mp4",
-          "type": "video"
-        }
-      ],
-      "captions": {
-        "en": "What this month's numbers actually mean for buyers and sellers.",
-        "zh": "本月数据，对买卖双方到底意味着什么。"
-      },
-      "commentLinks": {
-        "en": "https://peterluo.homes/market",
-        "zh": "https://peterluo.homes/market"
-      },
-      "targets": [
-        {
-          "platform": "youtube_zh",
-          "label": "YouTube 中文",
-          "lang": "zh",
-          "tier": "auto",
-          "status": "queued"
-        },
-        {
-          "platform": "threads",
-          "label": "Threads",
-          "lang": "en",
-          "tier": "auto",
-          "status": "queued"
-        },
-        {
-          "platform": "instagram_en",
-          "label": "Instagram",
-          "lang": "en",
-          "tier": "assist",
-          "status": "queued"
-        },
-        {
-          "platform": "linkedin",
-          "label": "LinkedIn",
-          "lang": "en",
-          "tier": "assist",
-          "status": "queued"
-        },
-        {
-          "platform": "facebook_zh",
-          "label": "Facebook",
-          "lang": "zh",
-          "tier": "assist",
-          "status": "queued"
-        },
-        {
-          "platform": "instagram_zh",
-          "label": "Instagram",
-          "lang": "zh",
-          "tier": "assist",
-          "status": "queued"
-        },
-        {
-          "platform": "wechat",
-          "label": "WeChat 朋友圈",
-          "lang": "zh",
-          "tier": "assist",
-          "status": "queued"
-        },
-        {
-          "platform": "red",
-          "label": "小红书 RED",
-          "lang": "zh",
-          "tier": "assist",
-          "status": "queued"
-        },
-        {
-          "platform": "whatsapp",
-          "label": "WhatsApp",
-          "lang": "en",
-          "tier": "assist",
-          "status": "queued"
-        },
-        {
-          "platform": "nextdoor",
-          "label": "Nextdoor",
-          "lang": "en",
-          "tier": "assist",
-          "status": "queued"
-        }
-      ]
-    },
-    {
-      "id": "e3f4ef4a-d4c5-40b6-be86-1fb9caf23a9e",
-      "created": "2026-07-05T17:51:22.372Z",
-      "scheduledFor": "2026-07-05T18:00:00.000Z",
-      "scheduledLocal": "2026-07-05T14:00",
-      "status": "queued",
-      "title": "Test-1-Market Intelligence Minute: Reading the Trend",
-      "breadcrumb": "Content Marketing › Market Education › Market Intelligence › Monthly Snapshot Explainer",
-      "propertyAddress": "",
-      "media": [
-        {
-          "filename": "keynote.mp4",
-          "url": "https://media.peterluo.homes/evergreen/MKT/snapshot/keynote.mp4",
-          "type": "video"
-        }
-      ],
-      "captions": {
-        "en": "What this month's numbers actually mean for buyers and sellers. Greater Toronto Area (GTA) housing market conditions continued to improve in June, with sales growing quite strongly year-over-year while new listings declined over the same period. For the first half of 2026, sales have also edged higher compared to the first six months of 2025, with new listings down substantially. “After a slow start in…",
-        "zh": "最近香港楼市牛气冲天，不少新盘开盘就就抢光，而且基本上都要抽签，价格也明显回升，和去年低迷的状态形成鲜明对比。无独有偶，中国一线城市房地产市场也出现了一些企稳回升初步信号， 2月份，一线城市新建商品住宅价格环比由此前的下降转为基本持平，北京和上海的二手房价格环比也同时出现反弹。更值得注意的是，这一变化是在近期没有明显新增房地产刺激政策的情况下出现的（最新的上海进一步放松地产的政策出现在二月末），具有一定的“自发企稳”意味。对于经历了较长时间调整的中国房地产市场而言，这无疑是一个值得关注的积极信号。"
-      },
-      "commentLinks": {
-        "en": "https://peterluo.homes/market",
-        "zh": "https://peterluo.homes/market"
-      },
-      "targets": [
-        {
-          "platform": "telegram",
-          "label": "Telegram",
-          "lang": "en",
-          "tier": "auto",
-          "status": "queued"
-        },
-        {
-          "platform": "youtube_en",
-          "label": "YouTube",
-          "lang": "en",
-          "tier": "auto",
-          "status": "queued"
-        },
-        {
-          "platform": "youtube_zh",
-          "label": "YouTube 中文",
-          "lang": "zh",
-          "tier": "auto",
-          "status": "queued"
-        },
-        {
-          "platform": "threads",
-          "label": "Threads",
-          "lang": "en",
-          "tier": "auto",
-          "status": "queued"
-        },
-        {
-          "platform": "email",
-          "label": "Email",
-          "lang": "en",
-          "tier": "assist",
-          "status": "queued"
-        },
-        {
-          "platform": "facebook_en",
-          "label": "Facebook",
-          "lang": "en",
-          "tier": "assist",
-          "status": "queued"
-        },
-        {
-          "platform": "instagram_en",
-          "label": "Instagram",
-          "lang": "en",
-          "tier": "assist",
-          "status": "queued"
-        },
-        {
-          "platform": "linkedin",
-          "label": "LinkedIn",
-          "lang": "en",
-          "tier": "assist",
-          "status": "queued"
-        },
-        {
-          "platform": "facebook_zh",
-          "label": "Facebook",
-          "lang": "zh",
-          "tier": "assist",
-          "status": "queued"
-        },
-        {
-          "platform": "instagram_zh",
-          "label": "Instagram",
-          "lang": "zh",
-          "tier": "assist",
-          "status": "queued"
-        },
-        {
-          "platform": "wechat",
-          "label": "WeChat 朋友圈",
-          "lang": "zh",
-          "tier": "assist",
-          "status": "queued"
-        },
-        {
-          "platform": "red",
-          "label": "小红书 RED",
-          "lang": "zh",
-          "tier": "assist",
-          "status": "queued"
-        },
-        {
-          "platform": "whatsapp",
-          "label": "WhatsApp",
-          "lang": "en",
-          "tier": "assist",
-          "status": "queued"
-        },
-        {
-          "platform": "nextdoor",
-          "label": "Nextdoor",
-          "lang": "en",
-          "tier": "assist",
-          "status": "queued"
-        }
-      ]
-    },
-    {
       "id": "2f81db63-67d3-404d-a9f6-1cad171604ad",
       "created": "2026-07-05T18:03:21.284Z",
       "scheduledFor": "2026-07-05T18:07:00.000Z",
@@ -3228,10 +3006,135 @@
       ]
     },
     {
-      "id": "07389fb2-c365-4bcc-a4b6-23f68094c0a2",
-      "created": "2026-07-05T18:04:26.801Z",
-      "scheduledFor": "2026-07-05T18:12:00.000Z",
-      "scheduledLocal": "2026-07-05T14:12",
+      "id": "13cedb29-233b-4c01-8646-313d975e65bc",
+      "created": "2026-07-05T18:26:44.280Z",
+      "scheduledFor": "2026-07-05T18:29:00.000Z",
+      "scheduledLocal": "2026-07-05T14:29",
+      "status": "queued",
+      "title": "Test-1-Market Intelligence Minute: Reading the Trend",
+      "breadcrumb": "Content Marketing › Market Education › Market Intelligence › Monthly Snapshot Explainer",
+      "propertyAddress": "",
+      "media": [
+        {
+          "filename": "keynote.mp4",
+          "url": "https://media.peterluo.homes/evergreen/MKT/snapshot/keynote.mp4",
+          "type": "video"
+        }
+      ],
+      "captions": {
+        "en": "What this month's numbers actually mean for buyers and sellers. Greater Toronto Area (GTA) housing market conditions continued to improve in June, with sales growing quite strongly year-over-year while new listings declined over the same period. For the first half of 2026, sales have also edged higher compared to the first six months of 2025, with new listings down substantially. “After a slow start in…",
+        "zh": "最近香港楼市牛气冲天，不少新盘开盘就就抢光，而且基本上都要抽签，价格也明显回升，和去年低迷的状态形成鲜明对比。无独有偶，中国一线城市房地产市场也出现了一些企稳回升初步信号， 2月份，一线城市新建商品住宅价格环比由此前的下降转为基本持平，北京和上海的二手房价格环比也同时出现反弹。更值得注意的是，这一变化是在近期没有明显新增房地产刺激政策的情况下出现的（最新的上海进一步放松地产的政策出现在二月末），具有一定的“自发企稳”意味。对于经历了较长时间调整的中国房地产市场而言，这无疑是一个值得关注的积极信号。"
+      },
+      "commentLinks": {
+        "en": "https://peterluo.homes/market",
+        "zh": "https://peterluo.homes/market"
+      },
+      "targets": [
+        {
+          "platform": "telegram",
+          "label": "Telegram",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "youtube_en",
+          "label": "YouTube",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "youtube_zh",
+          "label": "YouTube 中文",
+          "lang": "zh",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "threads",
+          "label": "Threads",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "email",
+          "label": "Email",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "facebook_en",
+          "label": "Facebook",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "instagram_en",
+          "label": "Instagram",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "linkedin",
+          "label": "LinkedIn",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "facebook_zh",
+          "label": "Facebook",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "instagram_zh",
+          "label": "Instagram",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "wechat",
+          "label": "WeChat 朋友圈",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "red",
+          "label": "小红书 RED",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "whatsapp",
+          "label": "WhatsApp",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "nextdoor",
+          "label": "Nextdoor",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        }
+      ]
+    },
+    {
+      "id": "d0c90daa-7635-4489-af49-9022b218632b",
+      "created": "2026-07-05T18:26:22.383Z",
+      "scheduledFor": "2026-07-05T18:34:00.000Z",
+      "scheduledLocal": "2026-07-05T14:34",
       "status": "queued",
       "title": "Ravine lot, Walkout Basement",
       "breadcrumb": "Listing Marketing › Property Marketing › Buyer Avatar Match › Multi-generation BUY-019",
@@ -3339,10 +3242,10 @@
       ]
     },
     {
-      "id": "c12dcd74-b9b8-4610-b4a5-97d167b7566b",
-      "created": "2026-07-05T18:05:00.205Z",
-      "scheduledFor": "2026-07-05T18:17:00.000Z",
-      "scheduledLocal": "2026-07-05T14:17",
+      "id": "1c812aa9-f6ae-4618-855a-a044fcf51c84",
+      "created": "2026-07-05T18:25:56.974Z",
+      "scheduledFor": "2026-07-05T18:39:00.000Z",
+      "scheduledLocal": "2026-07-05T14:39",
       "status": "queued",
       "title": "Test-2-Market Intelligence Minute: Reading the Trend",
       "breadcrumb": "Content Marketing › Market Education › Market Intelligence › Monthly Snapshot Explainer",
@@ -3373,6 +3276,20 @@
         {
           "platform": "youtube_en",
           "label": "YouTube",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "youtube_zh",
+          "label": "YouTube 中文",
+          "lang": "zh",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "threads",
+          "label": "Threads",
           "lang": "en",
           "tier": "auto",
           "status": "queued"
