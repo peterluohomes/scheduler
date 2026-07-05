@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-07-05T16:41:45.918Z",
+  "generated": "2026-07-05T16:44:20.054Z",
   "posts": [
     {
       "id": "fe84a6dc-b3a6-41df-8147-55dc46ecaa2c",
@@ -3014,16 +3014,16 @@
           "status": "queued"
         },
         {
-          "platform": "youtube_en",
-          "label": "YouTube",
-          "lang": "en",
+          "platform": "youtube_zh",
+          "label": "YouTube 中文",
+          "lang": "zh",
           "tier": "auto",
           "status": "queued"
         },
         {
-          "platform": "youtube_zh",
-          "label": "YouTube 中文",
-          "lang": "zh",
+          "platform": "threads",
+          "label": "Threads",
+          "lang": "en",
           "tier": "auto",
           "status": "queued"
         },
@@ -3035,9 +3035,30 @@
           "status": "queued"
         },
         {
-          "platform": "facebook_en",
-          "label": "Facebook",
+          "platform": "instagram_en",
+          "label": "Instagram",
           "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "linkedin",
+          "label": "LinkedIn",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "facebook_zh",
+          "label": "Facebook",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "instagram_zh",
+          "label": "Instagram",
+          "lang": "zh",
           "tier": "assist",
           "status": "queued"
         },
@@ -3045,6 +3066,27 @@
           "platform": "wechat",
           "label": "WeChat 朋友圈",
           "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "red",
+          "label": "小红书 RED",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "whatsapp",
+          "label": "WhatsApp",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "nextdoor",
+          "label": "Nextdoor",
+          "lang": "en",
           "tier": "assist",
           "status": "queued"
         }
