@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-07-05T16:41:07.836Z",
+  "generated": "2026-07-05T16:41:45.918Z",
   "posts": [
     {
       "id": "fe84a6dc-b3a6-41df-8147-55dc46ecaa2c",
@@ -2881,116 +2881,6 @@
       "recSlot": null
     },
     {
-      "id": "099d0944-558e-43f8-abaa-e9d84c6d2a2f",
-      "created": "2026-06-29T16:53:21.127Z",
-      "scheduledFor": "2026-07-05T16:38:00.000Z",
-      "scheduledLocal": "2026-07-05T12:38",
-      "status": "queued",
-      "title": "Ravine lot, Walkout Basement",
-      "breadcrumb": "",
-      "propertyAddress": "156 Tower Hill Rd",
-      "media": [
-        {
-          "filename": "keynote.mp4",
-          "url": "https://media.peterluo.homes/evergreen/MKT/snapshot/keynote.mp4",
-          "type": "video"
-        }
-      ],
-      "captions": {
-        "en": "Open house this weekend — come by.",
-        "zh": "本周末开放参观 — 欢迎到访。"
-      },
-      "commentLinks": {
-        "en": "https://peterluo.homes/valuation",
-        "zh": "https://peterluo.homes/valuation"
-      },
-      "targets": [
-        {
-          "platform": "telegram",
-          "label": "Telegram",
-          "lang": "en",
-          "tier": "auto",
-          "status": "queued"
-        },
-        {
-          "platform": "youtube_en",
-          "label": "YouTube",
-          "lang": "en",
-          "tier": "auto",
-          "status": "queued"
-        },
-        {
-          "platform": "youtube_zh",
-          "label": "YouTube 中文",
-          "lang": "zh",
-          "tier": "auto",
-          "status": "queued"
-        },
-        {
-          "platform": "threads",
-          "label": "Threads",
-          "lang": "en",
-          "tier": "auto",
-          "status": "queued"
-        },
-        {
-          "platform": "email",
-          "label": "Email",
-          "lang": "en",
-          "tier": "assist",
-          "status": "queued"
-        },
-        {
-          "platform": "facebook_en",
-          "label": "Facebook",
-          "lang": "en",
-          "tier": "assist",
-          "status": "queued"
-        },
-        {
-          "platform": "instagram_en",
-          "label": "Instagram",
-          "lang": "en",
-          "tier": "assist",
-          "status": "queued"
-        },
-        {
-          "platform": "linkedin",
-          "label": "LinkedIn",
-          "lang": "en",
-          "tier": "assist",
-          "status": "queued"
-        },
-        {
-          "platform": "facebook_zh",
-          "label": "Facebook",
-          "lang": "zh",
-          "tier": "assist",
-          "status": "queued"
-        },
-        {
-          "platform": "instagram_zh",
-          "label": "Instagram",
-          "lang": "zh",
-          "tier": "assist",
-          "status": "queued"
-        },
-        {
-          "platform": "wechat",
-          "label": "WeChat 朋友圈",
-          "lang": "zh",
-          "tier": "assist",
-          "status": "queued"
-        }
-      ],
-      "day": "sun",
-      "weekStart": "2026-06-29",
-      "folder": "156-tower-hill-rd/listing/",
-      "recurring": true,
-      "recSlot": null,
-      "property": "156-twer-hill-rd"
-    },
-    {
       "id": "0b07f574-1602-4725-aa0e-c82c4b116dd7",
       "created": "2026-07-05T16:16:34.777Z",
       "scheduledFor": "2026-07-05T16:45:00.000Z",
@@ -3090,6 +2980,81 @@
           "status": "queued"
         }
       ]
+    },
+    {
+      "id": "099d0944-558e-43f8-abaa-e9d84c6d2a2f",
+      "created": "2026-06-29T16:53:21.127Z",
+      "scheduledFor": "2026-07-05T16:49:00.000Z",
+      "scheduledLocal": "2026-07-05T12:49",
+      "status": "queued",
+      "title": "Ravine lot, Walkout Basement",
+      "breadcrumb": "Listing Marketing › Property Marketing › Buyer Avatar Match › Multi-generation BUY-019",
+      "propertyAddress": "156 Tower Hill Rd",
+      "media": [
+        {
+          "filename": "keynote.mp4",
+          "url": "https://media.peterluo.homes/evergreen/MKT/snapshot/keynote.mp4",
+          "type": "video"
+        }
+      ],
+      "captions": {
+        "en": "Open house this weekend — come by.",
+        "zh": "本周末开放参观 — 欢迎到访。"
+      },
+      "commentLinks": {
+        "en": "https://peterluo.homes/valuation",
+        "zh": "https://peterluo.homes/valuation"
+      },
+      "targets": [
+        {
+          "platform": "telegram",
+          "label": "Telegram",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "youtube_en",
+          "label": "YouTube",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "youtube_zh",
+          "label": "YouTube 中文",
+          "lang": "zh",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "email",
+          "label": "Email",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "facebook_en",
+          "label": "Facebook",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "wechat",
+          "label": "WeChat 朋友圈",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        }
+      ],
+      "day": "sun",
+      "weekStart": "2026-06-29",
+      "folder": "156-tower-hill-rd/listing/",
+      "recurring": true,
+      "recSlot": null,
+      "property": "156-twer-hill-rd"
     }
   ]
 }
