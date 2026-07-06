@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-07-06T19:55:36.408410+00:00",
+  "updated": "2026-07-06T20:00:42.476273+00:00",
   "statuses": {
     "test-telegram-001": {
       "overall": "posted",
@@ -2238,7 +2238,7 @@
         "threads": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-06T19:55:36.408410+00:00"
+          "at": "2026-07-06T20:00:42.476273+00:00"
         },
         "email": {
           "status": "nudged",
@@ -2436,7 +2436,7 @@
         "threads": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-06T19:55:36.408410+00:00"
+          "at": "2026-07-06T20:00:42.476273+00:00"
         },
         "email": {
           "status": "nudged",
@@ -2582,7 +2582,7 @@
         "threads": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-06T19:55:36.408410+00:00"
+          "at": "2026-07-06T20:00:42.476273+00:00"
         },
         "email": {
           "status": "nudged",
@@ -2650,7 +2650,7 @@
         "threads": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-06T19:55:36.408410+00:00"
+          "at": "2026-07-06T20:00:42.476273+00:00"
         },
         "email": {
           "status": "nudged",
@@ -2701,6 +2701,79 @@
           "status": "nudged",
           "info": "ok",
           "at": "2026-07-06T19:00:40.589977+00:00"
+        }
+      }
+    },
+    "2209a9f7-990c-4c59-a9e8-425973dc231c": {
+      "overall": "partial",
+      "targets": {
+        "telegram": {
+          "status": "posted",
+          "info": "https://t.me/peterluohomes/47",
+          "at": "2026-07-06T20:00:42.476273+00:00",
+          "url": "https://t.me/peterluohomes/47"
+        },
+        "youtube_en": {
+          "status": "posted",
+          "info": "https://youtu.be/3CpeVRziBaM",
+          "at": "2026-07-06T20:00:42.476273+00:00",
+          "url": "https://youtu.be/3CpeVRziBaM"
+        },
+        "youtube_zh": {
+          "status": "posted",
+          "info": "https://youtu.be/Zb4fz56Wml8",
+          "at": "2026-07-06T20:00:42.476273+00:00",
+          "url": "https://youtu.be/Zb4fz56Wml8"
+        },
+        "email": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-06T20:00:42.476273+00:00"
+        },
+        "facebook_en": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-06T20:00:42.476273+00:00"
+        },
+        "instagram_en": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-06T20:00:42.476273+00:00"
+        },
+        "linkedin": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-06T20:00:42.476273+00:00"
+        },
+        "facebook_zh": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-06T20:00:42.476273+00:00"
+        },
+        "instagram_zh": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-06T20:00:42.476273+00:00"
+        },
+        "wechat": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-06T20:00:42.476273+00:00"
+        },
+        "red": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-06T20:00:42.476273+00:00"
+        },
+        "whatsapp": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-06T20:00:42.476273+00:00"
+        },
+        "nextdoor": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-06T20:00:42.476273+00:00"
         }
       }
     }
