@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-07-06T08:25:36.431992+00:00",
+  "updated": "2026-07-06T08:30:38.146248+00:00",
   "statuses": {
     "test-telegram-001": {
       "overall": "posted",
@@ -1663,7 +1663,7 @@
         "youtube": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-06T08:25:36.431992+00:00"
+          "at": "2026-07-06T08:30:38.146248+00:00"
         },
         "facebook_en": {
           "status": "nudged",
@@ -1713,7 +1713,7 @@
         "youtube": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-06T08:25:36.431992+00:00"
+          "at": "2026-07-06T08:30:38.146248+00:00"
         },
         "facebook_en": {
           "status": "nudged",
@@ -2238,7 +2238,7 @@
         "threads": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-06T08:25:36.431992+00:00"
+          "at": "2026-07-06T08:30:38.146248+00:00"
         },
         "email": {
           "status": "nudged",
@@ -2436,7 +2436,7 @@
         "threads": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-06T08:25:36.431992+00:00"
+          "at": "2026-07-06T08:30:38.146248+00:00"
         },
         "email": {
           "status": "nudged",
@@ -2582,7 +2582,7 @@
         "threads": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-06T08:25:36.431992+00:00"
+          "at": "2026-07-06T08:30:38.146248+00:00"
         },
         "email": {
           "status": "nudged",
