@@ -202,6 +202,45 @@ def send_email(post, target):
         return "failed", str(e)[:200]
 
 
+
+def send_discord(post, target):
+    """Post to a Discord channel via an Incoming Webhook.
+
+    Discord auto-embeds media URLs appended to the message content, so both
+    images and videos preview inline -- no file upload needed for R2-hosted
+    media. Content is capped at Discord's 2000-char limit.
+    """
+    webhook = os.environ.get("DISCORD_WEBHOOK_URL")
+    if not webhook:
+        return "failed", "DISCORD_WEBHOOK_URL not set"
+
+    lang = target.get("lang", "en")
+    text = caption_for(post, lang).strip()
+    link = comment_link_for(post, lang)
+    if link:
+        text = (text + "\n\n" + link).strip()
+
+    media = media_of(post)
+    if media:
+        text = (text + "\n" + "\n".join(m["url"] for m in media if m.get("url"))).strip()
+
+    if not text:
+        text = post.get("title", "") or " "
+
+    if DRY_RUN:
+        log(f"  DRY discord -> {text[:60]!r} media={len(media)}")
+        return "posted", "dry-run"
+
+    try:
+        # wait=true makes Discord return the created message so failures surface
+        r = requests.post(webhook, params={"wait": "true"},
+                          json={"content": text[:2000]}, timeout=30)
+        r.raise_for_status()
+        return "posted", "ok"
+    except Exception as e:
+        return "failed", str(e)[:200]
+
+
 def send_pushover(post, assisted_targets):
     token = os.environ.get("PUSHOVER_TOKEN")
     user = os.environ.get("PUSHOVER_USER")
@@ -374,6 +413,7 @@ def send_youtube_zh(post, target):
 HANDLERS = {
     "telegram": send_telegram,
     "email": send_email,
+    "discord": send_discord,
     "youtube_en": send_youtube_en,
     "youtube_zh": send_youtube_zh,
 }
