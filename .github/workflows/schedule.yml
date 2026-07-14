@@ -55,6 +55,7 @@ jobs:
           # --- Pushover (assisted-post nudges) ---
           PUSHOVER_TOKEN: ${{ secrets.PUSHOVER_TOKEN }}
           PUSHOVER_USER: ${{ secrets.PUSHOVER_USER }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
         run: python post.py
 
       - name: Commit status.json
