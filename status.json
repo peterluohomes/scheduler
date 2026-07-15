@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-07-15T12:15:20.402028+00:00",
+  "updated": "2026-07-15T12:20:24.141298+00:00",
   "statuses": {
     "test-telegram-001": {
       "overall": "posted",
@@ -2890,7 +2890,7 @@
         "threads": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-15T12:15:20.402028+00:00"
+          "at": "2026-07-15T12:20:24.141298+00:00"
         },
         "facebook_en": {
           "status": "nudged",
@@ -2916,6 +2916,49 @@
           "status": "nudged",
           "info": "ok",
           "at": "2026-07-15T02:20:20.495522+00:00"
+        }
+      }
+    },
+    "a221b2d7-659e-42d0-9d5f-46441ef0ed44": {
+      "overall": "queued",
+      "targets": {
+        "telegram": {
+          "status": "posted",
+          "info": "https://t.me/peterluohomes/50",
+          "at": "2026-07-15T12:20:24.141298+00:00",
+          "url": "https://t.me/peterluohomes/50"
+        },
+        "youtube_en": {
+          "status": "posted",
+          "info": "https://youtu.be/lrcaspLj-ZI",
+          "at": "2026-07-15T12:20:24.141298+00:00",
+          "url": "https://youtu.be/lrcaspLj-ZI"
+        },
+        "youtube_zh": {
+          "status": "posted",
+          "info": "https://youtu.be/QlsXXhAJSbI",
+          "at": "2026-07-15T12:20:24.141298+00:00",
+          "url": "https://youtu.be/QlsXXhAJSbI"
+        },
+        "threads": {
+          "status": "pending",
+          "info": "handler not built yet",
+          "at": "2026-07-15T12:20:24.141298+00:00"
+        },
+        "facebook_en": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-15T12:20:24.141298+00:00"
+        },
+        "instagram_en": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-15T12:20:24.141298+00:00"
+        },
+        "instagram_zh": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-15T12:20:24.141298+00:00"
         }
       }
     }
