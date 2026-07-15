@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-07-15T13:20:21.234728+00:00",
+  "updated": "2026-07-15T13:25:23.933393+00:00",
   "statuses": {
     "test-telegram-001": {
       "overall": "posted",
@@ -2890,7 +2890,7 @@
         "threads": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-15T13:20:21.234728+00:00"
+          "at": "2026-07-15T13:25:23.933393+00:00"
         },
         "facebook_en": {
           "status": "nudged",
@@ -3029,6 +3029,76 @@
           "status": "nudged",
           "info": "ok",
           "at": "2026-07-15T12:30:18.906554+00:00"
+        }
+      }
+    },
+    "caf6f462-64dc-4d3f-8c36-a9246497dade": {
+      "overall": "queued",
+      "targets": {
+        "telegram": {
+          "status": "posted",
+          "info": "https://t.me/peterluohomes/52",
+          "at": "2026-07-15T13:25:23.933393+00:00",
+          "url": "https://t.me/peterluohomes/52"
+        },
+        "discord": {
+          "status": "posted",
+          "info": "ok",
+          "at": "2026-07-15T13:25:23.933393+00:00"
+        },
+        "blog": {
+          "status": "posted",
+          "info": "https://peterluo.homes/blog/en/2026-07-15-test-2-market-intelligence-minute-reading-the-trend.html",
+          "at": "2026-07-15T13:25:23.933393+00:00",
+          "url": "https://peterluo.homes/blog/en/2026-07-15-test-2-market-intelligence-minute-reading-the-trend.html"
+        },
+        "youtube_en": {
+          "status": "posted",
+          "info": "https://youtu.be/rHXLvwZZg7E",
+          "at": "2026-07-15T13:25:23.933393+00:00",
+          "url": "https://youtu.be/rHXLvwZZg7E"
+        },
+        "youtube_zh": {
+          "status": "posted",
+          "info": "https://youtu.be/LlbUyevuQMc",
+          "at": "2026-07-15T13:25:23.933393+00:00",
+          "url": "https://youtu.be/LlbUyevuQMc"
+        },
+        "threads": {
+          "status": "pending",
+          "info": "handler not built yet",
+          "at": "2026-07-15T13:25:23.933393+00:00"
+        },
+        "linkedin": {
+          "status": "posted",
+          "info": "https://www.linkedin.com/feed/update/urn:li:share:7483149752046469120/",
+          "at": "2026-07-15T13:25:23.933393+00:00",
+          "url": "https://www.linkedin.com/feed/update/urn:li:share:7483149752046469120/"
+        },
+        "facebook_en": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-15T13:25:23.933393+00:00"
+        },
+        "instagram_en": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-15T13:25:23.933393+00:00"
+        },
+        "facebook_zh": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-15T13:25:23.933393+00:00"
+        },
+        "instagram_zh": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-15T13:25:23.933393+00:00"
+        },
+        "reddit_richmondhill": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-15T13:25:23.933393+00:00"
         }
       }
     }
