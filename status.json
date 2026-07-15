@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-07-15T17:45:20.992159+00:00",
+  "updated": "2026-07-15T17:50:20.550202+00:00",
   "statuses": {
     "test-telegram-001": {
       "overall": "posted",
@@ -4102,7 +4102,7 @@
         "threads": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-15T17:45:20.992159+00:00"
+          "at": "2026-07-15T17:50:20.550202+00:00"
         },
         "linkedin": {
           "status": "posted",
@@ -4167,7 +4167,7 @@
         "threads": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-15T17:45:20.992159+00:00"
+          "at": "2026-07-15T17:50:20.550202+00:00"
         },
         "linkedin": {
           "status": "posted",
@@ -4232,7 +4232,7 @@
         "threads": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-15T17:45:20.992159+00:00"
+          "at": "2026-07-15T17:50:20.550202+00:00"
         },
         "linkedin": {
           "status": "posted",
@@ -4259,6 +4259,71 @@
           "status": "nudged",
           "info": "ok",
           "at": "2026-07-15T17:45:20.992159+00:00"
+        }
+      }
+    },
+    "7a26b3b9-5990-47aa-8c20-97b23b5ade1e": {
+      "overall": "queued",
+      "targets": {
+        "telegram": {
+          "status": "posted",
+          "info": "https://t.me/peterluohomes/71",
+          "at": "2026-07-15T17:50:20.550202+00:00",
+          "url": "https://t.me/peterluohomes/71"
+        },
+        "discord": {
+          "status": "posted",
+          "info": "ok",
+          "at": "2026-07-15T17:50:20.550202+00:00"
+        },
+        "blog": {
+          "status": "posted",
+          "info": "https://peterluo.homes/blog/en/2026-07-15-test-6-market-intelligence-minute-reading-the-trend-7a26b3.html",
+          "at": "2026-07-15T17:50:20.550202+00:00",
+          "url": "https://peterluo.homes/blog/en/2026-07-15-test-6-market-intelligence-minute-reading-the-trend-7a26b3.html"
+        },
+        "youtube_en": {
+          "status": "posted",
+          "info": "https://youtu.be/XyTQ4zS-TqI",
+          "at": "2026-07-15T17:50:20.550202+00:00",
+          "url": "https://youtu.be/XyTQ4zS-TqI"
+        },
+        "youtube_zh": {
+          "status": "posted",
+          "info": "https://youtu.be/4uQp9AYGNK0",
+          "at": "2026-07-15T17:50:20.550202+00:00",
+          "url": "https://youtu.be/4uQp9AYGNK0"
+        },
+        "threads": {
+          "status": "pending",
+          "info": "handler not built yet",
+          "at": "2026-07-15T17:50:20.550202+00:00"
+        },
+        "linkedin": {
+          "status": "posted",
+          "info": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7483216433317892096/",
+          "at": "2026-07-15T17:50:20.550202+00:00",
+          "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7483216433317892096/"
+        },
+        "facebook_en": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-15T17:50:20.550202+00:00"
+        },
+        "instagram_en": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-15T17:50:20.550202+00:00"
+        },
+        "facebook_zh": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-15T17:50:20.550202+00:00"
+        },
+        "instagram_zh": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-15T17:50:20.550202+00:00"
         }
       }
     }
