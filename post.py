@@ -343,31 +343,96 @@ def _li_escape(t):
 
 
 def _linkedin_upload_image(token, version, owner, image_url):
+    """Upload one image via LinkedIn's Images API. Returns (image_urn, error)."""
     try:
-        init = requests.post("https://api.linkedin.com/rest/images?action=initializeUpload",
-                             headers={"Authorization": f"Bearer {token}", "LinkedIn-Version": version,
-                                      "X-Restli-Protocol-Version": "2.0.0",
-                                      "Content-Type": "application/json"},
-                             json={"initializeUploadRequest": {"owner": owner}}, timeout=30)
+        init = requests.post(
+            "https://api.linkedin.com/rest/images?action=initializeUpload",
+            headers={"Authorization": f"Bearer {token}", "LinkedIn-Version": version,
+                     "X-Restli-Protocol-Version": "2.0.0", "Content-Type": "application/json"},
+            json={"initializeUploadRequest": {"owner": owner}}, timeout=30)
         init.raise_for_status()
         v = init.json().get("value", {})
         upload_url, image_urn = v.get("uploadUrl"), v.get("image")
         if not upload_url or not image_urn:
-            return None
+            return None, "image init: no uploadUrl/urn"
         dl = requests.get(image_url, timeout=60)
         dl.raise_for_status()
         put = requests.put(upload_url, data=dl.content,
                            headers={"Authorization": f"Bearer {token}"}, timeout=120)
         put.raise_for_status()
-        return image_urn
-    except Exception:
-        return None
+        return image_urn, None
+    except Exception as e:
+        return None, f"image upload failed: {str(e)[:150]}"
+
+
+def _linkedin_upload_video(token, version, owner, video_url):
+    """Upload one video via LinkedIn's Videos API: initializeUpload -> PUT each
+    part -> finalizeUpload. Returns (video_urn, error). Handles multi-part."""
+    tmp_path = None
+    try:
+        with requests.get(video_url, stream=True, timeout=180) as dl:
+            dl.raise_for_status()
+            fd, tmp_path = tempfile.mkstemp(suffix=".mp4")
+            with os.fdopen(fd, "wb") as f:
+                for chunk in dl.iter_content(chunk_size=1024 * 1024):
+                    if chunk:
+                        f.write(chunk)
+        size = os.path.getsize(tmp_path)
+        if size == 0:
+            return None, "video download was empty"
+
+        init = requests.post(
+            "https://api.linkedin.com/rest/videos?action=initializeUpload",
+            headers={"Authorization": f"Bearer {token}", "LinkedIn-Version": version,
+                     "X-Restli-Protocol-Version": "2.0.0", "Content-Type": "application/json"},
+            json={"initializeUploadRequest": {"owner": owner, "fileSizeBytes": size,
+                                              "uploadCaptions": False, "uploadThumbnail": False}},
+            timeout=30)
+        init.raise_for_status()
+        v = init.json().get("value", {})
+        video_urn = v.get("video")
+        upload_token = v.get("uploadToken", "")
+        instructions = v.get("uploadInstructions", [])
+        if not video_urn or not instructions:
+            return None, "video init: no urn/instructions"
+
+        etags = []
+        with open(tmp_path, "rb") as f:
+            for ins in instructions:
+                first = ins.get("firstByte", 0)
+                last = ins.get("lastByte")
+                f.seek(first)
+                part = f.read((last - first + 1) if last is not None else -1)
+                up = requests.put(ins["uploadUrl"], data=part,
+                                  headers={"Authorization": f"Bearer {token}",
+                                           "Content-Type": "application/octet-stream"},
+                                  timeout=300)
+                up.raise_for_status()
+                etags.append(up.headers.get("ETag", "").strip('"'))
+
+        fin = requests.post(
+            "https://api.linkedin.com/rest/videos?action=finalizeUpload",
+            headers={"Authorization": f"Bearer {token}", "LinkedIn-Version": version,
+                     "X-Restli-Protocol-Version": "2.0.0", "Content-Type": "application/json"},
+            json={"finalizeUploadRequest": {"video": video_urn, "uploadToken": upload_token,
+                                            "uploadedPartIds": etags}},
+            timeout=60)
+        fin.raise_for_status()
+        return video_urn, None
+    except Exception as e:
+        return None, f"video upload failed: {str(e)[:150]}"
+    finally:
+        if tmp_path and os.path.exists(tmp_path):
+            try:
+                os.remove(tmp_path)
+            except Exception:
+                pass
 
 
 def send_linkedin(post, target):
-    """Share to the authenticated member's personal LinkedIn feed (Posts API).
-    Attaches the first image when possible; otherwise posts text (LinkedIn
-    auto-unfurls any link in the commentary into a preview card)."""
+    """Share to the member's personal LinkedIn feed (Posts API), attaching a
+    video or image when present. The media outcome is appended to the returned
+    info, so a failed upload shows in status.json instead of silent text-only."""
     owner = _linkedin_person_urn()
     if not owner:
         return "failed", "LINKEDIN_PERSON_URN not set"
@@ -379,12 +444,19 @@ def send_linkedin(post, target):
         text = (text + "\n\n" + link).strip()
     if not text:
         text = post.get("title", "") or " "
+
+    videos = [m for m in media_of(post) if m.get("type") == "video" and m.get("url")]
+    images = [m for m in media_of(post) if m.get("type") != "video" and m.get("url")]
+
     if DRY_RUN:
-        log(f"  DRY linkedin -> {owner}: {text[:60]!r}")
+        kind = "video" if videos else ("image" if images else "none")
+        log(f"  DRY linkedin -> {owner}: {text[:50]!r} media={kind}")
         return "posted", "dry-run"
+
     token, err = _linkedin_access_token()
     if err:
         return "failed", err
+
     body = {
         "author": owner,
         "commentary": _li_escape(text),
@@ -394,20 +466,30 @@ def send_linkedin(post, target):
         "lifecycleState": "PUBLISHED",
         "isReshareDisabledByAuthor": False,
     }
-    images = [m for m in media_of(post) if m.get("type") != "video" and m.get("url")]
-    if images:
-        image_urn = _linkedin_upload_image(token, version, owner, images[0]["url"])
-        if image_urn:
-            body["content"] = {"media": {"id": image_urn,
-                                         "altText": (post.get("title") or "image")[:300]}}
+
+    media_note = ""
+    if videos:
+        urn, merr = _linkedin_upload_video(token, version, owner, videos[0]["url"])
+        if urn:
+            body["content"] = {"media": {"id": urn, "title": (post.get("title") or "video")[:400]}}
+        else:
+            media_note = " (" + (merr or "video not attached") + ")"
+    elif images:
+        urn, merr = _linkedin_upload_image(token, version, owner, images[0]["url"])
+        if urn:
+            body["content"] = {"media": {"id": urn, "altText": (post.get("title") or "image")[:300]}}
+        else:
+            media_note = " (" + (merr or "image not attached") + ")"
+
     try:
         r = requests.post("https://api.linkedin.com/rest/posts",
                           headers={"Authorization": f"Bearer {token}", "LinkedIn-Version": version,
                                    "X-Restli-Protocol-Version": "2.0.0",
-                                   "Content-Type": "application/json"}, json=body, timeout=60)
+                                   "Content-Type": "application/json"}, json=body, timeout=120)
         r.raise_for_status()
         pid = r.headers.get("x-restli-id") or r.headers.get("x-linkedin-id")
-        return "posted", (f"https://www.linkedin.com/feed/update/{pid}/" if pid else "ok")
+        base = f"https://www.linkedin.com/feed/update/{pid}/" if pid else "ok"
+        return "posted", base + media_note
     except Exception as e:
         return "failed", str(e)[:200]
 
@@ -579,19 +661,14 @@ def send_youtube_zh(post, target):
     return _send_youtube(post, target, "zh")
 
 
-# --- Blog: the static bilingual blog is rendered and committed by a scheduled
-# GitHub Action IN THE PAGES REPO (peterluohomes.github.io) — see
-# .github/workflows/build-blog.yml there. That workflow reads this queue's public
-# queue.json over plain HTTPS and pushes /blog with the Pages repo's own built-in
-# GITHUB_TOKEN, so NO cross-repo PAT is needed. This worker doesn't build or push
-# anything for the blog; it just records the post's canonical URL so the overall
-# status resolves and the manual page can link it. (Rendering is eventually
-# consistent — it lands on the Pages cron's next run.)
-_BLOG_SLUG_RE = re.compile(r"[^\w一-鿿]+", re.UNICODE)
+# --- Blog: rendered & committed by a scheduled Action in the Pages repo
+# (peterluohomes.github.io/.github/workflows/build-blog.yml), which reads this
+# queue's public queue.json and pushes /blog with its OWN GITHUB_TOKEN -> no PAT.
+# Here we just record the canonical URL so status/overall resolve.
+_BLOG_SLUG_RE = re.compile(r"[^\w\u4e00-\u9fff]+", re.UNICODE)
 
 
 def _blog_slug(post):
-    # mirrors blog_gen.slug_for: "<YYYY-MM-DD>-<slugified title>"
     d = parse_iso(post.get("scheduledFor")) or now_utc()
     s = _BLOG_SLUG_RE.sub("-", (post.get("title") or "").strip().lower()).strip("-") or "post"
     return f"{d:%Y-%m-%d}-{s}"
@@ -606,8 +683,7 @@ def _blog_url(post, target):
 
 
 def send_blog(post, target):
-    """No-op publisher: the Pages-repo workflow does the real build & commit.
-    Here we just return the canonical URL so status/overall resolve correctly."""
+    """No-op publisher: the Pages-repo workflow does the real build & commit."""
     url = _blog_url(post, target)
     if DRY_RUN:
         log(f"  DRY blog -> {url}")
