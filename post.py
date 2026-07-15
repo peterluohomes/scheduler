@@ -24,6 +24,7 @@ import sys
 import json
 import smtplib
 import tempfile
+import re
 import time
 import datetime as dt
 from email.message import EmailMessage
@@ -204,39 +205,209 @@ def send_email(post, target):
 
 
 def send_discord(post, target):
-    """Post to a Discord channel via an Incoming Webhook.
-
-    Discord auto-embeds media URLs appended to the message content, so both
-    images and videos preview inline -- no file upload needed for R2-hosted
-    media. Content is capped at Discord's 2000-char limit.
-    """
+    """Post to a Discord channel via an Incoming Webhook. Discord auto-embeds media
+    URLs appended to the content, so images/videos preview inline. 2000-char cap."""
     webhook = os.environ.get("DISCORD_WEBHOOK_URL")
     if not webhook:
         return "failed", "DISCORD_WEBHOOK_URL not set"
-
     lang = target.get("lang", "en")
     text = caption_for(post, lang).strip()
     link = comment_link_for(post, lang)
     if link:
         text = (text + "\n\n" + link).strip()
-
     media = media_of(post)
     if media:
         text = (text + "\n" + "\n".join(m["url"] for m in media if m.get("url"))).strip()
-
     if not text:
         text = post.get("title", "") or " "
-
     if DRY_RUN:
         log(f"  DRY discord -> {text[:60]!r} media={len(media)}")
         return "posted", "dry-run"
-
     try:
-        # wait=true makes Discord return the created message so failures surface
-        r = requests.post(webhook, params={"wait": "true"},
-                          json={"content": text[:2000]}, timeout=30)
+        r = requests.post(webhook, params={"wait": "true"}, json={"content": text[:2000]}, timeout=30)
         r.raise_for_status()
         return "posted", "ok"
+    except Exception as e:
+        return "failed", str(e)[:200]
+
+
+_PIN_TOKEN_CACHE = {"access_token": None, "expires_at": 0}
+
+
+def _pinterest_access_token():
+    cache = _PIN_TOKEN_CACHE
+    now_ts = time.time()
+    if cache["access_token"] and now_ts < cache["expires_at"] - 30:
+        return cache["access_token"], None
+    cid = os.environ.get("PINTEREST_CLIENT_ID")
+    secret = os.environ.get("PINTEREST_CLIENT_SECRET")
+    refresh = os.environ.get("PINTEREST_REFRESH_TOKEN")
+    missing = [n for n, v in [("PINTEREST_CLIENT_ID", cid), ("PINTEREST_CLIENT_SECRET", secret),
+                              ("PINTEREST_REFRESH_TOKEN", refresh)] if not v]
+    if missing:
+        return None, "missing env var(s): " + ", ".join(missing)
+    import base64
+    basic = base64.b64encode(f"{cid}:{secret}".encode()).decode()
+    try:
+        r = requests.post("https://api.pinterest.com/v5/oauth/token",
+                          headers={"Authorization": f"Basic {basic}"},
+                          data={"grant_type": "refresh_token", "refresh_token": refresh}, timeout=30)
+        r.raise_for_status()
+        tok = r.json()
+        cache["access_token"] = tok["access_token"]
+        cache["expires_at"] = now_ts + tok.get("expires_in", 3600)
+        return cache["access_token"], None
+    except Exception as e:
+        return None, f"token refresh failed: {str(e)[:150]}"
+
+
+def send_pinterest(post, target):
+    """Create a Pin (v5). Needs an image (public URL); videos are skipped."""
+    board = os.environ.get("PINTEREST_BOARD_ID")
+    if not board:
+        return "failed", "PINTEREST_BOARD_ID not set"
+    images = [m for m in media_of(post) if m.get("type") != "video" and m.get("url")]
+    if not images:
+        return "failed", "no image in media - Pinterest needs at least one image"
+    lang = target.get("lang", "en")
+    title = (post.get("title") or "Update")[:100]
+    desc = caption_for(post, lang).strip()[:800]
+    link = comment_link_for(post, lang)
+    if len(images) == 1:
+        media_source = {"source_type": "image_url", "url": images[0]["url"]}
+    else:
+        media_source = {"source_type": "multiple_image_urls",
+                        "items": [{"url": m["url"]} for m in images[:5]]}
+    body = {"board_id": board, "title": title, "description": desc, "media_source": media_source}
+    if link:
+        body["link"] = link
+    if DRY_RUN:
+        log(f"  DRY pinterest -> board {board}: {title!r} imgs={len(images)}")
+        return "posted", "dry-run"
+    access_token, err = _pinterest_access_token()
+    if err:
+        return "failed", err
+    try:
+        r = requests.post("https://api.pinterest.com/v5/pins",
+                          headers={"Authorization": f"Bearer {access_token}",
+                                   "Content-Type": "application/json"}, json=body, timeout=60)
+        r.raise_for_status()
+        pin_id = (r.json() or {}).get("id")
+        return "posted", (f"https://www.pinterest.com/pin/{pin_id}/" if pin_id else "ok")
+    except Exception as e:
+        return "failed", str(e)[:200]
+
+
+_LI_TOKEN_CACHE = {"access_token": None, "expires_at": 0}
+
+
+def _linkedin_access_token():
+    cache = _LI_TOKEN_CACHE
+    now_ts = time.time()
+    if cache["access_token"] and now_ts < cache["expires_at"] - 30:
+        return cache["access_token"], None
+    refresh = os.environ.get("LINKEDIN_REFRESH_TOKEN")
+    cid = os.environ.get("LINKEDIN_CLIENT_ID")
+    secret = os.environ.get("LINKEDIN_CLIENT_SECRET")
+    direct = os.environ.get("LINKEDIN_ACCESS_TOKEN")
+    if refresh and cid and secret:
+        try:
+            r = requests.post("https://www.linkedin.com/oauth/v2/accessToken",
+                              data={"grant_type": "refresh_token", "refresh_token": refresh,
+                                    "client_id": cid, "client_secret": secret}, timeout=30)
+            r.raise_for_status()
+            tok = r.json()
+            cache["access_token"] = tok["access_token"]
+            cache["expires_at"] = now_ts + tok.get("expires_in", 3600)
+            return cache["access_token"], None
+        except Exception as e:
+            return None, f"token refresh failed: {str(e)[:150]}"
+    if direct:
+        cache["access_token"] = direct
+        cache["expires_at"] = now_ts + 3600
+        return direct, None
+    return None, "set LINKEDIN_REFRESH_TOKEN (+ CLIENT_ID/SECRET) or LINKEDIN_ACCESS_TOKEN"
+
+
+def _linkedin_person_urn():
+    urn = os.environ.get("LINKEDIN_PERSON_URN", "").strip()
+    if not urn:
+        return None
+    return urn if urn.startswith("urn:li:person:") else "urn:li:person:" + urn
+
+
+def _li_escape(t):
+    for ch in "\\<>{}[]()@|~_#*":
+        t = t.replace(ch, "\\" + ch)
+    return t
+
+
+def _linkedin_upload_image(token, version, owner, image_url):
+    try:
+        init = requests.post("https://api.linkedin.com/rest/images?action=initializeUpload",
+                             headers={"Authorization": f"Bearer {token}", "LinkedIn-Version": version,
+                                      "X-Restli-Protocol-Version": "2.0.0",
+                                      "Content-Type": "application/json"},
+                             json={"initializeUploadRequest": {"owner": owner}}, timeout=30)
+        init.raise_for_status()
+        v = init.json().get("value", {})
+        upload_url, image_urn = v.get("uploadUrl"), v.get("image")
+        if not upload_url or not image_urn:
+            return None
+        dl = requests.get(image_url, timeout=60)
+        dl.raise_for_status()
+        put = requests.put(upload_url, data=dl.content,
+                           headers={"Authorization": f"Bearer {token}"}, timeout=120)
+        put.raise_for_status()
+        return image_urn
+    except Exception:
+        return None
+
+
+def send_linkedin(post, target):
+    """Share to the authenticated member's personal LinkedIn feed (Posts API).
+    Attaches the first image when possible; otherwise posts text (LinkedIn
+    auto-unfurls any link in the commentary into a preview card)."""
+    owner = _linkedin_person_urn()
+    if not owner:
+        return "failed", "LINKEDIN_PERSON_URN not set"
+    version = os.environ.get("LINKEDIN_VERSION", "202506")
+    lang = target.get("lang", "en")
+    text = caption_for(post, lang).strip()
+    link = comment_link_for(post, lang)
+    if link:
+        text = (text + "\n\n" + link).strip()
+    if not text:
+        text = post.get("title", "") or " "
+    if DRY_RUN:
+        log(f"  DRY linkedin -> {owner}: {text[:60]!r}")
+        return "posted", "dry-run"
+    token, err = _linkedin_access_token()
+    if err:
+        return "failed", err
+    body = {
+        "author": owner,
+        "commentary": _li_escape(text),
+        "visibility": "PUBLIC",
+        "distribution": {"feedDistribution": "MAIN_FEED", "targetEntities": [],
+                         "thirdPartyDistributionChannels": []},
+        "lifecycleState": "PUBLISHED",
+        "isReshareDisabledByAuthor": False,
+    }
+    images = [m for m in media_of(post) if m.get("type") != "video" and m.get("url")]
+    if images:
+        image_urn = _linkedin_upload_image(token, version, owner, images[0]["url"])
+        if image_urn:
+            body["content"] = {"media": {"id": image_urn,
+                                         "altText": (post.get("title") or "image")[:300]}}
+    try:
+        r = requests.post("https://api.linkedin.com/rest/posts",
+                          headers={"Authorization": f"Bearer {token}", "LinkedIn-Version": version,
+                                   "X-Restli-Protocol-Version": "2.0.0",
+                                   "Content-Type": "application/json"}, json=body, timeout=60)
+        r.raise_for_status()
+        pid = r.headers.get("x-restli-id") or r.headers.get("x-linkedin-id")
+        return "posted", (f"https://www.linkedin.com/feed/update/{pid}/" if pid else "ok")
     except Exception as e:
         return "failed", str(e)[:200]
 
@@ -408,14 +579,52 @@ def send_youtube_zh(post, target):
     return _send_youtube(post, target, "zh")
 
 
+# --- Blog: the static bilingual blog is rendered and committed by a scheduled
+# GitHub Action IN THE PAGES REPO (peterluohomes.github.io) — see
+# .github/workflows/build-blog.yml there. That workflow reads this queue's public
+# queue.json over plain HTTPS and pushes /blog with the Pages repo's own built-in
+# GITHUB_TOKEN, so NO cross-repo PAT is needed. This worker doesn't build or push
+# anything for the blog; it just records the post's canonical URL so the overall
+# status resolves and the manual page can link it. (Rendering is eventually
+# consistent — it lands on the Pages cron's next run.)
+_BLOG_SLUG_RE = re.compile(r"[^\w一-鿿]+", re.UNICODE)
+
+
+def _blog_slug(post):
+    # mirrors blog_gen.slug_for: "<YYYY-MM-DD>-<slugified title>"
+    d = parse_iso(post.get("scheduledFor")) or now_utc()
+    s = _BLOG_SLUG_RE.sub("-", (post.get("title") or "").strip().lower()).strip("-") or "post"
+    return f"{d:%Y-%m-%d}-{s}"
+
+
+def _blog_url(post, target):
+    site = os.environ.get("BLOG_SITE", "https://peterluo.homes").rstrip("/")
+    want = target.get("lang")
+    langs = [l for l in ("en", "zh") if caption_for(post, l).strip()] or ["en"]
+    lang = want if want in langs else langs[0]
+    return f"{site}/blog/{lang}/{_blog_slug(post)}.html"
+
+
+def send_blog(post, target):
+    """No-op publisher: the Pages-repo workflow does the real build & commit.
+    Here we just return the canonical URL so status/overall resolve correctly."""
+    url = _blog_url(post, target)
+    if DRY_RUN:
+        log(f"  DRY blog -> {url}")
+    return "posted", url
+
+
 # Auto-tier handlers. Platforms without an entry return ("pending", ...) and
 # will be retried on later runs once their handler is added.
 HANDLERS = {
     "telegram": send_telegram,
     "email": send_email,
     "discord": send_discord,
+    "pinterest": send_pinterest,
+    "linkedin": send_linkedin,
     "youtube_en": send_youtube_en,
     "youtube_zh": send_youtube_zh,
+    "blog": send_blog,
 }
 
 
