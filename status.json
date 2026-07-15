@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-07-15T15:25:19.628878+00:00",
+  "updated": "2026-07-15T15:30:22.471306+00:00",
   "statuses": {
     "test-telegram-001": {
       "overall": "posted",
@@ -3322,7 +3322,7 @@
         "threads": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-15T15:25:19.628878+00:00"
+          "at": "2026-07-15T15:30:22.471306+00:00"
         },
         "linkedin": {
           "status": "posted",
@@ -3349,6 +3349,71 @@
           "status": "nudged",
           "info": "ok",
           "at": "2026-07-15T15:15:20.949416+00:00"
+        }
+      }
+    },
+    "6b9a5e4d-50b3-4619-9eb2-94da1a2627f1": {
+      "overall": "queued",
+      "targets": {
+        "telegram": {
+          "status": "posted",
+          "info": "https://t.me/peterluohomes/57",
+          "at": "2026-07-15T15:30:22.471306+00:00",
+          "url": "https://t.me/peterluohomes/57"
+        },
+        "discord": {
+          "status": "posted",
+          "info": "ok",
+          "at": "2026-07-15T15:30:22.471306+00:00"
+        },
+        "blog": {
+          "status": "posted",
+          "info": "https://peterluo.homes/blog/en/2026-07-15-test-1-market-intelligence-minute-reading-the-trend-6b9a5e.html",
+          "at": "2026-07-15T15:30:22.471306+00:00",
+          "url": "https://peterluo.homes/blog/en/2026-07-15-test-1-market-intelligence-minute-reading-the-trend-6b9a5e.html"
+        },
+        "youtube_en": {
+          "status": "posted",
+          "info": "https://youtu.be/3z8ZkDKTvr8",
+          "at": "2026-07-15T15:30:22.471306+00:00",
+          "url": "https://youtu.be/3z8ZkDKTvr8"
+        },
+        "youtube_zh": {
+          "status": "posted",
+          "info": "https://youtu.be/Y1xXeYyN5Rg",
+          "at": "2026-07-15T15:30:22.471306+00:00",
+          "url": "https://youtu.be/Y1xXeYyN5Rg"
+        },
+        "threads": {
+          "status": "pending",
+          "info": "handler not built yet",
+          "at": "2026-07-15T15:30:22.471306+00:00"
+        },
+        "linkedin": {
+          "status": "posted",
+          "info": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7483181197716631552/",
+          "at": "2026-07-15T15:30:22.471306+00:00",
+          "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7483181197716631552/"
+        },
+        "facebook_en": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-15T15:30:22.471306+00:00"
+        },
+        "instagram_en": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-15T15:30:22.471306+00:00"
+        },
+        "facebook_zh": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-15T15:30:22.471306+00:00"
+        },
+        "instagram_zh": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-15T15:30:22.471306+00:00"
         }
       }
     }
