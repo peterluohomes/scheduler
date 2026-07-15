@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-07-15T16:21:28.429Z",
+  "generated": "2026-07-15T17:08:53.825Z",
   "posts": [
     {
       "id": "fe84a6dc-b3a6-41df-8147-55dc46ecaa2c",
@@ -3721,10 +3721,114 @@
       ]
     },
     {
-      "id": "67089bad-6940-4537-9a1b-e53777ed2f65",
-      "created": "2026-07-15T16:20:09.148Z",
-      "scheduledFor": "2026-07-15T16:25:00.000Z",
-      "scheduledLocal": "2026-07-15T12:25",
+      "id": "9641cf69-4b68-4456-8c92-09deac32d51c",
+      "created": "2026-07-15T16:21:01.226Z",
+      "scheduledFor": "2026-07-15T16:30:00.000Z",
+      "scheduledLocal": "2026-07-15T12:30",
+      "status": "queued",
+      "title": "Test-2-Market Intelligence Minute: Reading the Trend",
+      "breadcrumb": "Content Marketing › Market Education › Market Intelligence › Monthly Snapshot Explainer",
+      "propertyAddress": "",
+      "media": [
+        {
+          "filename": "newsroom.mp4",
+          "url": "https://media.peterluo.homes/evergreen/MKT/snapshot/newsroom.mp4",
+          "type": "video"
+        }
+      ],
+      "captions": {
+        "en": "What this month's numbers actually mean for buyers and sellers.",
+        "zh": "本月数据，对买卖双方到底意味着什么。"
+      },
+      "commentLinks": {
+        "en": "https://peterluo.homes/market",
+        "zh": "https://peterluo.homes/market"
+      },
+      "targets": [
+        {
+          "platform": "telegram",
+          "label": "Telegram",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "discord",
+          "label": "Discord",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "blog",
+          "label": "Blog (EN+中文)",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "youtube_en",
+          "label": "YouTube",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "youtube_zh",
+          "label": "YouTube 中文",
+          "lang": "zh",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "threads",
+          "label": "Threads",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "linkedin",
+          "label": "LinkedIn",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "facebook_en",
+          "label": "Facebook",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "instagram_en",
+          "label": "Instagram",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "facebook_zh",
+          "label": "Facebook",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "instagram_zh",
+          "label": "Instagram",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        }
+      ]
+    },
+    {
+      "id": "676842e9-ebda-4aec-9103-12cdc3a7c633",
+      "created": "2026-07-15T17:07:53.457Z",
+      "scheduledFor": "2026-07-15T17:11:00.000Z",
+      "scheduledLocal": "2026-07-15T13:11",
       "status": "queued",
       "title": "Test-1-Market Intelligence Minute: Reading the Trend",
       "breadcrumb": "Content Marketing › Market Education › Market Intelligence › Monthly Snapshot Explainer",
@@ -3825,10 +3929,10 @@
       ]
     },
     {
-      "id": "a38120c0-0d47-4ef2-8c34-9d799ba290a8",
-      "created": "2026-07-15T16:20:33.706Z",
-      "scheduledFor": "2026-07-15T16:27:00.000Z",
-      "scheduledLocal": "2026-07-15T12:27",
+      "id": "2064e154-2c50-4e3e-a251-bcd3bc1e2bce",
+      "created": "2026-07-15T17:08:23.989Z",
+      "scheduledFor": "2026-07-15T17:15:00.000Z",
+      "scheduledLocal": "2026-07-15T13:15",
       "status": "queued",
       "title": "Test-3-Market Intelligence Minute: Reading the Trend",
       "breadcrumb": "Content Marketing › Market Education › Market Intelligence › Monthly Snapshot Explainer",
@@ -3929,10 +4033,10 @@
       ]
     },
     {
-      "id": "9641cf69-4b68-4456-8c92-09deac32d51c",
-      "created": "2026-07-15T16:21:01.226Z",
-      "scheduledFor": "2026-07-15T16:30:00.000Z",
-      "scheduledLocal": "2026-07-15T12:30",
+      "id": "b018fafe-b782-48b4-87e3-768167b2b1f0",
+      "created": "2026-07-15T17:08:51.693Z",
+      "scheduledFor": "2026-07-15T17:20:00.000Z",
+      "scheduledLocal": "2026-07-15T13:20",
       "status": "queued",
       "title": "Test-2-Market Intelligence Minute: Reading the Trend",
       "breadcrumb": "Content Marketing › Market Education › Market Intelligence › Monthly Snapshot Explainer",
