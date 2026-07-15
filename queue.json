@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-07-06T18:49:33.632Z",
+  "generated": "2026-07-15T02:14:34.935Z",
   "posts": [
     {
       "id": "fe84a6dc-b3a6-41df-8147-55dc46ecaa2c",
@@ -3714,6 +3714,134 @@
         {
           "platform": "nextdoor",
           "label": "Nextdoor",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        }
+      ]
+    },
+    {
+      "id": "350c9983-0a1c-4ac0-bdf5-d783b9918bb4",
+      "created": "2026-07-15T02:13:03.914Z",
+      "scheduledFor": "2026-07-14T16:00:00.000Z",
+      "scheduledLocal": "2026-07-14T12:00",
+      "status": "queued",
+      "title": "(untitled)",
+      "layout": "",
+      "domain": "",
+      "pillar": "",
+      "theme": "",
+      "propertyAddress": "",
+      "surface": "",
+      "media": [],
+      "captions": {
+        "en": "",
+        "zh": ""
+      },
+      "commentLinks": {
+        "en": "",
+        "zh": ""
+      },
+      "targets": []
+    },
+    {
+      "id": "a98da924-e322-4c94-bfba-3f9d6b4aafcb",
+      "created": "2026-07-15T02:14:31.984Z",
+      "scheduledFor": "2026-07-15T02:19:00.000Z",
+      "scheduledLocal": "2026-07-14T22:19",
+      "status": "queued",
+      "title": "Test-1-Market Intelligence Minute: Reading the Trend",
+      "breadcrumb": "Content Marketing › Market Education › Market Intelligence › Monthly Snapshot Explainer",
+      "propertyAddress": "",
+      "media": [
+        {
+          "filename": "keynote.mp4",
+          "url": "https://media.peterluo.homes/evergreen/MKT/snapshot/keynote.mp4",
+          "type": "video"
+        }
+      ],
+      "captions": {
+        "en": "What this month's numbers actually mean for buyers and sellers.",
+        "zh": "本月数据，对买卖双方到底意味着什么。"
+      },
+      "commentLinks": {
+        "en": "https://peterluo.homes/market",
+        "zh": "https://peterluo.homes/market"
+      },
+      "targets": [
+        {
+          "platform": "telegram",
+          "label": "Telegram",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "discord",
+          "label": "Discord",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "blog",
+          "label": "Blog (EN+中文)",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "youtube_en",
+          "label": "YouTube",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "youtube_zh",
+          "label": "YouTube 中文",
+          "lang": "zh",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "threads",
+          "label": "Threads",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "facebook_en",
+          "label": "Facebook",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "instagram_en",
+          "label": "Instagram",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "linkedin",
+          "label": "LinkedIn",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "instagram_zh",
+          "label": "Instagram",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "reddit_richmondhill",
+          "label": "Reddit · r/RichmondHill",
           "lang": "en",
           "tier": "assist",
           "status": "queued"
