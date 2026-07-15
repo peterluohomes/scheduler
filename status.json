@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-07-15T13:45:27.051990+00:00",
+  "updated": "2026-07-15T14:15:24.676123+00:00",
   "statuses": {
     "test-telegram-001": {
       "overall": "posted",
@@ -3099,6 +3099,66 @@
           "status": "nudged",
           "info": "ok",
           "at": "2026-07-15T13:25:23.933393+00:00"
+        }
+      }
+    },
+    "eb2c0d2f-3e61-4959-b4bd-b3bc1d68c344": {
+      "overall": "queued",
+      "targets": {
+        "telegram": {
+          "status": "posted",
+          "info": "https://t.me/peterluohomes/53",
+          "at": "2026-07-15T14:15:24.676123+00:00",
+          "url": "https://t.me/peterluohomes/53"
+        },
+        "discord": {
+          "status": "posted",
+          "info": "ok",
+          "at": "2026-07-15T14:15:24.676123+00:00"
+        },
+        "blog": {
+          "status": "posted",
+          "info": "https://peterluo.homes/blog/en/2026-07-15-test-1-market-intelligence-minute-reading-the-trend.html",
+          "at": "2026-07-15T14:15:24.676123+00:00",
+          "url": "https://peterluo.homes/blog/en/2026-07-15-test-1-market-intelligence-minute-reading-the-trend.html"
+        },
+        "youtube_en": {
+          "status": "posted",
+          "info": "https://youtu.be/PKEIqHGOHOc",
+          "at": "2026-07-15T14:15:24.676123+00:00",
+          "url": "https://youtu.be/PKEIqHGOHOc"
+        },
+        "youtube_zh": {
+          "status": "posted",
+          "info": "https://youtu.be/teRDFf9hj1g",
+          "at": "2026-07-15T14:15:24.676123+00:00",
+          "url": "https://youtu.be/teRDFf9hj1g"
+        },
+        "threads": {
+          "status": "pending",
+          "info": "handler not built yet",
+          "at": "2026-07-15T14:15:24.676123+00:00"
+        },
+        "linkedin": {
+          "status": "posted",
+          "info": "https://www.linkedin.com/feed/update/urn:li:share:7483162332794155008/",
+          "at": "2026-07-15T14:15:24.676123+00:00",
+          "url": "https://www.linkedin.com/feed/update/urn:li:share:7483162332794155008/"
+        },
+        "facebook_en": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-15T14:15:24.676123+00:00"
+        },
+        "instagram_en": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-15T14:15:24.676123+00:00"
+        },
+        "instagram_zh": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-15T14:15:24.676123+00:00"
         }
       }
     }
