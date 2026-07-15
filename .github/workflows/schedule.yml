@@ -58,6 +58,8 @@ jobs:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
           LINKEDIN_PERSON_URN: ${{ secrets.LINKEDIN_PERSON_URN }}
+          # --- Trigger the Pages "Build blog" workflow after a blog post ---
+          BLOG_BUILD_TOKEN: ${{ secrets.BLOG_BUILD_TOKEN }}
         run: python post.py
 
       - name: Commit status.json
