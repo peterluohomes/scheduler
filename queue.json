@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-07-15T16:04:02.551Z",
+  "generated": "2026-07-15T16:04:43.514Z",
   "posts": [
     {
       "id": "fe84a6dc-b3a6-41df-8147-55dc46ecaa2c",
@@ -4139,8 +4139,8 @@
     {
       "id": "9f0de054-bb6c-4d79-a0e7-3d9f8cfc7994",
       "created": "2026-07-15T16:03:56.806Z",
-      "scheduledFor": "2026-07-15T16:08:00.000Z",
-      "scheduledLocal": "2026-07-15T12:08",
+      "scheduledFor": "2026-07-15T16:09:00.000Z",
+      "scheduledLocal": "2026-07-15T12:09",
       "status": "queued",
       "title": "Test-2-Market Intelligence Minute: Reading the Trend",
       "breadcrumb": "Content Marketing › Market Education › Market Intelligence › Monthly Snapshot Explainer",
@@ -4243,8 +4243,8 @@
     {
       "id": "1456bc0b-1251-44b2-9589-faeb590d45df",
       "created": "2026-07-15T16:03:21.650Z",
-      "scheduledFor": "2026-07-15T16:10:00.000Z",
-      "scheduledLocal": "2026-07-15T12:10",
+      "scheduledFor": "2026-07-15T16:12:00.000Z",
+      "scheduledLocal": "2026-07-15T12:12",
       "status": "queued",
       "title": "Test-3-Market Intelligence Minute: Reading the Trend",
       "breadcrumb": "Content Marketing › Market Education › Market Intelligence › Monthly Snapshot Explainer",
