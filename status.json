@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-07-15T17:10:22.944132+00:00",
+  "updated": "2026-07-15T17:15:21.117431+00:00",
   "statuses": {
     "test-telegram-001": {
       "overall": "posted",
@@ -3907,7 +3907,7 @@
         "threads": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-15T17:10:22.944132+00:00"
+          "at": "2026-07-15T17:15:21.117431+00:00"
         },
         "linkedin": {
           "status": "posted",
@@ -3934,6 +3934,136 @@
           "status": "nudged",
           "info": "ok",
           "at": "2026-07-15T16:30:21.294021+00:00"
+        }
+      }
+    },
+    "676842e9-ebda-4aec-9103-12cdc3a7c633": {
+      "overall": "queued",
+      "targets": {
+        "telegram": {
+          "status": "posted",
+          "info": "https://t.me/peterluohomes/66",
+          "at": "2026-07-15T17:15:21.117431+00:00",
+          "url": "https://t.me/peterluohomes/66"
+        },
+        "discord": {
+          "status": "posted",
+          "info": "ok",
+          "at": "2026-07-15T17:15:21.117431+00:00"
+        },
+        "blog": {
+          "status": "posted",
+          "info": "https://peterluo.homes/blog/en/2026-07-15-test-1-market-intelligence-minute-reading-the-trend-676842.html",
+          "at": "2026-07-15T17:15:21.117431+00:00",
+          "url": "https://peterluo.homes/blog/en/2026-07-15-test-1-market-intelligence-minute-reading-the-trend-676842.html"
+        },
+        "youtube_en": {
+          "status": "posted",
+          "info": "https://youtu.be/eq45IUsCJRw",
+          "at": "2026-07-15T17:15:21.117431+00:00",
+          "url": "https://youtu.be/eq45IUsCJRw"
+        },
+        "youtube_zh": {
+          "status": "posted",
+          "info": "https://youtu.be/l4FC4YlN9LY",
+          "at": "2026-07-15T17:15:21.117431+00:00",
+          "url": "https://youtu.be/l4FC4YlN9LY"
+        },
+        "threads": {
+          "status": "pending",
+          "info": "handler not built yet",
+          "at": "2026-07-15T17:15:21.117431+00:00"
+        },
+        "linkedin": {
+          "status": "posted",
+          "info": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7483207614621753345/",
+          "at": "2026-07-15T17:15:21.117431+00:00",
+          "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7483207614621753345/"
+        },
+        "facebook_en": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-15T17:15:21.117431+00:00"
+        },
+        "instagram_en": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-15T17:15:21.117431+00:00"
+        },
+        "facebook_zh": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-15T17:15:21.117431+00:00"
+        },
+        "instagram_zh": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-15T17:15:21.117431+00:00"
+        }
+      }
+    },
+    "2064e154-2c50-4e3e-a251-bcd3bc1e2bce": {
+      "overall": "queued",
+      "targets": {
+        "telegram": {
+          "status": "posted",
+          "info": "https://t.me/peterluohomes/67",
+          "at": "2026-07-15T17:15:21.117431+00:00",
+          "url": "https://t.me/peterluohomes/67"
+        },
+        "discord": {
+          "status": "posted",
+          "info": "ok",
+          "at": "2026-07-15T17:15:21.117431+00:00"
+        },
+        "blog": {
+          "status": "posted",
+          "info": "https://peterluo.homes/blog/en/2026-07-15-test-3-market-intelligence-minute-reading-the-trend-2064e1.html",
+          "at": "2026-07-15T17:15:21.117431+00:00",
+          "url": "https://peterluo.homes/blog/en/2026-07-15-test-3-market-intelligence-minute-reading-the-trend-2064e1.html"
+        },
+        "youtube_en": {
+          "status": "posted",
+          "info": "https://youtu.be/TGH7gPaDYqs",
+          "at": "2026-07-15T17:15:21.117431+00:00",
+          "url": "https://youtu.be/TGH7gPaDYqs"
+        },
+        "youtube_zh": {
+          "status": "posted",
+          "info": "https://youtu.be/t2KkqLA0ypI",
+          "at": "2026-07-15T17:15:21.117431+00:00",
+          "url": "https://youtu.be/t2KkqLA0ypI"
+        },
+        "threads": {
+          "status": "pending",
+          "info": "handler not built yet",
+          "at": "2026-07-15T17:15:21.117431+00:00"
+        },
+        "linkedin": {
+          "status": "posted",
+          "info": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7483207640765104128/",
+          "at": "2026-07-15T17:15:21.117431+00:00",
+          "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7483207640765104128/"
+        },
+        "facebook_en": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-15T17:15:21.117431+00:00"
+        },
+        "instagram_en": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-15T17:15:21.117431+00:00"
+        },
+        "facebook_zh": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-15T17:15:21.117431+00:00"
+        },
+        "instagram_zh": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-15T17:15:21.117431+00:00"
         }
       }
     }
