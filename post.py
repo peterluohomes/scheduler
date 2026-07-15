@@ -671,7 +671,8 @@ _BLOG_SLUG_RE = re.compile(r"[^\w\u4e00-\u9fff]+", re.UNICODE)
 def _blog_slug(post):
     d = parse_iso(post.get("scheduledFor")) or now_utc()
     s = _BLOG_SLUG_RE.sub("-", (post.get("title") or "").strip().lower()).strip("-") or "post"
-    return f"{d:%Y-%m-%d}-{s}"
+    pid = str(post.get("id") or "").replace("-", "")[:6]
+    return f"{d:%Y-%m-%d}-{s}-{pid}" if pid else f"{d:%Y-%m-%d}-{s}"
 
 
 def _blog_url(post, target):
