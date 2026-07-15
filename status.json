@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-07-15T18:00:21.688686+00:00",
+  "updated": "2026-07-15T18:05:21.297819+00:00",
   "statuses": {
     "test-telegram-001": {
       "overall": "posted",
@@ -4102,7 +4102,7 @@
         "threads": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-15T18:00:21.688686+00:00"
+          "at": "2026-07-15T18:05:21.297819+00:00"
         },
         "linkedin": {
           "status": "posted",
@@ -4167,7 +4167,7 @@
         "threads": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-15T18:00:21.688686+00:00"
+          "at": "2026-07-15T18:05:21.297819+00:00"
         },
         "linkedin": {
           "status": "posted",
@@ -4232,7 +4232,7 @@
         "threads": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-15T18:00:21.688686+00:00"
+          "at": "2026-07-15T18:05:21.297819+00:00"
         },
         "linkedin": {
           "status": "posted",
@@ -4297,7 +4297,7 @@
         "threads": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-15T18:00:21.688686+00:00"
+          "at": "2026-07-15T18:05:21.297819+00:00"
         },
         "linkedin": {
           "status": "posted",
@@ -4324,6 +4324,136 @@
           "status": "nudged",
           "info": "ok",
           "at": "2026-07-15T17:50:20.550202+00:00"
+        }
+      }
+    },
+    "62e04dd9-1ffe-416b-8762-4fb6f2cd8308": {
+      "overall": "queued",
+      "targets": {
+        "telegram": {
+          "status": "posted",
+          "info": "https://t.me/peterluohomes/72",
+          "at": "2026-07-15T18:05:21.297819+00:00",
+          "url": "https://t.me/peterluohomes/72"
+        },
+        "discord": {
+          "status": "posted",
+          "info": "ok",
+          "at": "2026-07-15T18:05:21.297819+00:00"
+        },
+        "blog": {
+          "status": "posted",
+          "info": "https://peterluo.homes/blog/en/2026-07-15-test-7-market-intelligence-minute-reading-the-trend-62e04d.html",
+          "at": "2026-07-15T18:05:21.297819+00:00",
+          "url": "https://peterluo.homes/blog/en/2026-07-15-test-7-market-intelligence-minute-reading-the-trend-62e04d.html"
+        },
+        "youtube_en": {
+          "status": "posted",
+          "info": "https://youtu.be/tGSWW2MLkCU",
+          "at": "2026-07-15T18:05:21.297819+00:00",
+          "url": "https://youtu.be/tGSWW2MLkCU"
+        },
+        "youtube_zh": {
+          "status": "posted",
+          "info": "https://youtu.be/BP3EeWyFf4Y",
+          "at": "2026-07-15T18:05:21.297819+00:00",
+          "url": "https://youtu.be/BP3EeWyFf4Y"
+        },
+        "threads": {
+          "status": "pending",
+          "info": "handler not built yet",
+          "at": "2026-07-15T18:05:21.297819+00:00"
+        },
+        "linkedin": {
+          "status": "posted",
+          "info": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7483220210523602945/",
+          "at": "2026-07-15T18:05:21.297819+00:00",
+          "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7483220210523602945/"
+        },
+        "facebook_en": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-15T18:05:21.297819+00:00"
+        },
+        "instagram_en": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-15T18:05:21.297819+00:00"
+        },
+        "facebook_zh": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-15T18:05:21.297819+00:00"
+        },
+        "instagram_zh": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-15T18:05:21.297819+00:00"
+        }
+      }
+    },
+    "29e7a041-eb14-4c3a-bd0c-36c767eeec03": {
+      "overall": "queued",
+      "targets": {
+        "telegram": {
+          "status": "posted",
+          "info": "https://t.me/peterluohomes/73",
+          "at": "2026-07-15T18:05:21.297819+00:00",
+          "url": "https://t.me/peterluohomes/73"
+        },
+        "discord": {
+          "status": "posted",
+          "info": "ok",
+          "at": "2026-07-15T18:05:21.297819+00:00"
+        },
+        "blog": {
+          "status": "posted",
+          "info": "https://peterluo.homes/blog/en/2026-07-15-test-8-market-intelligence-minute-reading-the-trend-29e7a0.html",
+          "at": "2026-07-15T18:05:21.297819+00:00",
+          "url": "https://peterluo.homes/blog/en/2026-07-15-test-8-market-intelligence-minute-reading-the-trend-29e7a0.html"
+        },
+        "youtube_en": {
+          "status": "posted",
+          "info": "https://youtu.be/6C3J_Bdz5hc",
+          "at": "2026-07-15T18:05:21.297819+00:00",
+          "url": "https://youtu.be/6C3J_Bdz5hc"
+        },
+        "youtube_zh": {
+          "status": "posted",
+          "info": "https://youtu.be/unbUUJ3SrfQ",
+          "at": "2026-07-15T18:05:21.297819+00:00",
+          "url": "https://youtu.be/unbUUJ3SrfQ"
+        },
+        "threads": {
+          "status": "pending",
+          "info": "handler not built yet",
+          "at": "2026-07-15T18:05:21.297819+00:00"
+        },
+        "linkedin": {
+          "status": "posted",
+          "info": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7483220245680111616/",
+          "at": "2026-07-15T18:05:21.297819+00:00",
+          "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7483220245680111616/"
+        },
+        "facebook_en": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-15T18:05:21.297819+00:00"
+        },
+        "instagram_en": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-15T18:05:21.297819+00:00"
+        },
+        "facebook_zh": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-15T18:05:21.297819+00:00"
+        },
+        "instagram_zh": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-15T18:05:21.297819+00:00"
         }
       }
     }
