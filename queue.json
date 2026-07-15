@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-07-15T12:25:00.557Z",
+  "generated": "2026-07-15T13:16:40.167Z",
   "posts": [
     {
       "id": "fe84a6dc-b3a6-41df-8147-55dc46ecaa2c",
@@ -3825,18 +3825,18 @@
       ]
     },
     {
-      "id": "a221b2d7-659e-42d0-9d5f-46441ef0ed44",
-      "created": "2026-07-15T12:14:32.794Z",
-      "scheduledFor": "2026-07-15T12:19:00.000Z",
-      "scheduledLocal": "2026-07-15T08:19",
+      "id": "caf6f462-64dc-4d3f-8c36-a9246497dade",
+      "created": "2026-07-15T13:15:41.941Z",
+      "scheduledFor": "2026-07-15T13:21:00.000Z",
+      "scheduledLocal": "2026-07-15T09:21",
       "status": "queued",
-      "title": "Test-1-Market Intelligence Minute: Reading the Trend",
+      "title": "Test-2-Market Intelligence Minute: Reading the Trend",
       "breadcrumb": "Content Marketing › Market Education › Market Intelligence › Monthly Snapshot Explainer",
       "propertyAddress": "",
       "media": [
         {
-          "filename": "keynote.mp4",
-          "url": "https://media.peterluo.homes/evergreen/MKT/snapshot/keynote.mp4",
+          "filename": "newsroom.mp4",
+          "url": "http://media.peterluo.homes/evergreen/MKT/snapshot/newsroom.mp4",
           "type": "video"
         }
       ],
@@ -3847,82 +3847,6 @@
       "commentLinks": {
         "en": "https://peterluo.homes/market",
         "zh": "https://peterluo.homes/market"
-      },
-      "targets": [
-        {
-          "platform": "telegram",
-          "label": "Telegram",
-          "lang": "en",
-          "tier": "auto",
-          "status": "queued"
-        },
-        {
-          "platform": "youtube_en",
-          "label": "YouTube",
-          "lang": "en",
-          "tier": "auto",
-          "status": "queued"
-        },
-        {
-          "platform": "youtube_zh",
-          "label": "YouTube 中文",
-          "lang": "zh",
-          "tier": "auto",
-          "status": "queued"
-        },
-        {
-          "platform": "threads",
-          "label": "Threads",
-          "lang": "en",
-          "tier": "auto",
-          "status": "queued"
-        },
-        {
-          "platform": "facebook_en",
-          "label": "Facebook",
-          "lang": "en",
-          "tier": "assist",
-          "status": "queued"
-        },
-        {
-          "platform": "instagram_en",
-          "label": "Instagram",
-          "lang": "en",
-          "tier": "assist",
-          "status": "queued"
-        },
-        {
-          "platform": "instagram_zh",
-          "label": "Instagram",
-          "lang": "zh",
-          "tier": "assist",
-          "status": "queued"
-        }
-      ]
-    },
-    {
-      "id": "334dc3e4-8e32-48f0-a12f-c299ea128c39",
-      "created": "2026-07-15T12:24:13.620Z",
-      "scheduledFor": "2026-07-15T12:30:00.000Z",
-      "scheduledLocal": "2026-07-15T08:30",
-      "status": "queued",
-      "title": "Ravine lot, Walkout Basement",
-      "breadcrumb": "Listing Marketing › Property Marketing › Buyer Avatar Match › Multi-generation BUY-019",
-      "propertyAddress": "156 Tower Hill Rd",
-      "media": [
-        {
-          "filename": "netflix.mp4",
-          "url": "https://media.peterluo.homes/evergreen/MKT/snapshot/netflix.mp4",
-          "type": "video"
-        }
-      ],
-      "captions": {
-        "en": "Open house this weekend — come by.",
-        "zh": "本周末开放参观 — 欢迎到访。"
-      },
-      "commentLinks": {
-        "en": "https://peterluo.homes/valuation",
-        "zh": "https://peterluo.homes/valuation"
       },
       "targets": [
         {
@@ -3975,13 +3899,6 @@
           "status": "queued"
         },
         {
-          "platform": "email",
-          "label": "Email",
-          "lang": "en",
-          "tier": "assist",
-          "status": "queued"
-        },
-        {
           "platform": "facebook_en",
           "label": "Facebook",
           "lang": "en",
@@ -4003,9 +3920,16 @@
           "status": "queued"
         },
         {
-          "platform": "wechat",
-          "label": "WeChat 朋友圈",
+          "platform": "instagram_zh",
+          "label": "Instagram",
           "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "reddit_richmondhill",
+          "label": "Reddit · r/RichmondHill",
+          "lang": "en",
           "tier": "assist",
           "status": "queued"
         }
