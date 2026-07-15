@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-07-15T15:06:52.052Z",
+  "generated": "2026-07-15T15:26:03.203Z",
   "posts": [
     {
       "id": "fe84a6dc-b3a6-41df-8147-55dc46ecaa2c",
@@ -3721,18 +3721,18 @@
       ]
     },
     {
-      "id": "eb2c0d2f-3e61-4959-b4bd-b3bc1d68c344",
-      "created": "2026-07-15T13:46:18.153Z",
-      "scheduledFor": "2026-07-15T14:15:00.000Z",
-      "scheduledLocal": "2026-07-15T10:15",
+      "id": "23864e70-82a3-4fa1-9a51-d5c3c606de19",
+      "created": "2026-07-15T15:06:47.722Z",
+      "scheduledFor": "2026-07-15T15:15:00.000Z",
+      "scheduledLocal": "2026-07-15T11:15",
       "status": "queued",
-      "title": "Test-1-Market Intelligence Minute: Reading the Trend",
+      "title": "Test-2-Market Intelligence Minute: Reading the Trend",
       "breadcrumb": "Content Marketing › Market Education › Market Intelligence › Monthly Snapshot Explainer",
       "propertyAddress": "",
       "media": [
         {
-          "filename": "keynote.mp4",
-          "url": "https://media.peterluo.homes/evergreen/MKT/snapshot/keynote.mp4",
+          "filename": "newsroom.mp4",
+          "url": "https://media.peterluo.homes/evergreen/MKT/snapshot/newsroom.mp4",
           "type": "video"
         }
       ],
@@ -3809,99 +3809,9 @@
           "status": "queued"
         },
         {
-          "platform": "instagram_zh",
-          "label": "Instagram",
-          "lang": "zh",
-          "tier": "assist",
-          "status": "queued"
-        }
-      ]
-    },
-    {
-      "id": "03057766-6908-4ac2-b904-d85c873fa80d",
-      "created": "2026-07-15T14:39:56.901Z",
-      "scheduledFor": "2026-07-15T14:45:00.000Z",
-      "scheduledLocal": "2026-07-15T10:45",
-      "status": "queued",
-      "title": "Test-1-Market Intelligence Minute: Reading the Trend",
-      "breadcrumb": "Content Marketing › Market Education › Market Intelligence › Monthly Snapshot Explainer",
-      "propertyAddress": "",
-      "media": [
-        {
-          "filename": "keynote.mp4",
-          "url": "https://media.peterluo.homes/evergreen/MKT/snapshot/keynote.mp4",
-          "type": "video"
-        }
-      ],
-      "captions": {
-        "en": "What this month's numbers actually mean for buyers and sellers.",
-        "zh": "本月数据，对买卖双方到底意味着什么。"
-      },
-      "commentLinks": {
-        "en": "https://peterluo.homes/market",
-        "zh": "https://peterluo.homes/market"
-      },
-      "targets": [
-        {
-          "platform": "telegram",
-          "label": "Telegram",
-          "lang": "en",
-          "tier": "auto",
-          "status": "queued"
-        },
-        {
-          "platform": "discord",
-          "label": "Discord",
-          "lang": "en",
-          "tier": "auto",
-          "status": "queued"
-        },
-        {
-          "platform": "blog",
-          "label": "Blog (EN+中文)",
-          "lang": "en",
-          "tier": "auto",
-          "status": "queued"
-        },
-        {
-          "platform": "youtube_en",
-          "label": "YouTube",
-          "lang": "en",
-          "tier": "auto",
-          "status": "queued"
-        },
-        {
-          "platform": "youtube_zh",
-          "label": "YouTube 中文",
-          "lang": "zh",
-          "tier": "auto",
-          "status": "queued"
-        },
-        {
-          "platform": "threads",
-          "label": "Threads",
-          "lang": "en",
-          "tier": "auto",
-          "status": "queued"
-        },
-        {
-          "platform": "linkedin",
-          "label": "LinkedIn",
-          "lang": "en",
-          "tier": "auto",
-          "status": "queued"
-        },
-        {
-          "platform": "facebook_en",
+          "platform": "facebook_zh",
           "label": "Facebook",
-          "lang": "en",
-          "tier": "assist",
-          "status": "queued"
-        },
-        {
-          "platform": "instagram_en",
-          "label": "Instagram",
-          "lang": "en",
+          "lang": "zh",
           "tier": "assist",
           "status": "queued"
         },
@@ -3915,10 +3825,10 @@
       ]
     },
     {
-      "id": "23e12d05-fe33-48a8-9069-a6a329a8c03b",
-      "created": "2026-07-15T15:04:38.494Z",
-      "scheduledFor": "2026-07-15T15:10:00.000Z",
-      "scheduledLocal": "2026-07-15T11:10",
+      "id": "6b9a5e4d-50b3-4619-9eb2-94da1a2627f1",
+      "created": "2026-07-15T15:24:58.368Z",
+      "scheduledFor": "2026-07-15T15:30:00.000Z",
+      "scheduledLocal": "2026-07-15T11:30",
       "status": "queued",
       "title": "Test-1-Market Intelligence Minute: Reading the Trend",
       "breadcrumb": "Content Marketing › Market Education › Market Intelligence › Monthly Snapshot Explainer",
@@ -4019,10 +3929,114 @@
       ]
     },
     {
-      "id": "23864e70-82a3-4fa1-9a51-d5c3c606de19",
-      "created": "2026-07-15T15:06:47.722Z",
-      "scheduledFor": "2026-07-15T15:15:00.000Z",
-      "scheduledLocal": "2026-07-15T11:15",
+      "id": "184030db-c46d-411e-a304-9b6d6f8ab70a",
+      "created": "2026-07-15T15:25:26.343Z",
+      "scheduledFor": "2026-07-15T15:34:00.000Z",
+      "scheduledLocal": "2026-07-15T11:34",
+      "status": "queued",
+      "title": "Test-1-Market Intelligence Minute: Reading the Trend",
+      "breadcrumb": "Content Marketing › Market Education › Market Intelligence › Monthly Snapshot Explainer",
+      "propertyAddress": "",
+      "media": [
+        {
+          "filename": "keynote.mp4",
+          "url": "https://media.peterluo.homes/evergreen/MKT/snapshot/keynote.mp4",
+          "type": "video"
+        }
+      ],
+      "captions": {
+        "en": "What this month's numbers actually mean for buyers and sellers.",
+        "zh": "本月数据，对买卖双方到底意味着什么。"
+      },
+      "commentLinks": {
+        "en": "https://peterluo.homes/market",
+        "zh": "https://peterluo.homes/market"
+      },
+      "targets": [
+        {
+          "platform": "telegram",
+          "label": "Telegram",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "discord",
+          "label": "Discord",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "blog",
+          "label": "Blog (EN+中文)",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "youtube_en",
+          "label": "YouTube",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "youtube_zh",
+          "label": "YouTube 中文",
+          "lang": "zh",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "threads",
+          "label": "Threads",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "linkedin",
+          "label": "LinkedIn",
+          "lang": "en",
+          "tier": "auto",
+          "status": "queued"
+        },
+        {
+          "platform": "facebook_en",
+          "label": "Facebook",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "instagram_en",
+          "label": "Instagram",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "facebook_zh",
+          "label": "Facebook",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "instagram_zh",
+          "label": "Instagram",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        }
+      ]
+    },
+    {
+      "id": "83831485-7f5a-4d0d-bda9-9cdd58b3c0fa",
+      "created": "2026-07-15T15:25:59.076Z",
+      "scheduledFor": "2026-07-15T15:37:00.000Z",
+      "scheduledLocal": "2026-07-15T11:37",
       "status": "queued",
       "title": "Test-2-Market Intelligence Minute: Reading the Trend",
       "breadcrumb": "Content Marketing › Market Education › Market Intelligence › Monthly Snapshot Explainer",
