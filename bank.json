@@ -1,0 +1,512 @@
+{
+  "version": 1,
+  "updated": "2026-07-15T13:39:27.130Z",
+  "captions": [
+    {
+      "g": "Preparation",
+      "en": "The journey before it goes live.",
+      "zh": "上市前的精心准备。"
+    },
+    {
+      "g": "Preparation",
+      "en": "Staging day — watch it become a home.",
+      "zh": "布置日 — 见证空房变成家。"
+    },
+    {
+      "g": "Preparation",
+      "en": "What buyers never see: the work behind the listing.",
+      "zh": "买家看不到的，是房源背后的功夫。"
+    },
+    {
+      "g": "Preparation",
+      "en": "Decluttering today so it photographs beautifully tomorrow.",
+      "zh": "今天整理收纳，明天拍出美照。"
+    },
+    {
+      "g": "Preparation",
+      "en": "Small fixes, big difference before we list.",
+      "zh": "上市前的小修小补，效果大不同。"
+    },
+    {
+      "g": "Preparation",
+      "en": "Prepping every room to show its best.",
+      "zh": "让每个房间展现最好的一面。"
+    },
+    {
+      "g": "Preparation",
+      "en": "Fresh paint, clean lines, ready for buyers.",
+      "zh": "焕新油漆，干净利落，迎接买家。"
+    },
+    {
+      "g": "Preparation",
+      "en": "Behind every great listing is a great prep week.",
+      "zh": "每个出色房源背后，都有一周的精心筹备。"
+    },
+    {
+      "g": "Preparation",
+      "en": "Getting the light right before photo day.",
+      "zh": "拍摄日前，先把光线调到最好。"
+    },
+    {
+      "g": "Preparation",
+      "en": "First we prepare. Then we launch.",
+      "zh": "先准备，再上市。"
+    },
+    {
+      "g": "Preparation",
+      "en": "The checklist that gets you top dollar.",
+      "zh": "让你卖出好价钱的准备清单。"
+    },
+    {
+      "g": "First impression",
+      "en": "The kind of home that makes you smile before you even walk in.",
+      "zh": "还没进门，就让你会心一笑的家。"
+    },
+    {
+      "g": "First impression",
+      "en": "Curb appeal that stops you in your tracks.",
+      "zh": "让人驻足的门面魅力。"
+    },
+    {
+      "g": "First impression",
+      "en": "The first three seconds decide everything.",
+      "zh": "头三秒，决定一切。"
+    },
+    {
+      "g": "First impression",
+      "en": "Walk in. Take a breath. You’re home.",
+      "zh": "走进来，深呼吸，到家了。"
+    },
+    {
+      "g": "First impression",
+      "en": "That feeling when the front door opens.",
+      "zh": "推开大门那一刻的感觉。"
+    },
+    {
+      "g": "First impression",
+      "en": "A welcome that sets the tone.",
+      "zh": "一进门，就定了基调。"
+    },
+    {
+      "g": "First impression",
+      "en": "Light, space, and a warm hello.",
+      "zh": "采光、空间，与温暖的问候。"
+    },
+    {
+      "g": "First impression",
+      "en": "You’ll know it in the foyer.",
+      "zh": "在门厅，你就会知道。"
+    },
+    {
+      "g": "First impression",
+      "en": "Some homes just feel right.",
+      "zh": "有些家，就是对的感觉。"
+    },
+    {
+      "g": "First impression",
+      "en": "The entrance that makes a promise.",
+      "zh": "一个许下承诺的入口。"
+    },
+    {
+      "g": "Lifestyle",
+      "en": "Morning here: sunrise, coffee, quiet.",
+      "zh": "这里的清晨：日出、咖啡、宁静。"
+    },
+    {
+      "g": "Lifestyle",
+      "en": "Summer here: backyard, BBQ, long evenings.",
+      "zh": "这里的夏天：后院、烧烤、悠长的傍晚。"
+    },
+    {
+      "g": "Lifestyle",
+      "en": "Winter here: fireplace, warmth, calm.",
+      "zh": "这里的冬天：壁炉、温暖、安宁。"
+    },
+    {
+      "g": "Lifestyle",
+      "en": "Imagine welcoming friends here on a summer evening.",
+      "zh": "想象夏夜在这里招待朋友。"
+    },
+    {
+      "g": "Lifestyle",
+      "en": "Weekends were made for this backyard.",
+      "zh": "周末，就是为这个后院而生。"
+    },
+    {
+      "g": "Lifestyle",
+      "en": "Coffee on the deck, birds in the trees.",
+      "zh": "露台上的咖啡，树梢的鸟鸣。"
+    },
+    {
+      "g": "Lifestyle",
+      "en": "Where busy days come home to quiet nights.",
+      "zh": "忙碌的白天，回到宁静的夜晚。"
+    },
+    {
+      "g": "Lifestyle",
+      "en": "Room to gather, space to breathe.",
+      "zh": "有相聚的地方，也有呼吸的空间。"
+    },
+    {
+      "g": "Lifestyle",
+      "en": "The life you picture starts at this address.",
+      "zh": "你想象中的生活，从这个地址开始。"
+    },
+    {
+      "g": "Lifestyle",
+      "en": "Sunday slow mornings, right here.",
+      "zh": "周日慵懒的早晨，就在这里。"
+    },
+    {
+      "g": "Room",
+      "en": "A kitchen where the whole family ends up.",
+      "zh": "全家人最后都会聚到的厨房。"
+    },
+    {
+      "g": "Room",
+      "en": "The owner’s retreat — your hotel at home.",
+      "zh": "主人的私享空间 — 家中的酒店套房。"
+    },
+    {
+      "g": "Room",
+      "en": "Movie nights start here.",
+      "zh": "电影之夜，从这里开始。"
+    },
+    {
+      "g": "Room",
+      "en": "The island everyone gathers around.",
+      "zh": "大家都爱围着的中岛。"
+    },
+    {
+      "g": "Room",
+      "en": "A spa bath to end the day.",
+      "zh": "结束一天的水疗浴室。"
+    },
+    {
+      "g": "Room",
+      "en": "Sunlit and ready for slow mornings.",
+      "zh": "阳光满室，适合慵懒的早晨。"
+    },
+    {
+      "g": "Room",
+      "en": "Storage you’ll actually love.",
+      "zh": "让你真心喜欢的收纳空间。"
+    },
+    {
+      "g": "Room",
+      "en": "The home office that works as hard as you.",
+      "zh": "和你一样努力的居家办公室。"
+    },
+    {
+      "g": "Room",
+      "en": "A dining room made for long dinners.",
+      "zh": "为长长晚餐而生的餐厅。"
+    },
+    {
+      "g": "Room",
+      "en": "Where the kids will never want to leave.",
+      "zh": "孩子们舍不得离开的地方。"
+    },
+    {
+      "g": "Neighbourhood",
+      "en": "Why families move to this community.",
+      "zh": "家庭为何选择这个社区。"
+    },
+    {
+      "g": "Neighbourhood",
+      "en": "Top schools, parks, and quiet streets.",
+      "zh": "名校、公园与宁静的街道。"
+    },
+    {
+      "g": "Neighbourhood",
+      "en": "The hidden gems the locals love.",
+      "zh": "本地人钟爱的隐藏宝藏。"
+    },
+    {
+      "g": "Neighbourhood",
+      "en": "Steps to trails and slow weekend mornings.",
+      "zh": "步行即达步道，享受悠闲的周末早晨。"
+    },
+    {
+      "g": "Neighbourhood",
+      "en": "Coffee shops, groceries, everything close.",
+      "zh": "咖啡馆、超市，一切都在身边。"
+    },
+    {
+      "g": "Neighbourhood",
+      "en": "A street where neighbours still wave.",
+      "zh": "邻里还会互相招手的街道。"
+    },
+    {
+      "g": "Neighbourhood",
+      "en": "Minutes to transit, easy to everywhere.",
+      "zh": "几分钟到公共交通，去哪都方便。"
+    },
+    {
+      "g": "Neighbourhood",
+      "en": "The community you’ve been looking for.",
+      "zh": "你一直在找的社区。"
+    },
+    {
+      "g": "Neighbourhood",
+      "en": "Green space at your doorstep.",
+      "zh": "绿意就在家门口。"
+    },
+    {
+      "g": "Neighbourhood",
+      "en": "Where location does half the work.",
+      "zh": "地段，已成就了一半。"
+    },
+    {
+      "g": "Market",
+      "en": "Why this home is priced where it is.",
+      "zh": "这套房子为何如此定价。"
+    },
+    {
+      "g": "Market",
+      "en": "What this month’s numbers mean for sellers.",
+      "zh": "本月数据，对卖家意味着什么。"
+    },
+    {
+      "g": "Market",
+      "en": "For every 100 homes listed, here’s what actually sold.",
+      "zh": "每上市 100 套房，真正成交的是这些。"
+    },
+    {
+      "g": "Market",
+      "en": "Days on market: what the trend is telling us.",
+      "zh": "房屋在售天数：趋势在说什么。"
+    },
+    {
+      "g": "Market",
+      "en": "Pricing right beats pricing high — here’s why.",
+      "zh": "定价合理胜过定价过高 — 原因在此。"
+    },
+    {
+      "g": "Market",
+      "en": "The numbers behind a smart listing strategy.",
+      "zh": "聪明上市策略背后的数据。"
+    },
+    {
+      "g": "Market",
+      "en": "What buyers are paying right now.",
+      "zh": "买家现在愿意出的价。"
+    },
+    {
+      "g": "Market",
+      "en": "Inventory is shifting. Here’s the read.",
+      "zh": "库存在变化，这是我的解读。"
+    },
+    {
+      "g": "Market",
+      "en": "A clear look at this month’s market.",
+      "zh": "本月市场，看得明明白白。"
+    },
+    {
+      "g": "Market",
+      "en": "Data first, decisions second.",
+      "zh": "先看数据，再做决定。"
+    },
+    {
+      "g": "Activity",
+      "en": "Open house this weekend — come by.",
+      "zh": "本周末开放参观 — 欢迎到访。"
+    },
+    {
+      "g": "Activity",
+      "en": "Busy showing day. Strong interest.",
+      "zh": "看房不断，反响热烈。"
+    },
+    {
+      "g": "Activity",
+      "en": "Offer night — here’s how it went.",
+      "zh": "Offer 之夜 — 结果如何。"
+    },
+    {
+      "g": "Activity",
+      "en": "The door’s open this Saturday.",
+      "zh": "本周六，大门为你敞开。"
+    },
+    {
+      "g": "Activity",
+      "en": "A steady stream of buyers today.",
+      "zh": "今天看房的买家络绎不绝。"
+    },
+    {
+      "g": "Activity",
+      "en": "Multiple showings booked — momentum is building.",
+      "zh": "多组预约看房 — 势头正旺。"
+    },
+    {
+      "g": "Activity",
+      "en": "Come see it in person this weekend.",
+      "zh": "本周末，来现场亲眼看看。"
+    },
+    {
+      "g": "Activity",
+      "en": "Interest is heating up on this one.",
+      "zh": "这套房，热度正在上升。"
+    },
+    {
+      "g": "Activity",
+      "en": "Bring your questions to the open house.",
+      "zh": "把你的问题带到开放日来。"
+    },
+    {
+      "g": "Activity",
+      "en": "Showings all week — book your time.",
+      "zh": "整周开放看房 — 预约你的时段。"
+    },
+    {
+      "g": "Story",
+      "en": "After 18 wonderful years, a new chapter begins.",
+      "zh": "美好的十八年后，新的篇章开启。"
+    },
+    {
+      "g": "Story",
+      "en": "The next chapter starts now.",
+      "zh": "新的篇章，此刻开始。"
+    },
+    {
+      "g": "Story",
+      "en": "Every home holds a story. Here’s this one’s.",
+      "zh": "每个家都有故事，这是它的。"
+    },
+    {
+      "g": "Story",
+      "en": "From first keys to fond farewells.",
+      "zh": "从拿到钥匙，到温馨道别。"
+    },
+    {
+      "g": "Story",
+      "en": "A family grew up here. Now it’s your turn.",
+      "zh": "一个家庭在此成长，如今轮到你。"
+    },
+    {
+      "g": "Story",
+      "en": "Saying goodbye to a home full of memories.",
+      "zh": "告别一个满载回忆的家。"
+    },
+    {
+      "g": "Story",
+      "en": "Where their journey ends, yours begins.",
+      "zh": "他们旅程的终点，是你的起点。"
+    },
+    {
+      "g": "Story",
+      "en": "The right home found the right family.",
+      "zh": "对的家，遇见对的家庭。"
+    },
+    {
+      "g": "Story",
+      "en": "Years of memories, ready for new ones.",
+      "zh": "多年回忆，等待新的故事。"
+    },
+    {
+      "g": "Story",
+      "en": "Some homes are hard to leave — for good reason.",
+      "zh": "有些家，难以离开 — 自有道理。"
+    },
+    {
+      "g": "Success",
+      "en": "Just sold — over asking.",
+      "zh": "刚刚成交 — 高于要价。"
+    },
+    {
+      "g": "Success",
+      "en": "Sold fast. Here’s what worked.",
+      "zh": "快速成交。成功的关键在这里。"
+    },
+    {
+      "g": "Success",
+      "en": "Another happy seller. Key handover day.",
+      "zh": "又一位满意的卖家。交钥匙的日子。"
+    },
+    {
+      "g": "Success",
+      "en": "Lessons for sellers from this sale.",
+      "zh": "这次成交，给卖家的启示。"
+    },
+    {
+      "g": "Success",
+      "en": "Sold in days, not weeks.",
+      "zh": "几天成交，而非几周。"
+    },
+    {
+      "g": "Success",
+      "en": "The right price brought the right buyer.",
+      "zh": "合理的定价，带来对的买家。"
+    },
+    {
+      "g": "Success",
+      "en": "Another address, another success story.",
+      "zh": "又一个地址，又一个成功故事。"
+    },
+    {
+      "g": "Success",
+      "en": "From listed to sold — smoothly.",
+      "zh": "从上市到成交 — 一路顺畅。"
+    },
+    {
+      "g": "Success",
+      "en": "Strategy, preparation, result.",
+      "zh": "策略、准备、成果。"
+    },
+    {
+      "g": "Success",
+      "en": "Grateful to hand over the keys again.",
+      "zh": "再一次，满怀感激地交出钥匙。"
+    }
+  ],
+  "snippets": [
+    {
+      "label": "IG hashtags",
+      "en": "#RichmondHillRealEstate #GTAHomes #YorkRegion #JustListed",
+      "zh": "",
+      "platforms": [
+        "instagram_en",
+        "instagram_zh"
+      ]
+    },
+    {
+      "label": "Sold hashtags",
+      "en": "#JustSold #SoldOverAsking #RichmondHillRealtor",
+      "zh": "",
+      "platforms": [
+        "instagram_en",
+        "instagram_zh",
+        "facebook_en",
+        "facebook_zh"
+      ]
+    },
+    {
+      "label": "CTA · book a showing",
+      "en": "📩 DM me for a private showing.",
+      "zh": "📩 私信预约看房。",
+      "platforms": [
+        "facebook_en",
+        "facebook_zh",
+        "instagram_en",
+        "instagram_zh",
+        "wechat"
+      ]
+    },
+    {
+      "label": "CTA · free home valuation",
+      "en": "What’s your home worth today? Link in bio.",
+      "zh": "想知道您的房子现在值多少？详见简介链接。",
+      "platforms": [
+        "instagram_en",
+        "instagram_zh"
+      ]
+    },
+    {
+      "label": "小红书 tags",
+      "en": "",
+      "zh": "#多伦多房产 #大多地产 #列治文山",
+      "platforms": [
+        "red"
+      ]
+    }
+  ]
+}
