@@ -725,6 +725,35 @@ def compute_overall(target_states):
     return "partial"
 
 
+def trigger_blog_build():
+    """Kick the Pages repo's Build blog workflow via workflow_dispatch, so the
+    blog rebuilds right after a blog post publishes instead of waiting on the
+    Pages cron. Cross-repo, so it needs its own token (the default GITHUB_TOKEN
+    only reaches this repo):
+      BLOG_BUILD_TOKEN     fine-grained PAT, Actions: read & write on the Pages repo
+      BLOG_BUILD_REPO      default "peterluohomes/peterluohomes.github.io"
+      BLOG_BUILD_WORKFLOW  default "build-blog.yml"   BLOG_BUILD_REF default "main"
+    No token -> silently skips (the Pages cron still runs as a fallback)."""
+    token = os.environ.get("BLOG_BUILD_TOKEN")
+    if not token:
+        return
+    repo = os.environ.get("BLOG_BUILD_REPO", "peterluohomes/peterluohomes.github.io")
+    wf = os.environ.get("BLOG_BUILD_WORKFLOW", "build-blog.yml")
+    ref = os.environ.get("BLOG_BUILD_REF", "main")
+    try:
+        r = requests.post(
+            f"https://api.github.com/repos/{repo}/actions/workflows/{wf}/dispatches",
+            headers={"Authorization": f"Bearer {token}",
+                     "Accept": "application/vnd.github+json",
+                     "X-GitHub-Api-Version": "2022-11-28",
+                     "User-Agent": "pinnacle-scheduler"},
+            json={"ref": ref}, timeout=30)
+        r.raise_for_status()
+        log("Triggered Build blog workflow")
+    except Exception as e:
+        log(f"WARN could not trigger Build blog: {str(e)[:150]}")
+
+
 # ----------------------------------------------------------------------------- main
 def main():
     queue = load_json(QUEUE_FILE, {"posts": []})
@@ -735,6 +764,7 @@ def main():
     now = now_utc()
     grace = dt.timedelta(hours=GRACE_HOURS) if GRACE_HOURS > 0 else None
     changed = False
+    blog_published = False
     log(f"Loaded {len(posts)} post(s). DRY_RUN={DRY_RUN}")
 
     for post in posts:
@@ -776,6 +806,8 @@ def main():
                 entry["url"] = info
             tstates[key] = entry
             changed = True
+            if key == "blog" and st == "posted":
+                blog_published = True
 
         # one consolidated Pushover nudge for all assisted targets on this post
         if pending_assist:
@@ -800,6 +832,9 @@ def main():
         log("DRY_RUN: status.json not written")
     else:
         log("Nothing due; status.json unchanged")
+
+    if blog_published and not DRY_RUN:
+        trigger_blog_build()
 
 
 if __name__ == "__main__":
