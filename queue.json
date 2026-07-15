@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-07-15T12:15:28.490Z",
+  "generated": "2026-07-15T12:25:00.557Z",
   "posts": [
     {
       "id": "fe84a6dc-b3a6-41df-8147-55dc46ecaa2c",
@@ -3901,22 +3901,28 @@
       ]
     },
     {
-      "id": "7caebb02-c1c5-41ed-a818-f772b57d6a8a",
-      "created": "2026-07-15T12:15:25.779Z",
-      "scheduledFor": "2026-07-15T13:00:00.000Z",
-      "scheduledLocal": "2026-07-15T09:00",
+      "id": "334dc3e4-8e32-48f0-a12f-c299ea128c39",
+      "created": "2026-07-15T12:24:13.620Z",
+      "scheduledFor": "2026-07-15T12:30:00.000Z",
+      "scheduledLocal": "2026-07-15T08:30",
       "status": "queued",
-      "title": "(untitled)",
-      "breadcrumb": "",
-      "propertyAddress": "",
-      "media": [],
+      "title": "Ravine lot, Walkout Basement",
+      "breadcrumb": "Listing Marketing › Property Marketing › Buyer Avatar Match › Multi-generation BUY-019",
+      "propertyAddress": "156 Tower Hill Rd",
+      "media": [
+        {
+          "filename": "netflix.mp4",
+          "url": "https://media.peterluo.homes/evergreen/MKT/snapshot/netflix.mp4",
+          "type": "video"
+        }
+      ],
       "captions": {
-        "en": "",
-        "zh": ""
+        "en": "Open house this weekend — come by.",
+        "zh": "本周末开放参观 — 欢迎到访。"
       },
       "commentLinks": {
-        "en": "",
-        "zh": ""
+        "en": "https://peterluo.homes/valuation",
+        "zh": "https://peterluo.homes/valuation"
       },
       "targets": [
         {
@@ -3929,13 +3935,6 @@
         {
           "platform": "discord",
           "label": "Discord",
-          "lang": "en",
-          "tier": "auto",
-          "status": "queued"
-        },
-        {
-          "platform": "wordpress",
-          "label": "WordPress",
           "lang": "en",
           "tier": "auto",
           "status": "queued"
@@ -3976,6 +3975,13 @@
           "status": "queued"
         },
         {
+          "platform": "email",
+          "label": "Email",
+          "lang": "en",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
           "platform": "facebook_en",
           "label": "Facebook",
           "lang": "en",
@@ -3990,9 +3996,16 @@
           "status": "queued"
         },
         {
-          "platform": "reddit_richmondhill",
-          "label": "Reddit · r/RichmondHill",
-          "lang": "en",
+          "platform": "facebook_zh",
+          "label": "Facebook",
+          "lang": "zh",
+          "tier": "assist",
+          "status": "queued"
+        },
+        {
+          "platform": "wechat",
+          "label": "WeChat 朋友圈",
+          "lang": "zh",
           "tier": "assist",
           "status": "queued"
         }
