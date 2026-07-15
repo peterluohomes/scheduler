@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-07-15T12:25:20.310407+00:00",
+  "updated": "2026-07-15T12:30:18.906554+00:00",
   "statuses": {
     "test-telegram-001": {
       "overall": "posted",
@@ -2890,7 +2890,7 @@
         "threads": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-15T12:25:20.310407+00:00"
+          "at": "2026-07-15T12:30:18.906554+00:00"
         },
         "facebook_en": {
           "status": "nudged",
@@ -2943,7 +2943,7 @@
         "threads": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-15T12:25:20.310407+00:00"
+          "at": "2026-07-15T12:30:18.906554+00:00"
         },
         "facebook_en": {
           "status": "nudged",
@@ -2959,6 +2959,76 @@
           "status": "nudged",
           "info": "ok",
           "at": "2026-07-15T12:20:24.141298+00:00"
+        }
+      }
+    },
+    "334dc3e4-8e32-48f0-a12f-c299ea128c39": {
+      "overall": "queued",
+      "targets": {
+        "telegram": {
+          "status": "posted",
+          "info": "https://t.me/peterluohomes/51",
+          "at": "2026-07-15T12:30:18.906554+00:00",
+          "url": "https://t.me/peterluohomes/51"
+        },
+        "discord": {
+          "status": "posted",
+          "info": "ok",
+          "at": "2026-07-15T12:30:18.906554+00:00"
+        },
+        "blog": {
+          "status": "posted",
+          "info": "https://peterluo.homes/blog/en/2026-07-15-ravine-lot-walkout-basement.html",
+          "at": "2026-07-15T12:30:18.906554+00:00",
+          "url": "https://peterluo.homes/blog/en/2026-07-15-ravine-lot-walkout-basement.html"
+        },
+        "youtube_en": {
+          "status": "posted",
+          "info": "https://youtu.be/5RBjvhIaGlM",
+          "at": "2026-07-15T12:30:18.906554+00:00",
+          "url": "https://youtu.be/5RBjvhIaGlM"
+        },
+        "youtube_zh": {
+          "status": "posted",
+          "info": "https://youtu.be/IF7um8vqnpM",
+          "at": "2026-07-15T12:30:18.906554+00:00",
+          "url": "https://youtu.be/IF7um8vqnpM"
+        },
+        "threads": {
+          "status": "pending",
+          "info": "handler not built yet",
+          "at": "2026-07-15T12:30:18.906554+00:00"
+        },
+        "linkedin": {
+          "status": "posted",
+          "info": "https://www.linkedin.com/feed/update/urn:li:share:7483135879046275072/",
+          "at": "2026-07-15T12:30:18.906554+00:00",
+          "url": "https://www.linkedin.com/feed/update/urn:li:share:7483135879046275072/"
+        },
+        "email": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-15T12:30:18.906554+00:00"
+        },
+        "facebook_en": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-15T12:30:18.906554+00:00"
+        },
+        "instagram_en": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-15T12:30:18.906554+00:00"
+        },
+        "facebook_zh": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-15T12:30:18.906554+00:00"
+        },
+        "wechat": {
+          "status": "nudged",
+          "info": "ok",
+          "at": "2026-07-15T12:30:18.906554+00:00"
         }
       }
     }
