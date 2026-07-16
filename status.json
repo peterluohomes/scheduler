@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-07-16T08:46:00.258967+00:00",
+  "updated": "2026-07-16T08:51:01.555986+00:00",
   "statuses": {
     "test-telegram-001": {
       "overall": "posted",
@@ -4102,7 +4102,7 @@
         "threads": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-16T08:46:00.258967+00:00"
+          "at": "2026-07-16T08:51:01.555986+00:00"
         },
         "linkedin": {
           "status": "posted",
@@ -4167,7 +4167,7 @@
         "threads": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-16T08:46:00.258967+00:00"
+          "at": "2026-07-16T08:51:01.555986+00:00"
         },
         "linkedin": {
           "status": "posted",
@@ -4232,7 +4232,7 @@
         "threads": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-16T08:46:00.258967+00:00"
+          "at": "2026-07-16T08:51:01.555986+00:00"
         },
         "linkedin": {
           "status": "posted",
@@ -4297,7 +4297,7 @@
         "threads": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-16T08:46:00.258967+00:00"
+          "at": "2026-07-16T08:51:01.555986+00:00"
         },
         "linkedin": {
           "status": "posted",
@@ -4362,7 +4362,7 @@
         "threads": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-16T08:46:00.258967+00:00"
+          "at": "2026-07-16T08:51:01.555986+00:00"
         },
         "linkedin": {
           "status": "posted",
@@ -4427,7 +4427,7 @@
         "threads": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-16T08:46:00.258967+00:00"
+          "at": "2026-07-16T08:51:01.555986+00:00"
         },
         "linkedin": {
           "status": "posted",
@@ -4492,7 +4492,7 @@
         "threads": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-16T08:46:00.258967+00:00"
+          "at": "2026-07-16T08:51:01.555986+00:00"
         },
         "linkedin": {
           "status": "posted",
