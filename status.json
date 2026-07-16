@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-07-16T06:55:59.404677+00:00",
+  "updated": "2026-07-16T07:00:59.853613+00:00",
   "statuses": {
     "test-telegram-001": {
       "overall": "posted",
@@ -4102,7 +4102,7 @@
         "threads": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-16T06:55:59.404677+00:00"
+          "at": "2026-07-16T07:00:59.853613+00:00"
         },
         "linkedin": {
           "status": "posted",
@@ -4167,7 +4167,7 @@
         "threads": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-16T06:55:59.404677+00:00"
+          "at": "2026-07-16T07:00:59.853613+00:00"
         },
         "linkedin": {
           "status": "posted",
@@ -4232,7 +4232,7 @@
         "threads": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-16T06:55:59.404677+00:00"
+          "at": "2026-07-16T07:00:59.853613+00:00"
         },
         "linkedin": {
           "status": "posted",
@@ -4297,7 +4297,7 @@
         "threads": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-16T06:55:59.404677+00:00"
+          "at": "2026-07-16T07:00:59.853613+00:00"
         },
         "linkedin": {
           "status": "posted",
@@ -4362,7 +4362,7 @@
         "threads": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-16T06:55:59.404677+00:00"
+          "at": "2026-07-16T07:00:59.853613+00:00"
         },
         "linkedin": {
           "status": "posted",
@@ -4427,7 +4427,7 @@
         "threads": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-16T06:55:59.404677+00:00"
+          "at": "2026-07-16T07:00:59.853613+00:00"
         },
         "linkedin": {
           "status": "posted",
@@ -4458,7 +4458,7 @@
       }
     },
     "df0e91a5-8659-4115-bf45-8d7270e9690a": {
-      "overall": "partial",
+      "overall": "queued",
       "targets": {
         "telegram": {
           "status": "posted",
@@ -4484,14 +4484,15 @@
           "url": "https://youtu.be/2aUbzZ2qdeQ"
         },
         "youtube_zh": {
-          "status": "failed",
-          "info": "429 Client Error: Too Many Requests for url: https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status",
-          "at": "2026-07-16T06:55:59.404677+00:00"
+          "status": "posted",
+          "info": "https://youtu.be/KcIuAFF-Yu8",
+          "at": "2026-07-16T07:00:59.853613+00:00",
+          "url": "https://youtu.be/KcIuAFF-Yu8"
         },
         "threads": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-16T06:55:59.404677+00:00"
+          "at": "2026-07-16T07:00:59.853613+00:00"
         },
         "linkedin": {
           "status": "posted",
