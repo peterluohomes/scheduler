@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-07-17T17:51:01.148606+00:00",
+  "updated": "2026-07-17T17:56:04.059469+00:00",
   "statuses": {
     "test-telegram-001": {
       "overall": "posted",
@@ -4362,7 +4362,7 @@
         "threads": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-17T17:51:01.148606+00:00"
+          "at": "2026-07-17T17:56:04.059469+00:00"
         },
         "linkedin": {
           "status": "posted",
@@ -4427,7 +4427,7 @@
         "threads": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-17T17:51:01.148606+00:00"
+          "at": "2026-07-17T17:56:04.059469+00:00"
         },
         "linkedin": {
           "status": "posted",
@@ -4492,7 +4492,7 @@
         "threads": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-17T17:51:01.148606+00:00"
+          "at": "2026-07-17T17:56:04.059469+00:00"
         },
         "linkedin": {
           "status": "posted",
