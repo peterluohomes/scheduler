@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-07-17T18:01:04.895667+00:00",
+  "updated": "2026-07-17T18:06:02.996128+00:00",
   "statuses": {
     "test-telegram-001": {
       "overall": "posted",
@@ -4492,7 +4492,7 @@
         "threads": {
           "status": "pending",
           "info": "handler not built yet",
-          "at": "2026-07-17T18:01:04.895667+00:00"
+          "at": "2026-07-17T18:06:02.996128+00:00"
         },
         "linkedin": {
           "status": "posted",
